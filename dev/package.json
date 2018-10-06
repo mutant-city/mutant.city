@@ -1,0 +1,21 @@
+{
+  "name": "dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:css": "node-sass scss/style.scss -o ../ -wr",
+    "build:css": "node-sass scss/style.scss ../style.css -r",
+    "build:fonts": "mkdir -p ../assets/fonts && cp node_modules/font-awesome/fonts/** ../assets/fonts && cp fonts/** ../assets/fonts",
+    "build:all": "npm run build:fonts && npm run build:css && echo 'is completed'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.1",
+    "font-awesome": "^4.7.0",
+    "node-sass": "^4.9.3",
+    "reset-css": "^4.0.1"
+  }
+}
