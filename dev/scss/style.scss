@@ -22,7 +22,6 @@ body{
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }
 
@@ -38,6 +37,7 @@ a {
 .blog-post-title {
   @extend .title-font
 }
+
 
 
 
