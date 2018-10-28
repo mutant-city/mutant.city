@@ -7,6 +7,7 @@
         </div>
 
         <div class="column is-10">
+
             <div class="media-content">
                 <h1 class="blog-post-title">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -15,11 +16,11 @@
                 </h1>
                 <p class=><?php the_date(); ?> by <?php the_author(); ?></p>
             </div>
-        </div>
+            <hr/>
+            <div class="media-content">
+                <?php the_content(); ?>
+            </div>
 
+        </div>
     </div>
 </section>
-<section class="section" style="margin-top:-4%; border-bottom: 3px solid whitesmoke">
-    <?php the_content(); ?>
-</section>
-
