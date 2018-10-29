@@ -1,4 +1,4 @@
-<section class="section">
+<section class="section single-post">
     <div class="columns">
         <div class="column is-2">
             <p class="image"">
