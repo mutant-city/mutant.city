@@ -177,7 +177,7 @@ table {
   right: 0;
   top: 0; }
 
-.button, #commentform #submit, .input,
+.button, #commentform #submit, .input, .middle-txt-boxes, .comment-respond input#author, .comment-respond input#email, .comment-respond input#url,
 .textarea, #commentform textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
@@ -200,29 +200,29 @@ table {
   padding-top: calc(0.375em - 1px);
   position: relative;
   vertical-align: top; }
-  .button:focus, #commentform #submit:focus, .input:focus,
+  .button:focus, #commentform #submit:focus, .input:focus, .middle-txt-boxes:focus, .comment-respond input#author:focus, .comment-respond input#email:focus, .comment-respond input#url:focus,
   .textarea:focus, #commentform textarea:focus, .select select:focus, .file-cta:focus,
   .file-name:focus, .pagination-previous:focus,
   .pagination-next:focus,
   .pagination-link:focus,
-  .pagination-ellipsis:focus, .is-focused.button, #commentform .is-focused#submit, .is-focused.input,
+  .pagination-ellipsis:focus, .is-focused.button, #commentform .is-focused#submit, .is-focused.input, .is-focused.middle-txt-boxes, .comment-respond input.is-focused#author, .comment-respond input.is-focused#email, .comment-respond input.is-focused#url,
   .is-focused.textarea, #commentform textarea.is-focused, .select select.is-focused, .is-focused.file-cta,
   .is-focused.file-name, .is-focused.pagination-previous,
   .is-focused.pagination-next,
   .is-focused.pagination-link,
-  .is-focused.pagination-ellipsis, .button:active, #commentform #submit:active, .input:active,
+  .is-focused.pagination-ellipsis, .button:active, #commentform #submit:active, .input:active, .middle-txt-boxes:active, .comment-respond input#author:active, .comment-respond input#email:active, .comment-respond input#url:active,
   .textarea:active, #commentform textarea:active, .select select:active, .file-cta:active,
   .file-name:active, .pagination-previous:active,
   .pagination-next:active,
   .pagination-link:active,
-  .pagination-ellipsis:active, .is-active.button, #commentform .is-active#submit, .is-active.input,
+  .pagination-ellipsis:active, .is-active.button, #commentform .is-active#submit, .is-active.input, .is-active.middle-txt-boxes, .comment-respond input.is-active#author, .comment-respond input.is-active#email, .comment-respond input.is-active#url,
   .is-active.textarea, #commentform textarea.is-active, .select select.is-active, .is-active.file-cta,
   .is-active.file-name, .is-active.pagination-previous,
   .is-active.pagination-next,
   .is-active.pagination-link,
   .is-active.pagination-ellipsis {
     outline: none; }
-  .button[disabled], #commentform #submit[disabled], .input[disabled],
+  .button[disabled], #commentform #submit[disabled], .input[disabled], .middle-txt-boxes[disabled], .comment-respond input#author[disabled], .comment-respond input#email[disabled], .comment-respond input#url[disabled],
   .textarea[disabled], #commentform textarea[disabled], .select select[disabled], .file-cta[disabled],
   .file-name[disabled], .pagination-previous[disabled],
   .pagination-next[disabled],
@@ -1570,62 +1570,62 @@ a.box:active {
         border-color: #fff;
         box-shadow: none;
         color: #fff; }
-  .button.is-info, #commentform .is-info#submit {
+  .button.is-info, #commentform .is-info#submit, #commentform #submit.middle-txt-boxes, .button.middle-txt-boxes, .comment-respond input.button#author, .comment-respond input.button#email, .comment-respond input.button#url {
     background-color: #209cee;
     border-color: transparent;
     color: #fff; }
-    .button.is-info:hover, #commentform .is-info#submit:hover, .button.is-info.is-hovered, #commentform .is-info.is-hovered#submit {
+    .button.is-info:hover, #commentform .is-info#submit:hover, #commentform #submit.middle-txt-boxes:hover, .button.middle-txt-boxes:hover, .comment-respond input.button#author:hover, .comment-respond input.button#email:hover, .comment-respond input.button#url:hover, .button.is-info.is-hovered, #commentform .is-info.is-hovered#submit, #commentform .is-hovered#submit.middle-txt-boxes, .button.is-hovered.middle-txt-boxes, .comment-respond input.button.is-hovered#author, .comment-respond input.button.is-hovered#email, .comment-respond input.button.is-hovered#url {
       background-color: #1496ed;
       border-color: transparent;
       color: #fff; }
-    .button.is-info:focus, #commentform .is-info#submit:focus, .button.is-info.is-focused, #commentform .is-info.is-focused#submit {
+    .button.is-info:focus, #commentform .is-info#submit:focus, #commentform #submit.middle-txt-boxes:focus, .button.middle-txt-boxes:focus, .comment-respond input.button#author:focus, .comment-respond input.button#email:focus, .comment-respond input.button#url:focus, .button.is-info.is-focused, #commentform .is-info.is-focused#submit, #commentform .is-focused#submit.middle-txt-boxes, .button.is-focused.middle-txt-boxes, .comment-respond input.button.is-focused#author, .comment-respond input.button.is-focused#email, .comment-respond input.button.is-focused#url {
       border-color: transparent;
       color: #fff; }
-      .button.is-info:focus:not(:active), #commentform .is-info#submit:focus:not(:active), .button.is-info.is-focused:not(:active), #commentform .is-info.is-focused#submit:not(:active) {
+      .button.is-info:focus:not(:active), #commentform .is-info#submit:focus:not(:active), #commentform #submit.middle-txt-boxes:focus:not(:active), .button.middle-txt-boxes:focus:not(:active), .comment-respond input.button#author:focus:not(:active), .comment-respond input.button#email:focus:not(:active), .comment-respond input.button#url:focus:not(:active), .button.is-info.is-focused:not(:active), #commentform .is-info.is-focused#submit:not(:active), #commentform .is-focused#submit.middle-txt-boxes:not(:active), .button.is-focused.middle-txt-boxes:not(:active), .comment-respond input.button.is-focused#author:not(:active), .comment-respond input.button.is-focused#email:not(:active), .comment-respond input.button.is-focused#url:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
-    .button.is-info:active, #commentform .is-info#submit:active, .button.is-info.is-active, #commentform .is-info.is-active#submit {
+    .button.is-info:active, #commentform .is-info#submit:active, #commentform #submit.middle-txt-boxes:active, .button.middle-txt-boxes:active, .comment-respond input.button#author:active, .comment-respond input.button#email:active, .comment-respond input.button#url:active, .button.is-info.is-active, #commentform .is-info.is-active#submit, #commentform .is-active#submit.middle-txt-boxes, .button.is-active.middle-txt-boxes, .comment-respond input.button.is-active#author, .comment-respond input.button.is-active#email, .comment-respond input.button.is-active#url {
       background-color: #118fe4;
       border-color: transparent;
       color: #fff; }
-    .button.is-info[disabled], #commentform .is-info#submit[disabled] {
+    .button.is-info[disabled], #commentform .is-info#submit[disabled], #commentform #submit.middle-txt-boxes[disabled], .button.middle-txt-boxes[disabled], .comment-respond input.button#author[disabled], .comment-respond input.button#email[disabled], .comment-respond input.button#url[disabled] {
       background-color: #209cee;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-info.is-inverted, #commentform .is-info.is-inverted#submit {
+    .button.is-info.is-inverted, #commentform .is-info.is-inverted#submit, #commentform .is-inverted#submit.middle-txt-boxes, .button.is-inverted.middle-txt-boxes, .comment-respond input.button.is-inverted#author, .comment-respond input.button.is-inverted#email, .comment-respond input.button.is-inverted#url {
       background-color: #fff;
       color: #209cee; }
-      .button.is-info.is-inverted:hover, #commentform .is-info.is-inverted#submit:hover {
+      .button.is-info.is-inverted:hover, #commentform .is-info.is-inverted#submit:hover, #commentform .is-inverted#submit.middle-txt-boxes:hover, .button.is-inverted.middle-txt-boxes:hover, .comment-respond input.button.is-inverted#author:hover, .comment-respond input.button.is-inverted#email:hover, .comment-respond input.button.is-inverted#url:hover {
         background-color: #f2f2f2; }
-      .button.is-info.is-inverted[disabled], #commentform .is-info.is-inverted#submit[disabled] {
+      .button.is-info.is-inverted[disabled], #commentform .is-info.is-inverted#submit[disabled], #commentform .is-inverted#submit.middle-txt-boxes[disabled], .button.is-inverted.middle-txt-boxes[disabled], .comment-respond input.button.is-inverted#author[disabled], .comment-respond input.button.is-inverted#email[disabled], .comment-respond input.button.is-inverted#url[disabled] {
         background-color: #fff;
         border-color: transparent;
         box-shadow: none;
         color: #209cee; }
-    .button.is-info.is-loading::after, #commentform .is-info.is-loading#submit::after {
+    .button.is-info.is-loading::after, #commentform .is-info.is-loading#submit::after, #commentform .is-loading#submit.middle-txt-boxes::after, .button.is-loading.middle-txt-boxes::after, .comment-respond input.button.is-loading#author::after, .comment-respond input.button.is-loading#email::after, .comment-respond input.button.is-loading#url::after {
       border-color: transparent transparent #fff #fff !important; }
-    .button.is-info.is-outlined, #commentform .is-info.is-outlined#submit {
+    .button.is-info.is-outlined, #commentform .is-info.is-outlined#submit, #commentform .is-outlined#submit.middle-txt-boxes, .button.is-outlined.middle-txt-boxes, .comment-respond input.button.is-outlined#author, .comment-respond input.button.is-outlined#email, .comment-respond input.button.is-outlined#url {
       background-color: transparent;
       border-color: #209cee;
       color: #209cee; }
-      .button.is-info.is-outlined:hover, #commentform .is-info.is-outlined#submit:hover, .button.is-info.is-outlined:focus, #commentform .is-info.is-outlined#submit:focus {
+      .button.is-info.is-outlined:hover, #commentform .is-info.is-outlined#submit:hover, #commentform .is-outlined#submit.middle-txt-boxes:hover, .button.is-outlined.middle-txt-boxes:hover, .comment-respond input.button.is-outlined#author:hover, .comment-respond input.button.is-outlined#email:hover, .comment-respond input.button.is-outlined#url:hover, .button.is-info.is-outlined:focus, #commentform .is-info.is-outlined#submit:focus, #commentform .is-outlined#submit.middle-txt-boxes:focus, .button.is-outlined.middle-txt-boxes:focus, .comment-respond input.button.is-outlined#author:focus, .comment-respond input.button.is-outlined#email:focus, .comment-respond input.button.is-outlined#url:focus {
         background-color: #209cee;
         border-color: #209cee;
         color: #fff; }
-      .button.is-info.is-outlined.is-loading::after, #commentform .is-info.is-outlined.is-loading#submit::after {
+      .button.is-info.is-outlined.is-loading::after, #commentform .is-info.is-outlined.is-loading#submit::after, #commentform .is-outlined.is-loading#submit.middle-txt-boxes::after, .button.is-outlined.is-loading.middle-txt-boxes::after, .comment-respond input.button.is-outlined.is-loading#author::after, .comment-respond input.button.is-outlined.is-loading#email::after, .comment-respond input.button.is-outlined.is-loading#url::after {
         border-color: transparent transparent #209cee #209cee !important; }
-      .button.is-info.is-outlined[disabled], #commentform .is-info.is-outlined#submit[disabled] {
+      .button.is-info.is-outlined[disabled], #commentform .is-info.is-outlined#submit[disabled], #commentform .is-outlined#submit.middle-txt-boxes[disabled], .button.is-outlined.middle-txt-boxes[disabled], .comment-respond input.button.is-outlined#author[disabled], .comment-respond input.button.is-outlined#email[disabled], .comment-respond input.button.is-outlined#url[disabled] {
         background-color: transparent;
         border-color: #209cee;
         box-shadow: none;
         color: #209cee; }
-    .button.is-info.is-inverted.is-outlined, #commentform .is-info.is-inverted.is-outlined#submit {
+    .button.is-info.is-inverted.is-outlined, #commentform .is-info.is-inverted.is-outlined#submit, #commentform .is-inverted.is-outlined#submit.middle-txt-boxes, .button.is-inverted.is-outlined.middle-txt-boxes, .comment-respond input.button.is-inverted.is-outlined#author, .comment-respond input.button.is-inverted.is-outlined#email, .comment-respond input.button.is-inverted.is-outlined#url {
       background-color: transparent;
       border-color: #fff;
       color: #fff; }
-      .button.is-info.is-inverted.is-outlined:hover, #commentform .is-info.is-inverted.is-outlined#submit:hover, .button.is-info.is-inverted.is-outlined:focus, #commentform .is-info.is-inverted.is-outlined#submit:focus {
+      .button.is-info.is-inverted.is-outlined:hover, #commentform .is-info.is-inverted.is-outlined#submit:hover, #commentform .is-inverted.is-outlined#submit.middle-txt-boxes:hover, .button.is-inverted.is-outlined.middle-txt-boxes:hover, .comment-respond input.button.is-inverted.is-outlined#author:hover, .comment-respond input.button.is-inverted.is-outlined#email:hover, .comment-respond input.button.is-inverted.is-outlined#url:hover, .button.is-info.is-inverted.is-outlined:focus, #commentform .is-info.is-inverted.is-outlined#submit:focus, #commentform .is-inverted.is-outlined#submit.middle-txt-boxes:focus, .button.is-inverted.is-outlined.middle-txt-boxes:focus, .comment-respond input.button.is-inverted.is-outlined#author:focus, .comment-respond input.button.is-inverted.is-outlined#email:focus, .comment-respond input.button.is-inverted.is-outlined#url:focus {
         background-color: #fff;
         color: #209cee; }
-      .button.is-info.is-inverted.is-outlined[disabled], #commentform .is-info.is-inverted.is-outlined#submit[disabled] {
+      .button.is-info.is-inverted.is-outlined[disabled], #commentform .is-info.is-inverted.is-outlined#submit[disabled], #commentform .is-inverted.is-outlined#submit.middle-txt-boxes[disabled], .button.is-inverted.is-outlined.middle-txt-boxes[disabled], .comment-respond input.button.is-inverted.is-outlined#author[disabled], .comment-respond input.button.is-inverted.is-outlined#email[disabled], .comment-respond input.button.is-inverted.is-outlined#url[disabled] {
         background-color: transparent;
         border-color: #fff;
         box-shadow: none;
@@ -2039,7 +2039,7 @@ a.box:active {
 .content.is-large, #commentform textarea.content {
   font-size: 1.5rem; }
 
-.input,
+.input, .middle-txt-boxes, .comment-respond input#author, .comment-respond input#email, .comment-respond input#url,
 .textarea,
 #commentform textarea {
   background-color: white;
@@ -2048,29 +2048,29 @@ a.box:active {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
   max-width: 100%;
   width: 100%; }
-  .input::-moz-placeholder,
+  .input::-moz-placeholder, .middle-txt-boxes::-moz-placeholder, .comment-respond input#author::-moz-placeholder, .comment-respond input#email::-moz-placeholder, .comment-respond input#url::-moz-placeholder,
   .textarea::-moz-placeholder,
   #commentform textarea::-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input::-webkit-input-placeholder,
+  .input::-webkit-input-placeholder, .middle-txt-boxes::-webkit-input-placeholder, .comment-respond input#author::-webkit-input-placeholder, .comment-respond input#email::-webkit-input-placeholder, .comment-respond input#url::-webkit-input-placeholder,
   .textarea::-webkit-input-placeholder,
   #commentform textarea::-webkit-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:-moz-placeholder,
+  .input:-moz-placeholder, .middle-txt-boxes:-moz-placeholder, .comment-respond input#author:-moz-placeholder, .comment-respond input#email:-moz-placeholder, .comment-respond input#url:-moz-placeholder,
   .textarea:-moz-placeholder,
   #commentform textarea:-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:-ms-input-placeholder,
+  .input:-ms-input-placeholder, .middle-txt-boxes:-ms-input-placeholder, .comment-respond input#author:-ms-input-placeholder, .comment-respond input#email:-ms-input-placeholder, .comment-respond input#url:-ms-input-placeholder,
   .textarea:-ms-input-placeholder,
   #commentform textarea:-ms-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
-  .input:hover, .input.is-hovered,
+  .input:hover, .middle-txt-boxes:hover, .comment-respond input#author:hover, .comment-respond input#email:hover, .comment-respond input#url:hover, .input.is-hovered, .is-hovered.middle-txt-boxes, .comment-respond input.is-hovered#author, .comment-respond input.is-hovered#email, .comment-respond input.is-hovered#url,
   .textarea:hover,
   #commentform textarea:hover,
   .textarea.is-hovered,
   #commentform textarea.is-hovered {
     border-color: #b5b5b5; }
-  .input:focus, .input.is-focused, .input:active, .input.is-active,
+  .input:focus, .middle-txt-boxes:focus, .comment-respond input#author:focus, .comment-respond input#email:focus, .comment-respond input#url:focus, .input.is-focused, .is-focused.middle-txt-boxes, .comment-respond input.is-focused#author, .comment-respond input.is-focused#email, .comment-respond input.is-focused#url, .input:active, .middle-txt-boxes:active, .comment-respond input#author:active, .comment-respond input#email:active, .comment-respond input#url:active, .input.is-active, .is-active.middle-txt-boxes, .comment-respond input.is-active#author, .comment-respond input.is-active#email, .comment-respond input.is-active#url,
   .textarea:focus,
   #commentform textarea:focus,
   .textarea.is-focused,
@@ -2081,38 +2081,38 @@ a.box:active {
   #commentform textarea.is-active {
     border-color: #3273dc;
     box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
-  .input[disabled],
+  .input[disabled], .middle-txt-boxes[disabled], .comment-respond input#author[disabled], .comment-respond input#email[disabled], .comment-respond input#url[disabled],
   .textarea[disabled],
   #commentform textarea[disabled] {
     background-color: whitesmoke;
     border-color: whitesmoke;
     box-shadow: none;
     color: #7a7a7a; }
-    .input[disabled]::-moz-placeholder,
+    .input[disabled]::-moz-placeholder, .middle-txt-boxes[disabled]::-moz-placeholder, .comment-respond input#author[disabled]::-moz-placeholder, .comment-respond input#email[disabled]::-moz-placeholder, .comment-respond input#url[disabled]::-moz-placeholder,
     .textarea[disabled]::-moz-placeholder,
     #commentform textarea[disabled]::-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]::-webkit-input-placeholder,
+    .input[disabled]::-webkit-input-placeholder, .middle-txt-boxes[disabled]::-webkit-input-placeholder, .comment-respond input#author[disabled]::-webkit-input-placeholder, .comment-respond input#email[disabled]::-webkit-input-placeholder, .comment-respond input#url[disabled]::-webkit-input-placeholder,
     .textarea[disabled]::-webkit-input-placeholder,
     #commentform textarea[disabled]::-webkit-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]:-moz-placeholder,
+    .input[disabled]:-moz-placeholder, .middle-txt-boxes[disabled]:-moz-placeholder, .comment-respond input#author[disabled]:-moz-placeholder, .comment-respond input#email[disabled]:-moz-placeholder, .comment-respond input#url[disabled]:-moz-placeholder,
     .textarea[disabled]:-moz-placeholder,
     #commentform textarea[disabled]:-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-    .input[disabled]:-ms-input-placeholder,
+    .input[disabled]:-ms-input-placeholder, .middle-txt-boxes[disabled]:-ms-input-placeholder, .comment-respond input#author[disabled]:-ms-input-placeholder, .comment-respond input#email[disabled]:-ms-input-placeholder, .comment-respond input#url[disabled]:-ms-input-placeholder,
     .textarea[disabled]:-ms-input-placeholder,
     #commentform textarea[disabled]:-ms-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
-  .input[readonly],
+  .input[readonly], .middle-txt-boxes[readonly], .comment-respond input#author[readonly], .comment-respond input#email[readonly], .comment-respond input#url[readonly],
   .textarea[readonly],
   #commentform textarea[readonly] {
     box-shadow: none; }
-  .input.is-white,
+  .input.is-white, .is-white.middle-txt-boxes, .comment-respond input.is-white#author, .comment-respond input.is-white#email, .comment-respond input.is-white#url,
   .textarea.is-white,
   #commentform textarea.is-white {
     border-color: white; }
-    .input.is-white:focus, .input.is-white.is-focused, .input.is-white:active, .input.is-white.is-active,
+    .input.is-white:focus, .is-white.middle-txt-boxes:focus, .comment-respond input.is-white#author:focus, .comment-respond input.is-white#email:focus, .comment-respond input.is-white#url:focus, .input.is-white.is-focused, .is-white.is-focused.middle-txt-boxes, .comment-respond input.is-white.is-focused#author, .comment-respond input.is-white.is-focused#email, .comment-respond input.is-white.is-focused#url, .input.is-white:active, .is-white.middle-txt-boxes:active, .comment-respond input.is-white#author:active, .comment-respond input.is-white#email:active, .comment-respond input.is-white#url:active, .input.is-white.is-active, .is-white.is-active.middle-txt-boxes, .comment-respond input.is-white.is-active#author, .comment-respond input.is-white.is-active#email, .comment-respond input.is-white.is-active#url,
     .textarea.is-white:focus,
     #commentform textarea.is-white:focus,
     .textarea.is-white.is-focused,
@@ -2122,11 +2122,11 @@ a.box:active {
     .textarea.is-white.is-active,
     #commentform textarea.is-white.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
-  .input.is-black,
+  .input.is-black, .is-black.middle-txt-boxes, .comment-respond input.is-black#author, .comment-respond input.is-black#email, .comment-respond input.is-black#url,
   .textarea.is-black,
   #commentform textarea.is-black {
     border-color: #0a0a0a; }
-    .input.is-black:focus, .input.is-black.is-focused, .input.is-black:active, .input.is-black.is-active,
+    .input.is-black:focus, .is-black.middle-txt-boxes:focus, .comment-respond input.is-black#author:focus, .comment-respond input.is-black#email:focus, .comment-respond input.is-black#url:focus, .input.is-black.is-focused, .is-black.is-focused.middle-txt-boxes, .comment-respond input.is-black.is-focused#author, .comment-respond input.is-black.is-focused#email, .comment-respond input.is-black.is-focused#url, .input.is-black:active, .is-black.middle-txt-boxes:active, .comment-respond input.is-black#author:active, .comment-respond input.is-black#email:active, .comment-respond input.is-black#url:active, .input.is-black.is-active, .is-black.is-active.middle-txt-boxes, .comment-respond input.is-black.is-active#author, .comment-respond input.is-black.is-active#email, .comment-respond input.is-black.is-active#url,
     .textarea.is-black:focus,
     #commentform textarea.is-black:focus,
     .textarea.is-black.is-focused,
@@ -2136,11 +2136,11 @@ a.box:active {
     .textarea.is-black.is-active,
     #commentform textarea.is-black.is-active {
       box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
-  .input.is-light,
+  .input.is-light, .is-light.middle-txt-boxes, .comment-respond input.is-light#author, .comment-respond input.is-light#email, .comment-respond input.is-light#url,
   .textarea.is-light,
   #commentform textarea.is-light {
     border-color: whitesmoke; }
-    .input.is-light:focus, .input.is-light.is-focused, .input.is-light:active, .input.is-light.is-active,
+    .input.is-light:focus, .is-light.middle-txt-boxes:focus, .comment-respond input.is-light#author:focus, .comment-respond input.is-light#email:focus, .comment-respond input.is-light#url:focus, .input.is-light.is-focused, .is-light.is-focused.middle-txt-boxes, .comment-respond input.is-light.is-focused#author, .comment-respond input.is-light.is-focused#email, .comment-respond input.is-light.is-focused#url, .input.is-light:active, .is-light.middle-txt-boxes:active, .comment-respond input.is-light#author:active, .comment-respond input.is-light#email:active, .comment-respond input.is-light#url:active, .input.is-light.is-active, .is-light.is-active.middle-txt-boxes, .comment-respond input.is-light.is-active#author, .comment-respond input.is-light.is-active#email, .comment-respond input.is-light.is-active#url,
     .textarea.is-light:focus,
     #commentform textarea.is-light:focus,
     .textarea.is-light.is-focused,
@@ -2150,11 +2150,11 @@ a.box:active {
     .textarea.is-light.is-active,
     #commentform textarea.is-light.is-active {
       box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
-  .input.is-dark,
+  .input.is-dark, .is-dark.middle-txt-boxes, .comment-respond input.is-dark#author, .comment-respond input.is-dark#email, .comment-respond input.is-dark#url,
   .textarea.is-dark,
   #commentform textarea.is-dark {
     border-color: #363636; }
-    .input.is-dark:focus, .input.is-dark.is-focused, .input.is-dark:active, .input.is-dark.is-active,
+    .input.is-dark:focus, .is-dark.middle-txt-boxes:focus, .comment-respond input.is-dark#author:focus, .comment-respond input.is-dark#email:focus, .comment-respond input.is-dark#url:focus, .input.is-dark.is-focused, .is-dark.is-focused.middle-txt-boxes, .comment-respond input.is-dark.is-focused#author, .comment-respond input.is-dark.is-focused#email, .comment-respond input.is-dark.is-focused#url, .input.is-dark:active, .is-dark.middle-txt-boxes:active, .comment-respond input.is-dark#author:active, .comment-respond input.is-dark#email:active, .comment-respond input.is-dark#url:active, .input.is-dark.is-active, .is-dark.is-active.middle-txt-boxes, .comment-respond input.is-dark.is-active#author, .comment-respond input.is-dark.is-active#email, .comment-respond input.is-dark.is-active#url,
     .textarea.is-dark:focus,
     #commentform textarea.is-dark:focus,
     .textarea.is-dark.is-focused,
@@ -2164,13 +2164,13 @@ a.box:active {
     .textarea.is-dark.is-active,
     #commentform textarea.is-dark.is-active {
       box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
-  .input.is-primary, #commentform .input#submit,
+  .input.is-primary, #commentform .input#submit, #commentform #submit.middle-txt-boxes, .is-primary.middle-txt-boxes, .comment-respond input.is-primary#author, .comment-respond input.is-primary#email, .comment-respond input.is-primary#url,
   .textarea.is-primary,
   #commentform textarea.is-primary,
   #commentform textarea#submit,
   #commentform .textarea#submit {
     border-color: #00d1b2; }
-    .input.is-primary:focus, #commentform .input#submit:focus, .input.is-primary.is-focused, #commentform .input.is-focused#submit, .input.is-primary:active, #commentform .input#submit:active, .input.is-primary.is-active, #commentform .input.is-active#submit,
+    .input.is-primary:focus, #commentform .input#submit:focus, #commentform #submit.middle-txt-boxes:focus, .is-primary.middle-txt-boxes:focus, .comment-respond input.is-primary#author:focus, .comment-respond input.is-primary#email:focus, .comment-respond input.is-primary#url:focus, .input.is-primary.is-focused, #commentform .input.is-focused#submit, #commentform .is-focused#submit.middle-txt-boxes, .is-primary.is-focused.middle-txt-boxes, .comment-respond input.is-primary.is-focused#author, .comment-respond input.is-primary.is-focused#email, .comment-respond input.is-primary.is-focused#url, .input.is-primary:active, #commentform .input#submit:active, #commentform #submit.middle-txt-boxes:active, .is-primary.middle-txt-boxes:active, .comment-respond input.is-primary#author:active, .comment-respond input.is-primary#email:active, .comment-respond input.is-primary#url:active, .input.is-primary.is-active, #commentform .input.is-active#submit, #commentform .is-active#submit.middle-txt-boxes, .is-primary.is-active.middle-txt-boxes, .comment-respond input.is-primary.is-active#author, .comment-respond input.is-primary.is-active#email, .comment-respond input.is-primary.is-active#url,
     .textarea.is-primary:focus,
     #commentform textarea.is-primary:focus,
     #commentform textarea#submit:focus,
@@ -2188,11 +2188,11 @@ a.box:active {
     #commentform textarea.is-active#submit,
     #commentform .textarea.is-active#submit {
       box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
-  .input.is-link,
+  .input.is-link, .is-link.middle-txt-boxes, .comment-respond input.is-link#author, .comment-respond input.is-link#email, .comment-respond input.is-link#url,
   .textarea.is-link,
   #commentform textarea.is-link {
     border-color: #3273dc; }
-    .input.is-link:focus, .input.is-link.is-focused, .input.is-link:active, .input.is-link.is-active,
+    .input.is-link:focus, .is-link.middle-txt-boxes:focus, .comment-respond input.is-link#author:focus, .comment-respond input.is-link#email:focus, .comment-respond input.is-link#url:focus, .input.is-link.is-focused, .is-link.is-focused.middle-txt-boxes, .comment-respond input.is-link.is-focused#author, .comment-respond input.is-link.is-focused#email, .comment-respond input.is-link.is-focused#url, .input.is-link:active, .is-link.middle-txt-boxes:active, .comment-respond input.is-link#author:active, .comment-respond input.is-link#email:active, .comment-respond input.is-link#url:active, .input.is-link.is-active, .is-link.is-active.middle-txt-boxes, .comment-respond input.is-link.is-active#author, .comment-respond input.is-link.is-active#email, .comment-respond input.is-link.is-active#url,
     .textarea.is-link:focus,
     #commentform textarea.is-link:focus,
     .textarea.is-link.is-focused,
@@ -2202,25 +2202,50 @@ a.box:active {
     .textarea.is-link.is-active,
     #commentform textarea.is-link.is-active {
       box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
-  .input.is-info,
+  .input.is-info, .middle-txt-boxes, .comment-respond input#author, .comment-respond input#email, .comment-respond input#url,
   .textarea.is-info,
-  #commentform textarea.is-info {
+  #commentform textarea.is-info,
+  #commentform textarea.middle-txt-boxes,
+  .textarea.middle-txt-boxes,
+  .comment-respond input.textarea#author,
+  .comment-respond input.textarea#email,
+  .comment-respond input.textarea#url {
     border-color: #209cee; }
-    .input.is-info:focus, .input.is-info.is-focused, .input.is-info:active, .input.is-info.is-active,
+    .input.is-info:focus, .middle-txt-boxes:focus, .comment-respond input#author:focus, .comment-respond input#email:focus, .comment-respond input#url:focus, .input.is-info.is-focused, .is-focused.middle-txt-boxes, .comment-respond input.is-focused#author, .comment-respond input.is-focused#email, .comment-respond input.is-focused#url, .input.is-info:active, .middle-txt-boxes:active, .comment-respond input#author:active, .comment-respond input#email:active, .comment-respond input#url:active, .input.is-info.is-active, .is-active.middle-txt-boxes, .comment-respond input.is-active#author, .comment-respond input.is-active#email, .comment-respond input.is-active#url,
     .textarea.is-info:focus,
     #commentform textarea.is-info:focus,
+    #commentform textarea.middle-txt-boxes:focus,
+    .textarea.middle-txt-boxes:focus,
+    .comment-respond input.textarea#author:focus,
+    .comment-respond input.textarea#email:focus,
+    .comment-respond input.textarea#url:focus,
     .textarea.is-info.is-focused,
     #commentform textarea.is-info.is-focused,
+    #commentform textarea.is-focused.middle-txt-boxes,
+    .textarea.is-focused.middle-txt-boxes,
+    .comment-respond input.textarea.is-focused#author,
+    .comment-respond input.textarea.is-focused#email,
+    .comment-respond input.textarea.is-focused#url,
     .textarea.is-info:active,
     #commentform textarea.is-info:active,
+    #commentform textarea.middle-txt-boxes:active,
+    .textarea.middle-txt-boxes:active,
+    .comment-respond input.textarea#author:active,
+    .comment-respond input.textarea#email:active,
+    .comment-respond input.textarea#url:active,
     .textarea.is-info.is-active,
-    #commentform textarea.is-info.is-active {
+    #commentform textarea.is-info.is-active,
+    #commentform textarea.is-active.middle-txt-boxes,
+    .textarea.is-active.middle-txt-boxes,
+    .comment-respond input.textarea.is-active#author,
+    .comment-respond input.textarea.is-active#email,
+    .comment-respond input.textarea.is-active#url {
       box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
-  .input.is-success,
+  .input.is-success, .is-success.middle-txt-boxes, .comment-respond input.is-success#author, .comment-respond input.is-success#email, .comment-respond input.is-success#url,
   .textarea.is-success,
   #commentform textarea.is-success {
     border-color: #23d160; }
-    .input.is-success:focus, .input.is-success.is-focused, .input.is-success:active, .input.is-success.is-active,
+    .input.is-success:focus, .is-success.middle-txt-boxes:focus, .comment-respond input.is-success#author:focus, .comment-respond input.is-success#email:focus, .comment-respond input.is-success#url:focus, .input.is-success.is-focused, .is-success.is-focused.middle-txt-boxes, .comment-respond input.is-success.is-focused#author, .comment-respond input.is-success.is-focused#email, .comment-respond input.is-success.is-focused#url, .input.is-success:active, .is-success.middle-txt-boxes:active, .comment-respond input.is-success#author:active, .comment-respond input.is-success#email:active, .comment-respond input.is-success#url:active, .input.is-success.is-active, .is-success.is-active.middle-txt-boxes, .comment-respond input.is-success.is-active#author, .comment-respond input.is-success.is-active#email, .comment-respond input.is-success.is-active#url,
     .textarea.is-success:focus,
     #commentform textarea.is-success:focus,
     .textarea.is-success.is-focused,
@@ -2230,11 +2255,11 @@ a.box:active {
     .textarea.is-success.is-active,
     #commentform textarea.is-success.is-active {
       box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25); }
-  .input.is-warning,
+  .input.is-warning, .is-warning.middle-txt-boxes, .comment-respond input.is-warning#author, .comment-respond input.is-warning#email, .comment-respond input.is-warning#url,
   .textarea.is-warning,
   #commentform textarea.is-warning {
     border-color: #ffdd57; }
-    .input.is-warning:focus, .input.is-warning.is-focused, .input.is-warning:active, .input.is-warning.is-active,
+    .input.is-warning:focus, .is-warning.middle-txt-boxes:focus, .comment-respond input.is-warning#author:focus, .comment-respond input.is-warning#email:focus, .comment-respond input.is-warning#url:focus, .input.is-warning.is-focused, .is-warning.is-focused.middle-txt-boxes, .comment-respond input.is-warning.is-focused#author, .comment-respond input.is-warning.is-focused#email, .comment-respond input.is-warning.is-focused#url, .input.is-warning:active, .is-warning.middle-txt-boxes:active, .comment-respond input.is-warning#author:active, .comment-respond input.is-warning#email:active, .comment-respond input.is-warning#url:active, .input.is-warning.is-active, .is-warning.is-active.middle-txt-boxes, .comment-respond input.is-warning.is-active#author, .comment-respond input.is-warning.is-active#email, .comment-respond input.is-warning.is-active#url,
     .textarea.is-warning:focus,
     #commentform textarea.is-warning:focus,
     .textarea.is-warning.is-focused,
@@ -2244,11 +2269,11 @@ a.box:active {
     .textarea.is-warning.is-active,
     #commentform textarea.is-warning.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25); }
-  .input.is-danger,
+  .input.is-danger, .is-danger.middle-txt-boxes, .comment-respond input.is-danger#author, .comment-respond input.is-danger#email, .comment-respond input.is-danger#url,
   .textarea.is-danger,
   #commentform textarea.is-danger {
     border-color: #ff3860; }
-    .input.is-danger:focus, .input.is-danger.is-focused, .input.is-danger:active, .input.is-danger.is-active,
+    .input.is-danger:focus, .is-danger.middle-txt-boxes:focus, .comment-respond input.is-danger#author:focus, .comment-respond input.is-danger#email:focus, .comment-respond input.is-danger#url:focus, .input.is-danger.is-focused, .is-danger.is-focused.middle-txt-boxes, .comment-respond input.is-danger.is-focused#author, .comment-respond input.is-danger.is-focused#email, .comment-respond input.is-danger.is-focused#url, .input.is-danger:active, .is-danger.middle-txt-boxes:active, .comment-respond input.is-danger#author:active, .comment-respond input.is-danger#email:active, .comment-respond input.is-danger#url:active, .input.is-danger.is-active, .is-danger.is-active.middle-txt-boxes, .comment-respond input.is-danger.is-active#author, .comment-respond input.is-danger.is-active#email, .comment-respond input.is-danger.is-active#url,
     .textarea.is-danger:focus,
     #commentform textarea.is-danger:focus,
     .textarea.is-danger.is-focused,
@@ -2258,36 +2283,36 @@ a.box:active {
     .textarea.is-danger.is-active,
     #commentform textarea.is-danger.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25); }
-  .input.is-small,
+  .input.is-small, .is-small.middle-txt-boxes, .comment-respond input.is-small#author, .comment-respond input.is-small#email, .comment-respond input.is-small#url,
   .textarea.is-small,
   #commentform textarea.is-small {
     border-radius: 2px;
     font-size: 0.75rem; }
-  .input.is-medium,
+  .input.is-medium, .is-medium.middle-txt-boxes, .comment-respond input.is-medium#author, .comment-respond input.is-medium#email, .comment-respond input.is-medium#url,
   .textarea.is-medium,
   #commentform textarea.is-medium {
     font-size: 1.25rem; }
-  .input.is-large, #commentform textarea.input,
+  .input.is-large, #commentform textarea.input, #commentform textarea.middle-txt-boxes, .is-large.middle-txt-boxes, .comment-respond input.is-large#author, .comment-respond input.is-large#email, .comment-respond input.is-large#url,
   .textarea.is-large,
   #commentform textarea {
     font-size: 1.5rem; }
-  .input.is-fullwidth,
+  .input.is-fullwidth, .is-fullwidth.middle-txt-boxes, .comment-respond input.is-fullwidth#author, .comment-respond input.is-fullwidth#email, .comment-respond input.is-fullwidth#url,
   .textarea.is-fullwidth,
   #commentform textarea.is-fullwidth {
     display: block;
     width: 100%; }
-  .input.is-inline,
+  .input.is-inline, .is-inline.middle-txt-boxes, .comment-respond input.is-inline#author, .comment-respond input.is-inline#email, .comment-respond input.is-inline#url,
   .textarea.is-inline,
   #commentform textarea.is-inline {
     display: inline;
     width: auto; }
 
-.input.is-rounded {
+.input.is-rounded, .is-rounded.middle-txt-boxes, .comment-respond input.is-rounded#author, .comment-respond input.is-rounded#email, .comment-respond input.is-rounded#url {
   border-radius: 290486px;
   padding-left: 1em;
   padding-right: 1em; }
 
-.input.is-static {
+.input.is-static, .is-static.middle-txt-boxes, .comment-respond input.is-static#author, .comment-respond input.is-static#email, .comment-respond input.is-static#url {
   background-color: transparent;
   border-color: transparent;
   box-shadow: none;
@@ -2440,13 +2465,13 @@ a.box:active {
       border-color: #2366d1; }
     .select.is-link select:focus, .select.is-link select.is-focused, .select.is-link select:active, .select.is-link select.is-active {
       box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
-  .select.is-info:not(:hover)::after {
+  .select.is-info:not(:hover)::after, .select.middle-txt-boxes:not(:hover)::after, .comment-respond input.select#author:not(:hover)::after, .comment-respond input.select#email:not(:hover)::after, .comment-respond input.select#url:not(:hover)::after {
     border-color: #209cee; }
-  .select.is-info select {
+  .select.is-info select, .select.middle-txt-boxes select, .comment-respond input.select#author select, .comment-respond input.select#email select, .comment-respond input.select#url select {
     border-color: #209cee; }
-    .select.is-info select:hover, .select.is-info select.is-hovered {
+    .select.is-info select:hover, .select.middle-txt-boxes select:hover, .comment-respond input.select#author select:hover, .comment-respond input.select#email select:hover, .comment-respond input.select#url select:hover, .select.is-info select.is-hovered, .select.middle-txt-boxes select.is-hovered, .comment-respond input.select#author select.is-hovered, .comment-respond input.select#email select.is-hovered, .comment-respond input.select#url select.is-hovered {
       border-color: #118fe4; }
-    .select.is-info select:focus, .select.is-info select.is-focused, .select.is-info select:active, .select.is-info select.is-active {
+    .select.is-info select:focus, .select.middle-txt-boxes select:focus, .comment-respond input.select#author select:focus, .comment-respond input.select#email select:focus, .comment-respond input.select#url select:focus, .select.is-info select.is-focused, .select.middle-txt-boxes select.is-focused, .comment-respond input.select#author select.is-focused, .comment-respond input.select#email select.is-focused, .comment-respond input.select#url select.is-focused, .select.is-info select:active, .select.middle-txt-boxes select:active, .comment-respond input.select#author select:active, .comment-respond input.select#email select:active, .comment-respond input.select#url select:active, .select.is-info select.is-active, .select.middle-txt-boxes select.is-active, .comment-respond input.select#author select.is-active, .comment-respond input.select#email select.is-active, .comment-respond input.select#url select.is-active {
       box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
   .select.is-success:not(:hover)::after {
     border-color: #23d160; }
@@ -2599,19 +2624,19 @@ a.box:active {
     background-color: #2366d1;
     border-color: transparent;
     color: #fff; }
-  .file.is-info .file-cta {
+  .file.is-info .file-cta, .file.middle-txt-boxes .file-cta, .comment-respond input.file#author .file-cta, .comment-respond input.file#email .file-cta, .comment-respond input.file#url .file-cta {
     background-color: #209cee;
     border-color: transparent;
     color: #fff; }
-  .file.is-info:hover .file-cta, .file.is-info.is-hovered .file-cta {
+  .file.is-info:hover .file-cta, .file.middle-txt-boxes:hover .file-cta, .comment-respond input.file#author:hover .file-cta, .comment-respond input.file#email:hover .file-cta, .comment-respond input.file#url:hover .file-cta, .file.is-info.is-hovered .file-cta, .file.is-hovered.middle-txt-boxes .file-cta, .comment-respond input.file.is-hovered#author .file-cta, .comment-respond input.file.is-hovered#email .file-cta, .comment-respond input.file.is-hovered#url .file-cta {
     background-color: #1496ed;
     border-color: transparent;
     color: #fff; }
-  .file.is-info:focus .file-cta, .file.is-info.is-focused .file-cta {
+  .file.is-info:focus .file-cta, .file.middle-txt-boxes:focus .file-cta, .comment-respond input.file#author:focus .file-cta, .comment-respond input.file#email:focus .file-cta, .comment-respond input.file#url:focus .file-cta, .file.is-info.is-focused .file-cta, .file.is-focused.middle-txt-boxes .file-cta, .comment-respond input.file.is-focused#author .file-cta, .comment-respond input.file.is-focused#email .file-cta, .comment-respond input.file.is-focused#url .file-cta {
     border-color: transparent;
     box-shadow: 0 0 0.5em rgba(32, 156, 238, 0.25);
     color: #fff; }
-  .file.is-info:active .file-cta, .file.is-info.is-active .file-cta {
+  .file.is-info:active .file-cta, .file.middle-txt-boxes:active .file-cta, .comment-respond input.file#author:active .file-cta, .comment-respond input.file#email:active .file-cta, .comment-respond input.file#url:active .file-cta, .file.is-info.is-active .file-cta, .file.is-active.middle-txt-boxes .file-cta, .comment-respond input.file.is-active#author .file-cta, .comment-respond input.file.is-active#email .file-cta, .comment-respond input.file.is-active#url .file-cta {
     background-color: #118fe4;
     border-color: transparent;
     color: #fff; }
@@ -2812,7 +2837,7 @@ a.box:active {
     color: #00d1b2; }
   .help.is-link {
     color: #3273dc; }
-  .help.is-info {
+  .help.is-info, .help.middle-txt-boxes, .comment-respond input.help#author, .comment-respond input.help#email, .comment-respond input.help#url {
     color: #209cee; }
   .help.is-success {
     color: #23d160; }
@@ -2831,29 +2856,92 @@ a.box:active {
     margin-right: -1px; }
   .field.has-addons .control:not(:first-child):not(:last-child) .button, .field.has-addons .control:not(:first-child):not(:last-child) #commentform #submit, #commentform .field.has-addons .control:not(:first-child):not(:last-child) #submit,
   .field.has-addons .control:not(:first-child):not(:last-child) .input,
+  .field.has-addons .control:not(:first-child):not(:last-child) .middle-txt-boxes,
+  .field.has-addons .control:not(:first-child):not(:last-child) .comment-respond input#author,
+  .comment-respond .field.has-addons .control:not(:first-child):not(:last-child) input#author,
+  .field.has-addons .control:not(:first-child):not(:last-child) .comment-respond input#email,
+  .comment-respond .field.has-addons .control:not(:first-child):not(:last-child) input#email,
+  .field.has-addons .control:not(:first-child):not(:last-child) .comment-respond input#url,
+  .comment-respond .field.has-addons .control:not(:first-child):not(:last-child) input#url,
   .field.has-addons .control:not(:first-child):not(:last-child) .select select {
     border-radius: 0; }
   .field.has-addons .control:first-child .button, .field.has-addons .control:first-child #commentform #submit, #commentform .field.has-addons .control:first-child #submit,
   .field.has-addons .control:first-child .input,
+  .field.has-addons .control:first-child .middle-txt-boxes,
+  .field.has-addons .control:first-child .comment-respond input#author,
+  .comment-respond .field.has-addons .control:first-child input#author,
+  .field.has-addons .control:first-child .comment-respond input#email,
+  .comment-respond .field.has-addons .control:first-child input#email,
+  .field.has-addons .control:first-child .comment-respond input#url,
+  .comment-respond .field.has-addons .control:first-child input#url,
   .field.has-addons .control:first-child .select select {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
   .field.has-addons .control:last-child .button, .field.has-addons .control:last-child #commentform #submit, #commentform .field.has-addons .control:last-child #submit,
   .field.has-addons .control:last-child .input,
+  .field.has-addons .control:last-child .middle-txt-boxes,
+  .field.has-addons .control:last-child .comment-respond input#author,
+  .comment-respond .field.has-addons .control:last-child input#author,
+  .field.has-addons .control:last-child .comment-respond input#email,
+  .comment-respond .field.has-addons .control:last-child input#email,
+  .field.has-addons .control:last-child .comment-respond input#url,
+  .comment-respond .field.has-addons .control:last-child input#url,
   .field.has-addons .control:last-child .select select {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
   .field.has-addons .control .button:hover, .field.has-addons .control #commentform #submit:hover, #commentform .field.has-addons .control #submit:hover, .field.has-addons .control .button.is-hovered, .field.has-addons .control #commentform .is-hovered#submit, #commentform .field.has-addons .control .is-hovered#submit,
   .field.has-addons .control .input:hover,
+  .field.has-addons .control .middle-txt-boxes:hover,
+  .field.has-addons .control .comment-respond input#author:hover,
+  .comment-respond .field.has-addons .control input#author:hover,
+  .field.has-addons .control .comment-respond input#email:hover,
+  .comment-respond .field.has-addons .control input#email:hover,
+  .field.has-addons .control .comment-respond input#url:hover,
+  .comment-respond .field.has-addons .control input#url:hover,
   .field.has-addons .control .input.is-hovered,
+  .field.has-addons .control .is-hovered.middle-txt-boxes,
+  .field.has-addons .control .comment-respond input.is-hovered#author,
+  .comment-respond .field.has-addons .control input.is-hovered#author,
+  .field.has-addons .control .comment-respond input.is-hovered#email,
+  .comment-respond .field.has-addons .control input.is-hovered#email,
+  .field.has-addons .control .comment-respond input.is-hovered#url,
+  .comment-respond .field.has-addons .control input.is-hovered#url,
   .field.has-addons .control .select select:hover,
   .field.has-addons .control .select select.is-hovered {
     z-index: 2; }
   .field.has-addons .control .button:focus, .field.has-addons .control #commentform #submit:focus, #commentform .field.has-addons .control #submit:focus, .field.has-addons .control .button.is-focused, .field.has-addons .control #commentform .is-focused#submit, #commentform .field.has-addons .control .is-focused#submit, .field.has-addons .control .button:active, .field.has-addons .control #commentform #submit:active, #commentform .field.has-addons .control #submit:active, .field.has-addons .control .button.is-active, .field.has-addons .control #commentform .is-active#submit, #commentform .field.has-addons .control .is-active#submit,
   .field.has-addons .control .input:focus,
+  .field.has-addons .control .middle-txt-boxes:focus,
+  .field.has-addons .control .comment-respond input#author:focus,
+  .comment-respond .field.has-addons .control input#author:focus,
+  .field.has-addons .control .comment-respond input#email:focus,
+  .comment-respond .field.has-addons .control input#email:focus,
+  .field.has-addons .control .comment-respond input#url:focus,
+  .comment-respond .field.has-addons .control input#url:focus,
   .field.has-addons .control .input.is-focused,
+  .field.has-addons .control .is-focused.middle-txt-boxes,
+  .field.has-addons .control .comment-respond input.is-focused#author,
+  .comment-respond .field.has-addons .control input.is-focused#author,
+  .field.has-addons .control .comment-respond input.is-focused#email,
+  .comment-respond .field.has-addons .control input.is-focused#email,
+  .field.has-addons .control .comment-respond input.is-focused#url,
+  .comment-respond .field.has-addons .control input.is-focused#url,
   .field.has-addons .control .input:active,
+  .field.has-addons .control .middle-txt-boxes:active,
+  .field.has-addons .control .comment-respond input#author:active,
+  .comment-respond .field.has-addons .control input#author:active,
+  .field.has-addons .control .comment-respond input#email:active,
+  .comment-respond .field.has-addons .control input#email:active,
+  .field.has-addons .control .comment-respond input#url:active,
+  .comment-respond .field.has-addons .control input#url:active,
   .field.has-addons .control .input.is-active,
+  .field.has-addons .control .is-active.middle-txt-boxes,
+  .field.has-addons .control .comment-respond input.is-active#author,
+  .comment-respond .field.has-addons .control input.is-active#author,
+  .field.has-addons .control .comment-respond input.is-active#email,
+  .comment-respond .field.has-addons .control input.is-active#email,
+  .field.has-addons .control .comment-respond input.is-active#url,
+  .comment-respond .field.has-addons .control input.is-active#url,
   .field.has-addons .control .select select:focus,
   .field.has-addons .control .select select.is-focused,
   .field.has-addons .control .select select:active,
@@ -2861,9 +2949,37 @@ a.box:active {
     z-index: 3; }
     .field.has-addons .control .button:focus:hover, .field.has-addons .control #commentform #submit:focus:hover, #commentform .field.has-addons .control #submit:focus:hover, .field.has-addons .control .button.is-focused:hover, .field.has-addons .control #commentform .is-focused#submit:hover, #commentform .field.has-addons .control .is-focused#submit:hover, .field.has-addons .control .button:active:hover, .field.has-addons .control #commentform #submit:active:hover, #commentform .field.has-addons .control #submit:active:hover, .field.has-addons .control .button.is-active:hover, .field.has-addons .control #commentform .is-active#submit:hover, #commentform .field.has-addons .control .is-active#submit:hover,
     .field.has-addons .control .input:focus:hover,
+    .field.has-addons .control .middle-txt-boxes:focus:hover,
+    .field.has-addons .control .comment-respond input#author:focus:hover,
+    .comment-respond .field.has-addons .control input#author:focus:hover,
+    .field.has-addons .control .comment-respond input#email:focus:hover,
+    .comment-respond .field.has-addons .control input#email:focus:hover,
+    .field.has-addons .control .comment-respond input#url:focus:hover,
+    .comment-respond .field.has-addons .control input#url:focus:hover,
     .field.has-addons .control .input.is-focused:hover,
+    .field.has-addons .control .is-focused.middle-txt-boxes:hover,
+    .field.has-addons .control .comment-respond input.is-focused#author:hover,
+    .comment-respond .field.has-addons .control input.is-focused#author:hover,
+    .field.has-addons .control .comment-respond input.is-focused#email:hover,
+    .comment-respond .field.has-addons .control input.is-focused#email:hover,
+    .field.has-addons .control .comment-respond input.is-focused#url:hover,
+    .comment-respond .field.has-addons .control input.is-focused#url:hover,
     .field.has-addons .control .input:active:hover,
+    .field.has-addons .control .middle-txt-boxes:active:hover,
+    .field.has-addons .control .comment-respond input#author:active:hover,
+    .comment-respond .field.has-addons .control input#author:active:hover,
+    .field.has-addons .control .comment-respond input#email:active:hover,
+    .comment-respond .field.has-addons .control input#email:active:hover,
+    .field.has-addons .control .comment-respond input#url:active:hover,
+    .comment-respond .field.has-addons .control input#url:active:hover,
     .field.has-addons .control .input.is-active:hover,
+    .field.has-addons .control .is-active.middle-txt-boxes:hover,
+    .field.has-addons .control .comment-respond input.is-active#author:hover,
+    .comment-respond .field.has-addons .control input.is-active#author:hover,
+    .field.has-addons .control .comment-respond input.is-active#email:hover,
+    .comment-respond .field.has-addons .control input.is-active#email:hover,
+    .field.has-addons .control .comment-respond input.is-active#url:hover,
+    .comment-respond .field.has-addons .control input.is-active#url:hover,
     .field.has-addons .control .select select:focus:hover,
     .field.has-addons .control .select select.is-focused:hover,
     .field.has-addons .control .select select:active:hover,
@@ -2963,38 +3079,38 @@ a.box:active {
     top: 0;
     width: 2.25em;
     z-index: 4; }
-  .control.has-icon .input:focus + .icon {
+  .control.has-icon .input:focus + .icon, .control.has-icon .middle-txt-boxes:focus + .icon, .control.has-icon .comment-respond input#author:focus + .icon, .comment-respond .control.has-icon input#author:focus + .icon, .control.has-icon .comment-respond input#email:focus + .icon, .comment-respond .control.has-icon input#email:focus + .icon, .control.has-icon .comment-respond input#url:focus + .icon, .comment-respond .control.has-icon input#url:focus + .icon {
     color: #7a7a7a; }
-  .control.has-icon .input.is-small + .icon {
+  .control.has-icon .input.is-small + .icon, .control.has-icon .is-small.middle-txt-boxes + .icon, .control.has-icon .comment-respond input.is-small#author + .icon, .comment-respond .control.has-icon input.is-small#author + .icon, .control.has-icon .comment-respond input.is-small#email + .icon, .comment-respond .control.has-icon input.is-small#email + .icon, .control.has-icon .comment-respond input.is-small#url + .icon, .comment-respond .control.has-icon input.is-small#url + .icon {
     font-size: 0.75rem; }
-  .control.has-icon .input.is-medium + .icon {
+  .control.has-icon .input.is-medium + .icon, .control.has-icon .is-medium.middle-txt-boxes + .icon, .control.has-icon .comment-respond input.is-medium#author + .icon, .comment-respond .control.has-icon input.is-medium#author + .icon, .control.has-icon .comment-respond input.is-medium#email + .icon, .comment-respond .control.has-icon input.is-medium#email + .icon, .control.has-icon .comment-respond input.is-medium#url + .icon, .comment-respond .control.has-icon input.is-medium#url + .icon {
     font-size: 1.25rem; }
-  .control.has-icon .input.is-large + .icon, .control.has-icon #commentform textarea.input + .icon, #commentform .control.has-icon textarea.input + .icon {
+  .control.has-icon .input.is-large + .icon, .control.has-icon #commentform textarea.input + .icon, #commentform .control.has-icon textarea.input + .icon, .control.has-icon #commentform textarea.middle-txt-boxes + .icon, #commentform .control.has-icon textarea.middle-txt-boxes + .icon, .control.has-icon .is-large.middle-txt-boxes + .icon, .control.has-icon .comment-respond input.is-large#author + .icon, .comment-respond .control.has-icon input.is-large#author + .icon, .control.has-icon .comment-respond input.is-large#email + .icon, .comment-respond .control.has-icon input.is-large#email + .icon, .control.has-icon .comment-respond input.is-large#url + .icon, .comment-respond .control.has-icon input.is-large#url + .icon {
     font-size: 1.5rem; }
   .control.has-icon:not(.has-icon-right) .icon {
     left: 0; }
-  .control.has-icon:not(.has-icon-right) .input {
+  .control.has-icon:not(.has-icon-right) .input, .control.has-icon:not(.has-icon-right) .middle-txt-boxes, .control.has-icon:not(.has-icon-right) .comment-respond input#author, .comment-respond .control.has-icon:not(.has-icon-right) input#author, .control.has-icon:not(.has-icon-right) .comment-respond input#email, .comment-respond .control.has-icon:not(.has-icon-right) input#email, .control.has-icon:not(.has-icon-right) .comment-respond input#url, .comment-respond .control.has-icon:not(.has-icon-right) input#url {
     padding-left: 2.25em; }
   .control.has-icon.has-icon-right .icon {
     right: 0; }
-  .control.has-icon.has-icon-right .input {
+  .control.has-icon.has-icon-right .input, .control.has-icon.has-icon-right .middle-txt-boxes, .control.has-icon.has-icon-right .comment-respond input#author, .comment-respond .control.has-icon.has-icon-right input#author, .control.has-icon.has-icon-right .comment-respond input#email, .comment-respond .control.has-icon.has-icon-right input#email, .control.has-icon.has-icon-right .comment-respond input#url, .comment-respond .control.has-icon.has-icon-right input#url {
     padding-right: 2.25em; }
-  .control.has-icons-left .input:focus ~ .icon,
-  .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon,
+  .control.has-icons-left .input:focus ~ .icon, .control.has-icons-left .middle-txt-boxes:focus ~ .icon, .control.has-icons-left .comment-respond input#author:focus ~ .icon, .comment-respond .control.has-icons-left input#author:focus ~ .icon, .control.has-icons-left .comment-respond input#email:focus ~ .icon, .comment-respond .control.has-icons-left input#email:focus ~ .icon, .control.has-icons-left .comment-respond input#url:focus ~ .icon, .comment-respond .control.has-icons-left input#url:focus ~ .icon,
+  .control.has-icons-left .select:focus ~ .icon, .control.has-icons-right .input:focus ~ .icon, .control.has-icons-right .middle-txt-boxes:focus ~ .icon, .control.has-icons-right .comment-respond input#author:focus ~ .icon, .comment-respond .control.has-icons-right input#author:focus ~ .icon, .control.has-icons-right .comment-respond input#email:focus ~ .icon, .comment-respond .control.has-icons-right input#email:focus ~ .icon, .control.has-icons-right .comment-respond input#url:focus ~ .icon, .comment-respond .control.has-icons-right input#url:focus ~ .icon,
   .control.has-icons-right .select:focus ~ .icon {
     color: #7a7a7a; }
-  .control.has-icons-left .input.is-small ~ .icon,
-  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon,
+  .control.has-icons-left .input.is-small ~ .icon, .control.has-icons-left .is-small.middle-txt-boxes ~ .icon, .control.has-icons-left .comment-respond input.is-small#author ~ .icon, .comment-respond .control.has-icons-left input.is-small#author ~ .icon, .control.has-icons-left .comment-respond input.is-small#email ~ .icon, .comment-respond .control.has-icons-left input.is-small#email ~ .icon, .control.has-icons-left .comment-respond input.is-small#url ~ .icon, .comment-respond .control.has-icons-left input.is-small#url ~ .icon,
+  .control.has-icons-left .select.is-small ~ .icon, .control.has-icons-right .input.is-small ~ .icon, .control.has-icons-right .is-small.middle-txt-boxes ~ .icon, .control.has-icons-right .comment-respond input.is-small#author ~ .icon, .comment-respond .control.has-icons-right input.is-small#author ~ .icon, .control.has-icons-right .comment-respond input.is-small#email ~ .icon, .comment-respond .control.has-icons-right input.is-small#email ~ .icon, .control.has-icons-right .comment-respond input.is-small#url ~ .icon, .comment-respond .control.has-icons-right input.is-small#url ~ .icon,
   .control.has-icons-right .select.is-small ~ .icon {
     font-size: 0.75rem; }
-  .control.has-icons-left .input.is-medium ~ .icon,
-  .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
+  .control.has-icons-left .input.is-medium ~ .icon, .control.has-icons-left .is-medium.middle-txt-boxes ~ .icon, .control.has-icons-left .comment-respond input.is-medium#author ~ .icon, .comment-respond .control.has-icons-left input.is-medium#author ~ .icon, .control.has-icons-left .comment-respond input.is-medium#email ~ .icon, .comment-respond .control.has-icons-left input.is-medium#email ~ .icon, .control.has-icons-left .comment-respond input.is-medium#url ~ .icon, .comment-respond .control.has-icons-left input.is-medium#url ~ .icon,
+  .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon, .control.has-icons-right .is-medium.middle-txt-boxes ~ .icon, .control.has-icons-right .comment-respond input.is-medium#author ~ .icon, .comment-respond .control.has-icons-right input.is-medium#author ~ .icon, .control.has-icons-right .comment-respond input.is-medium#email ~ .icon, .comment-respond .control.has-icons-right input.is-medium#email ~ .icon, .control.has-icons-right .comment-respond input.is-medium#url ~ .icon, .comment-respond .control.has-icons-right input.is-medium#url ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
     font-size: 1.25rem; }
-  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left #commentform textarea.input ~ .icon, #commentform .control.has-icons-left textarea.input ~ .icon,
+  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left #commentform textarea.input ~ .icon, #commentform .control.has-icons-left textarea.input ~ .icon, .control.has-icons-left #commentform textarea.middle-txt-boxes ~ .icon, #commentform .control.has-icons-left textarea.middle-txt-boxes ~ .icon, .control.has-icons-left .is-large.middle-txt-boxes ~ .icon, .control.has-icons-left .comment-respond input.is-large#author ~ .icon, .comment-respond .control.has-icons-left input.is-large#author ~ .icon, .control.has-icons-left .comment-respond input.is-large#email ~ .icon, .comment-respond .control.has-icons-left input.is-large#email ~ .icon, .control.has-icons-left .comment-respond input.is-large#url ~ .icon, .comment-respond .control.has-icons-left input.is-large#url ~ .icon,
   .control.has-icons-left .select.is-large ~ .icon,
   .control.has-icons-left #commentform textarea.select ~ .icon,
-  #commentform .control.has-icons-left textarea.select ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right #commentform textarea.input ~ .icon, #commentform .control.has-icons-right textarea.input ~ .icon,
+  #commentform .control.has-icons-left textarea.select ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right #commentform textarea.input ~ .icon, #commentform .control.has-icons-right textarea.input ~ .icon, .control.has-icons-right #commentform textarea.middle-txt-boxes ~ .icon, #commentform .control.has-icons-right textarea.middle-txt-boxes ~ .icon, .control.has-icons-right .is-large.middle-txt-boxes ~ .icon, .control.has-icons-right .comment-respond input.is-large#author ~ .icon, .comment-respond .control.has-icons-right input.is-large#author ~ .icon, .control.has-icons-right .comment-respond input.is-large#email ~ .icon, .comment-respond .control.has-icons-right input.is-large#email ~ .icon, .control.has-icons-right .comment-respond input.is-large#url ~ .icon, .comment-respond .control.has-icons-right input.is-large#url ~ .icon,
   .control.has-icons-right .select.is-large ~ .icon,
   .control.has-icons-right #commentform textarea.select ~ .icon,
   #commentform .control.has-icons-right textarea.select ~ .icon {
@@ -3007,12 +3123,12 @@ a.box:active {
     top: 0;
     width: 2.25em;
     z-index: 4; }
-  .control.has-icons-left .input,
+  .control.has-icons-left .input, .control.has-icons-left .middle-txt-boxes, .control.has-icons-left .comment-respond input#author, .comment-respond .control.has-icons-left input#author, .control.has-icons-left .comment-respond input#email, .comment-respond .control.has-icons-left input#email, .control.has-icons-left .comment-respond input#url, .comment-respond .control.has-icons-left input#url,
   .control.has-icons-left .select select {
     padding-left: 2.25em; }
   .control.has-icons-left .icon.is-left {
     left: 0; }
-  .control.has-icons-right .input,
+  .control.has-icons-right .input, .control.has-icons-right .middle-txt-boxes, .control.has-icons-right .comment-respond input#author, .comment-respond .control.has-icons-right input#author, .control.has-icons-right .comment-respond input#email, .comment-respond .control.has-icons-right input#email, .control.has-icons-right .comment-respond input#url, .comment-respond .control.has-icons-right input#url,
   .control.has-icons-right .select select {
     padding-right: 2.25em; }
   .control.has-icons-right .icon.is-right {
@@ -3150,7 +3266,7 @@ a.box:active {
   .notification.is-link {
     background-color: #3273dc;
     color: #fff; }
-  .notification.is-info {
+  .notification.is-info, .notification.middle-txt-boxes, .comment-respond input.notification#author, .comment-respond input.notification#email, .comment-respond input.notification#url {
     background-color: #209cee;
     color: #fff; }
   .notification.is-success {
@@ -3218,11 +3334,11 @@ a.box:active {
     background-color: #3273dc; }
   .progress.is-link::-ms-fill {
     background-color: #3273dc; }
-  .progress.is-info::-webkit-progress-value {
+  .progress.is-info::-webkit-progress-value, .progress.middle-txt-boxes::-webkit-progress-value, .comment-respond input.progress#author::-webkit-progress-value, .comment-respond input.progress#email::-webkit-progress-value, .comment-respond input.progress#url::-webkit-progress-value {
     background-color: #209cee; }
-  .progress.is-info::-moz-progress-bar {
+  .progress.is-info::-moz-progress-bar, .progress.middle-txt-boxes::-moz-progress-bar, .comment-respond input.progress#author::-moz-progress-bar, .comment-respond input.progress#email::-moz-progress-bar, .comment-respond input.progress#url::-moz-progress-bar {
     background-color: #209cee; }
-  .progress.is-info::-ms-fill {
+  .progress.is-info::-ms-fill, .progress.middle-txt-boxes::-ms-fill, .comment-respond input.progress#author::-ms-fill, .comment-respond input.progress#email::-ms-fill, .comment-respond input.progress#url::-ms-fill {
     background-color: #209cee; }
   .progress.is-success::-webkit-progress-value {
     background-color: #23d160; }
@@ -3290,8 +3406,9 @@ a.box:active {
       background-color: #3273dc;
       border-color: #3273dc;
       color: #fff; }
-    .table td.is-info,
-    .table th.is-info {
+    .table td.is-info, .table td.middle-txt-boxes,
+    .table th.is-info,
+    .table th.middle-txt-boxes {
       background-color: #209cee;
       border-color: #209cee;
       color: #fff; }
@@ -3438,7 +3555,7 @@ a.box:active {
   .tag:not(body).is-link {
     background-color: #3273dc;
     color: #fff; }
-  .tag:not(body).is-info {
+  .tag:not(body).is-info, .tag.middle-txt-boxes:not(body), .comment-respond input.tag#author:not(body), .comment-respond input.tag#email:not(body), .comment-respond input.tag#url:not(body) {
     background-color: #209cee;
     color: #fff; }
   .tag:not(body).is-success {
@@ -3975,12 +4092,12 @@ a.dropdown-item {
     .message.is-link .message-body {
       border-color: #3273dc;
       color: #22509a; }
-  .message.is-info {
+  .message.is-info, .message.middle-txt-boxes, .comment-respond input.message#author, .comment-respond input.message#email, .comment-respond input.message#url {
     background-color: #f6fbfe; }
-    .message.is-info .message-header {
+    .message.is-info .message-header, .message.middle-txt-boxes .message-header, .comment-respond input.message#author .message-header, .comment-respond input.message#email .message-header, .comment-respond input.message#url .message-header {
       background-color: #209cee;
       color: #fff; }
-    .message.is-info .message-body {
+    .message.is-info .message-body, .message.middle-txt-boxes .message-body, .comment-respond input.message#author .message-body, .comment-respond input.message#email .message-body, .comment-respond input.message#url .message-body {
       border-color: #209cee;
       color: #12537e; }
   .message.is-success {
@@ -4366,42 +4483,98 @@ a.dropdown-item {
       .navbar.is-link .navbar-dropdown a.navbar-item.is-active {
         background-color: #3273dc;
         color: #fff; } }
-  .navbar.is-info {
+  .navbar.is-info, .navbar.middle-txt-boxes, .comment-respond input.navbar#author, .comment-respond input.navbar#email, .comment-respond input.navbar#url {
     background-color: #209cee;
     color: #fff; }
-    .navbar.is-info .navbar-brand > .navbar-item,
-    .navbar.is-info .navbar-brand .navbar-link {
+    .navbar.is-info .navbar-brand > .navbar-item, .navbar.middle-txt-boxes .navbar-brand > .navbar-item, .comment-respond input.navbar#author .navbar-brand > .navbar-item, .comment-respond input.navbar#email .navbar-brand > .navbar-item, .comment-respond input.navbar#url .navbar-brand > .navbar-item,
+    .navbar.is-info .navbar-brand .navbar-link,
+    .navbar.middle-txt-boxes .navbar-brand .navbar-link,
+    .comment-respond input.navbar#author .navbar-brand .navbar-link,
+    .comment-respond input.navbar#email .navbar-brand .navbar-link,
+    .comment-respond input.navbar#url .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-info .navbar-brand > a.navbar-item:hover, .navbar.is-info .navbar-brand > a.navbar-item.is-active,
+    .navbar.is-info .navbar-brand > a.navbar-item:hover, .navbar.middle-txt-boxes .navbar-brand > a.navbar-item:hover, .comment-respond input.navbar#author .navbar-brand > a.navbar-item:hover, .comment-respond input.navbar#email .navbar-brand > a.navbar-item:hover, .comment-respond input.navbar#url .navbar-brand > a.navbar-item:hover, .navbar.is-info .navbar-brand > a.navbar-item.is-active, .navbar.middle-txt-boxes .navbar-brand > a.navbar-item.is-active, .comment-respond input.navbar#author .navbar-brand > a.navbar-item.is-active, .comment-respond input.navbar#email .navbar-brand > a.navbar-item.is-active, .comment-respond input.navbar#url .navbar-brand > a.navbar-item.is-active,
     .navbar.is-info .navbar-brand .navbar-link:hover,
-    .navbar.is-info .navbar-brand .navbar-link.is-active {
+    .navbar.middle-txt-boxes .navbar-brand .navbar-link:hover,
+    .comment-respond input.navbar#author .navbar-brand .navbar-link:hover,
+    .comment-respond input.navbar#email .navbar-brand .navbar-link:hover,
+    .comment-respond input.navbar#url .navbar-brand .navbar-link:hover,
+    .navbar.is-info .navbar-brand .navbar-link.is-active,
+    .navbar.middle-txt-boxes .navbar-brand .navbar-link.is-active,
+    .comment-respond input.navbar#author .navbar-brand .navbar-link.is-active,
+    .comment-respond input.navbar#email .navbar-brand .navbar-link.is-active,
+    .comment-respond input.navbar#url .navbar-brand .navbar-link.is-active {
       background-color: #118fe4;
       color: #fff; }
-    .navbar.is-info .navbar-brand .navbar-link::after {
+    .navbar.is-info .navbar-brand .navbar-link::after, .navbar.middle-txt-boxes .navbar-brand .navbar-link::after, .comment-respond input.navbar#author .navbar-brand .navbar-link::after, .comment-respond input.navbar#email .navbar-brand .navbar-link::after, .comment-respond input.navbar#url .navbar-brand .navbar-link::after {
       border-color: #fff; }
     @media screen and (min-width: 1088px) {
-      .navbar.is-info .navbar-start > .navbar-item,
+      .navbar.is-info .navbar-start > .navbar-item, .navbar.middle-txt-boxes .navbar-start > .navbar-item, .comment-respond input.navbar#author .navbar-start > .navbar-item, .comment-respond input.navbar#email .navbar-start > .navbar-item, .comment-respond input.navbar#url .navbar-start > .navbar-item,
       .navbar.is-info .navbar-start .navbar-link,
+      .navbar.middle-txt-boxes .navbar-start .navbar-link,
+      .comment-respond input.navbar#author .navbar-start .navbar-link,
+      .comment-respond input.navbar#email .navbar-start .navbar-link,
+      .comment-respond input.navbar#url .navbar-start .navbar-link,
       .navbar.is-info .navbar-end > .navbar-item,
-      .navbar.is-info .navbar-end .navbar-link {
+      .navbar.middle-txt-boxes .navbar-end > .navbar-item,
+      .comment-respond input.navbar#author .navbar-end > .navbar-item,
+      .comment-respond input.navbar#email .navbar-end > .navbar-item,
+      .comment-respond input.navbar#url .navbar-end > .navbar-item,
+      .navbar.is-info .navbar-end .navbar-link,
+      .navbar.middle-txt-boxes .navbar-end .navbar-link,
+      .comment-respond input.navbar#author .navbar-end .navbar-link,
+      .comment-respond input.navbar#email .navbar-end .navbar-link,
+      .comment-respond input.navbar#url .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-info .navbar-start > a.navbar-item:hover, .navbar.is-info .navbar-start > a.navbar-item.is-active,
+      .navbar.is-info .navbar-start > a.navbar-item:hover, .navbar.middle-txt-boxes .navbar-start > a.navbar-item:hover, .comment-respond input.navbar#author .navbar-start > a.navbar-item:hover, .comment-respond input.navbar#email .navbar-start > a.navbar-item:hover, .comment-respond input.navbar#url .navbar-start > a.navbar-item:hover, .navbar.is-info .navbar-start > a.navbar-item.is-active, .navbar.middle-txt-boxes .navbar-start > a.navbar-item.is-active, .comment-respond input.navbar#author .navbar-start > a.navbar-item.is-active, .comment-respond input.navbar#email .navbar-start > a.navbar-item.is-active, .comment-respond input.navbar#url .navbar-start > a.navbar-item.is-active,
       .navbar.is-info .navbar-start .navbar-link:hover,
+      .navbar.middle-txt-boxes .navbar-start .navbar-link:hover,
+      .comment-respond input.navbar#author .navbar-start .navbar-link:hover,
+      .comment-respond input.navbar#email .navbar-start .navbar-link:hover,
+      .comment-respond input.navbar#url .navbar-start .navbar-link:hover,
       .navbar.is-info .navbar-start .navbar-link.is-active,
+      .navbar.middle-txt-boxes .navbar-start .navbar-link.is-active,
+      .comment-respond input.navbar#author .navbar-start .navbar-link.is-active,
+      .comment-respond input.navbar#email .navbar-start .navbar-link.is-active,
+      .comment-respond input.navbar#url .navbar-start .navbar-link.is-active,
       .navbar.is-info .navbar-end > a.navbar-item:hover,
+      .navbar.middle-txt-boxes .navbar-end > a.navbar-item:hover,
+      .comment-respond input.navbar#author .navbar-end > a.navbar-item:hover,
+      .comment-respond input.navbar#email .navbar-end > a.navbar-item:hover,
+      .comment-respond input.navbar#url .navbar-end > a.navbar-item:hover,
       .navbar.is-info .navbar-end > a.navbar-item.is-active,
+      .navbar.middle-txt-boxes .navbar-end > a.navbar-item.is-active,
+      .comment-respond input.navbar#author .navbar-end > a.navbar-item.is-active,
+      .comment-respond input.navbar#email .navbar-end > a.navbar-item.is-active,
+      .comment-respond input.navbar#url .navbar-end > a.navbar-item.is-active,
       .navbar.is-info .navbar-end .navbar-link:hover,
-      .navbar.is-info .navbar-end .navbar-link.is-active {
+      .navbar.middle-txt-boxes .navbar-end .navbar-link:hover,
+      .comment-respond input.navbar#author .navbar-end .navbar-link:hover,
+      .comment-respond input.navbar#email .navbar-end .navbar-link:hover,
+      .comment-respond input.navbar#url .navbar-end .navbar-link:hover,
+      .navbar.is-info .navbar-end .navbar-link.is-active,
+      .navbar.middle-txt-boxes .navbar-end .navbar-link.is-active,
+      .comment-respond input.navbar#author .navbar-end .navbar-link.is-active,
+      .comment-respond input.navbar#email .navbar-end .navbar-link.is-active,
+      .comment-respond input.navbar#url .navbar-end .navbar-link.is-active {
         background-color: #118fe4;
         color: #fff; }
-      .navbar.is-info .navbar-start .navbar-link::after,
-      .navbar.is-info .navbar-end .navbar-link::after {
+      .navbar.is-info .navbar-start .navbar-link::after, .navbar.middle-txt-boxes .navbar-start .navbar-link::after, .comment-respond input.navbar#author .navbar-start .navbar-link::after, .comment-respond input.navbar#email .navbar-start .navbar-link::after, .comment-respond input.navbar#url .navbar-start .navbar-link::after,
+      .navbar.is-info .navbar-end .navbar-link::after,
+      .navbar.middle-txt-boxes .navbar-end .navbar-link::after,
+      .comment-respond input.navbar#author .navbar-end .navbar-link::after,
+      .comment-respond input.navbar#email .navbar-end .navbar-link::after,
+      .comment-respond input.navbar#url .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-info .navbar-item.has-dropdown:hover .navbar-link,
-      .navbar.is-info .navbar-item.has-dropdown.is-active .navbar-link {
+      .navbar.is-info .navbar-item.has-dropdown:hover .navbar-link, .navbar.middle-txt-boxes .navbar-item.has-dropdown:hover .navbar-link, .comment-respond input.navbar#author .navbar-item.has-dropdown:hover .navbar-link, .comment-respond input.navbar#email .navbar-item.has-dropdown:hover .navbar-link, .comment-respond input.navbar#url .navbar-item.has-dropdown:hover .navbar-link,
+      .navbar.is-info .navbar-item.has-dropdown.is-active .navbar-link,
+      .navbar.middle-txt-boxes .navbar-item.has-dropdown.is-active .navbar-link,
+      .comment-respond input.navbar#author .navbar-item.has-dropdown.is-active .navbar-link,
+      .comment-respond input.navbar#email .navbar-item.has-dropdown.is-active .navbar-link,
+      .comment-respond input.navbar#url .navbar-item.has-dropdown.is-active .navbar-link {
         background-color: #118fe4;
         color: #fff; }
-      .navbar.is-info .navbar-dropdown a.navbar-item.is-active {
+      .navbar.is-info .navbar-dropdown a.navbar-item.is-active, .navbar.middle-txt-boxes .navbar-dropdown a.navbar-item.is-active, .comment-respond input.navbar#author .navbar-dropdown a.navbar-item.is-active, .comment-respond input.navbar#email .navbar-dropdown a.navbar-item.is-active, .comment-respond input.navbar#url .navbar-dropdown a.navbar-item.is-active {
         background-color: #209cee;
         color: #fff; } }
   .navbar.is-success {
@@ -6341,49 +6514,69 @@ label.panel-block {
       @media screen and (max-width: 768px) {
         .hero.is-link.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #1577c6 0%, #3273dc 71%, #4366e5 100%); } }
-  .hero.is-info {
+  .hero.is-info, .hero.middle-txt-boxes, .comment-respond input.hero#author, .comment-respond input.hero#email, .comment-respond input.hero#url {
     background-color: #209cee;
     color: #fff; }
-    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag),
-    .hero.is-info strong {
+    .hero.is-info a:not(.button):not(.dropdown-item):not(.tag), .hero.middle-txt-boxes a:not(.button):not(.dropdown-item):not(.tag), .comment-respond input.hero#author a:not(.button):not(.dropdown-item):not(.tag), .comment-respond input.hero#email a:not(.button):not(.dropdown-item):not(.tag), .comment-respond input.hero#url a:not(.button):not(.dropdown-item):not(.tag),
+    .hero.is-info strong,
+    .hero.middle-txt-boxes strong,
+    .comment-respond input.hero#author strong,
+    .comment-respond input.hero#email strong,
+    .comment-respond input.hero#url strong {
       color: inherit; }
-    .hero.is-info .title {
+    .hero.is-info .title, .hero.middle-txt-boxes .title, .comment-respond input.hero#author .title, .comment-respond input.hero#email .title, .comment-respond input.hero#url .title {
       color: #fff; }
-    .hero.is-info .subtitle {
+    .hero.is-info .subtitle, .hero.middle-txt-boxes .subtitle, .comment-respond input.hero#author .subtitle, .comment-respond input.hero#email .subtitle, .comment-respond input.hero#url .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-info .subtitle a:not(.button),
-      .hero.is-info .subtitle strong {
+      .hero.is-info .subtitle a:not(.button), .hero.middle-txt-boxes .subtitle a:not(.button), .comment-respond input.hero#author .subtitle a:not(.button), .comment-respond input.hero#email .subtitle a:not(.button), .comment-respond input.hero#url .subtitle a:not(.button),
+      .hero.is-info .subtitle strong,
+      .hero.middle-txt-boxes .subtitle strong,
+      .comment-respond input.hero#author .subtitle strong,
+      .comment-respond input.hero#email .subtitle strong,
+      .comment-respond input.hero#url .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1087px) {
-      .hero.is-info .navbar-menu {
+      .hero.is-info .navbar-menu, .hero.middle-txt-boxes .navbar-menu, .comment-respond input.hero#author .navbar-menu, .comment-respond input.hero#email .navbar-menu, .comment-respond input.hero#url .navbar-menu {
         background-color: #209cee; } }
-    .hero.is-info .navbar-item,
-    .hero.is-info .navbar-link {
+    .hero.is-info .navbar-item, .hero.middle-txt-boxes .navbar-item, .comment-respond input.hero#author .navbar-item, .comment-respond input.hero#email .navbar-item, .comment-respond input.hero#url .navbar-item,
+    .hero.is-info .navbar-link,
+    .hero.middle-txt-boxes .navbar-link,
+    .comment-respond input.hero#author .navbar-link,
+    .comment-respond input.hero#email .navbar-link,
+    .comment-respond input.hero#url .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-info a.navbar-item:hover, .hero.is-info a.navbar-item.is-active,
+    .hero.is-info a.navbar-item:hover, .hero.middle-txt-boxes a.navbar-item:hover, .comment-respond input.hero#author a.navbar-item:hover, .comment-respond input.hero#email a.navbar-item:hover, .comment-respond input.hero#url a.navbar-item:hover, .hero.is-info a.navbar-item.is-active, .hero.middle-txt-boxes a.navbar-item.is-active, .comment-respond input.hero#author a.navbar-item.is-active, .comment-respond input.hero#email a.navbar-item.is-active, .comment-respond input.hero#url a.navbar-item.is-active,
     .hero.is-info .navbar-link:hover,
-    .hero.is-info .navbar-link.is-active {
+    .hero.middle-txt-boxes .navbar-link:hover,
+    .comment-respond input.hero#author .navbar-link:hover,
+    .comment-respond input.hero#email .navbar-link:hover,
+    .comment-respond input.hero#url .navbar-link:hover,
+    .hero.is-info .navbar-link.is-active,
+    .hero.middle-txt-boxes .navbar-link.is-active,
+    .comment-respond input.hero#author .navbar-link.is-active,
+    .comment-respond input.hero#email .navbar-link.is-active,
+    .comment-respond input.hero#url .navbar-link.is-active {
       background-color: #118fe4;
       color: #fff; }
-    .hero.is-info .tabs a {
+    .hero.is-info .tabs a, .hero.middle-txt-boxes .tabs a, .comment-respond input.hero#author .tabs a, .comment-respond input.hero#email .tabs a, .comment-respond input.hero#url .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-info .tabs a:hover {
+      .hero.is-info .tabs a:hover, .hero.middle-txt-boxes .tabs a:hover, .comment-respond input.hero#author .tabs a:hover, .comment-respond input.hero#email .tabs a:hover, .comment-respond input.hero#url .tabs a:hover {
         opacity: 1; }
-    .hero.is-info .tabs li.is-active a {
+    .hero.is-info .tabs li.is-active a, .hero.middle-txt-boxes .tabs li.is-active a, .comment-respond input.hero#author .tabs li.is-active a, .comment-respond input.hero#email .tabs li.is-active a, .comment-respond input.hero#url .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-info .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a {
+    .hero.is-info .tabs.is-boxed a, .hero.middle-txt-boxes .tabs.is-boxed a, .comment-respond input.hero#author .tabs.is-boxed a, .comment-respond input.hero#email .tabs.is-boxed a, .comment-respond input.hero#url .tabs.is-boxed a, .hero.is-info .tabs.is-toggle a, .hero.middle-txt-boxes .tabs.is-toggle a, .comment-respond input.hero#author .tabs.is-toggle a, .comment-respond input.hero#email .tabs.is-toggle a, .comment-respond input.hero#url .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-info .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover {
+      .hero.is-info .tabs.is-boxed a:hover, .hero.middle-txt-boxes .tabs.is-boxed a:hover, .comment-respond input.hero#author .tabs.is-boxed a:hover, .comment-respond input.hero#email .tabs.is-boxed a:hover, .comment-respond input.hero#url .tabs.is-boxed a:hover, .hero.is-info .tabs.is-toggle a:hover, .hero.middle-txt-boxes .tabs.is-toggle a:hover, .comment-respond input.hero#author .tabs.is-toggle a:hover, .comment-respond input.hero#email .tabs.is-toggle a:hover, .comment-respond input.hero#url .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-info .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover {
+    .hero.is-info .tabs.is-boxed li.is-active a, .hero.middle-txt-boxes .tabs.is-boxed li.is-active a, .comment-respond input.hero#author .tabs.is-boxed li.is-active a, .comment-respond input.hero#email .tabs.is-boxed li.is-active a, .comment-respond input.hero#url .tabs.is-boxed li.is-active a, .hero.is-info .tabs.is-boxed li.is-active a:hover, .hero.middle-txt-boxes .tabs.is-boxed li.is-active a:hover, .comment-respond input.hero#author .tabs.is-boxed li.is-active a:hover, .comment-respond input.hero#email .tabs.is-boxed li.is-active a:hover, .comment-respond input.hero#url .tabs.is-boxed li.is-active a:hover, .hero.is-info .tabs.is-toggle li.is-active a, .hero.middle-txt-boxes .tabs.is-toggle li.is-active a, .comment-respond input.hero#author .tabs.is-toggle li.is-active a, .comment-respond input.hero#email .tabs.is-toggle li.is-active a, .comment-respond input.hero#url .tabs.is-toggle li.is-active a, .hero.is-info .tabs.is-toggle li.is-active a:hover, .hero.middle-txt-boxes .tabs.is-toggle li.is-active a:hover, .comment-respond input.hero#author .tabs.is-toggle li.is-active a:hover, .comment-respond input.hero#email .tabs.is-toggle li.is-active a:hover, .comment-respond input.hero#url .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #209cee; }
-    .hero.is-info.is-bold {
+    .hero.is-info.is-bold, .hero.is-bold.middle-txt-boxes, .comment-respond input.hero.is-bold#author, .comment-respond input.hero.is-bold#email, .comment-respond input.hero.is-bold#url {
       background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-info.is-bold .navbar-menu {
+        .hero.is-info.is-bold .navbar-menu, .hero.is-bold.middle-txt-boxes .navbar-menu, .comment-respond input.hero.is-bold#author .navbar-menu, .comment-respond input.hero.is-bold#email .navbar-menu, .comment-respond input.hero.is-bold#url .navbar-menu {
           background-image: linear-gradient(141deg, #04a6d7 0%, #209cee 71%, #3287f5 100%); } }
   .hero.is-success {
     background-color: #23d160;
@@ -8956,6 +9149,25 @@ hr {
 .media-content {
   line-height: 1.6em; }
 
+.middle-txt-boxes, .comment-respond input#author, .comment-respond input#email, .comment-respond input#url {
+  width: 15%;
+  min-width: 200px; }
+
+.comment-form-author {
+  margin-top: 20px; }
+
+.comment-form-email {
+  margin-top: 20px; }
+
+.comment-form-url {
+  margin-top: 20px; }
+
+.comment-respond label {
+  margin-top: 20px; }
+
+.comment-respond label {
+  display: block; }
+
 .single-post .category-section {
   display: inline; }
   .single-post .category-section ul {
@@ -9075,6 +9287,8 @@ hr {
     margin-left: 40px; }
   .single-post-content ol {
     list-style-type: decimal; }
+  .single-post-content ul ul {
+    list-style-type: disc; }
   .single-post-content ol ul, .single-post-content ul ol,
   .single-post-content ul ul, .single-post-content ol ol {
     margin-top: 0;

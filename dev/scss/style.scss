@@ -25,7 +25,6 @@ a {
   text-decoration: none;
 }
 
-
 #main-loop img {
   border: solid 1px whitesmoke;
 }
@@ -80,6 +79,39 @@ hr {
   line-height: 1.6em;
 }
 
+// comments
+.middle-txt-boxes {
+  @extend .input;
+  @extend .is-info;
+  width: 15%;
+  min-width: 200px;
+}
+.comment-form-author{
+  margin-top:20px;
+}
+.comment-form-email{
+  margin-top:20px;
+}
+.comment-form-url{
+  margin-top:20px;
+}
+.comment-respond label{
+  margin-top: 20px;
+}
+.comment-respond label{
+  display:block;
+}
+.comment-respond input#author {
+  @extend .middle-txt-boxes;
+}
+
+.comment-respond input#email {
+  @extend .middle-txt-boxes;
+}
+
+.comment-respond input#url {
+  @extend .middle-txt-boxes;
+}
 
 // category section
 .single-post {
@@ -101,8 +133,6 @@ hr {
     }
   }
 }
-
-
 
 // remove hard-reset of elements in the single post block
 .single-post-content {

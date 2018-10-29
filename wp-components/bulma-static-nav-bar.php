@@ -28,13 +28,13 @@
             </div>
 
             <div class="navbar-end">
-                <a class="navbar-item" href="#" target="_blank" style="font-size: 140%;">
+                <a class="navbar-item" href="https://github.com/mutant-city" target="_blank" style="font-size: 140%;">
                     <i class="fa fa-github nav-icon"></i>
                 </a>
-                <a class="navbar-item" href="#" target="_blank" style="color: #55acee; font-size: 140%;">
+                <a class="navbar-item" href="https://twitter.com/mutant_city" target="_blank" style="color: #55acee; font-size: 140%;">
                     <i class="fa fa-twitter nav-icon"></i>
                 </a>
-                <a class="navbar-item" href="#" target="_blank" style="font-size:140%; color: #f48024;">
+                <a class="navbar-item" href="https://stackoverflow.com/users/1821450/mutant-city" target="_blank" style="font-size:140%; color: #f48024;">
                     <i class="fa fa-stack-overflow"></i>
                 </a>
             </div>

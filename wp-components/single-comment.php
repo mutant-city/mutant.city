@@ -8,7 +8,6 @@
             <i class="fa fa-anchor"></i>
         </a>
     </div>
-    <hr/>
     <?php if ($comment->comment_approved == '0'): ?>
         <div>
             <?php _e('Thank you for posting. Your comment is awaiting moderation.'); ?>
