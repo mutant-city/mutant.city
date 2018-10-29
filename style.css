@@ -8,8 +8,59 @@ Description: Mutant City Blog Theme
 Version: 1.0
 Text Domain: mutantcity
 */
-/*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
 @import url("https://fonts.googleapis.com/css?family=Special+Elite");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*! bulma.io v0.7.1 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
     transform: rotate(0deg); }
@@ -8905,14 +8956,143 @@ hr {
 .media-content {
   line-height: 1.6em; }
 
-.single-post ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px; }
-
-.single-post li {
-  display: list-item; }
+.single-post {
+  /* Begin bidirectionality settings (do not change) */ }
+  .single-post html, .single-post address,
+  .single-post blockquote,
+  .single-post body, .single-post dd, .single-post div,
+  .single-post dl, .single-post dt, .single-post fieldset, .single-post form,
+  .single-post frame, .single-post frameset,
+  .single-post h1, .single-post h2, .single-post h3, .single-post h4,
+  .single-post h5, .single-post h6, .single-post noframes,
+  .single-post ol, .single-post p, .single-post ul, .single-post center,
+  .single-post dir, .single-post hr, .single-post menu, .single-post pre {
+    display: block;
+    unicode-bidi: embed; }
+  .single-post li {
+    display: list-item; }
+  .single-post head {
+    display: none; }
+  .single-post table {
+    display: table; }
+  .single-post tr {
+    display: table-row; }
+  .single-post thead {
+    display: table-header-group; }
+  .single-post tbody {
+    display: table-row-group; }
+  .single-post tfoot {
+    display: table-footer-group; }
+  .single-post col {
+    display: table-column; }
+  .single-post colgroup {
+    display: table-column-group; }
+  .single-post td, .single-post th {
+    display: table-cell; }
+  .single-post caption {
+    display: table-caption; }
+  .single-post th {
+    font-weight: bolder;
+    text-align: center; }
+  .single-post caption {
+    text-align: center; }
+  .single-post body {
+    margin: 8px; }
+  .single-post h1 {
+    font-size: 2em;
+    margin: .67em 0; }
+  .single-post h2 {
+    font-size: 1.5em;
+    margin: .75em 0; }
+  .single-post h3 {
+    font-size: 1.17em;
+    margin: .83em 0; }
+  .single-post h4, .single-post p,
+  .single-post blockquote, .single-post ul,
+  .single-post fieldset, .single-post form,
+  .single-post ol, .single-post dl, .single-post dir,
+  .single-post menu {
+    margin: 1.12em 0; }
+  .single-post h5 {
+    font-size: .83em;
+    margin: 1.5em 0; }
+  .single-post h6 {
+    font-size: .75em;
+    margin: 1.67em 0; }
+  .single-post h1, .single-post h2, .single-post h3, .single-post h4,
+  .single-post h5, .single-post h6, .single-post b,
+  .single-post strong {
+    font-weight: bolder; }
+  .single-post blockquote {
+    margin-left: 40px;
+    margin-right: 40px; }
+  .single-post i, .single-post cite, .single-post em,
+  .single-post var, .single-post address {
+    font-style: italic; }
+  .single-post pre, .single-post tt, .single-post code,
+  .single-post kbd, .single-post samp {
+    font-family: monospace; }
+  .single-post pre {
+    white-space: pre; }
+  .single-post button, .single-post textarea,
+  .single-post input, .single-post select {
+    display: inline-block; }
+  .single-post big {
+    font-size: 1.17em; }
+  .single-post small, .single-post sub, .single-post sup {
+    font-size: .83em; }
+  .single-post sub {
+    vertical-align: sub; }
+  .single-post sup {
+    vertical-align: super; }
+  .single-post table {
+    border-spacing: 2px; }
+  .single-post thead, .single-post tbody,
+  .single-post tfoot {
+    vertical-align: middle; }
+  .single-post td, .single-post th, .single-post tr {
+    vertical-align: inherit; }
+  .single-post s, .single-post strike, .single-post del {
+    text-decoration: line-through; }
+  .single-post hr {
+    border: 1px inset; }
+  .single-post ol, .single-post ul, .single-post dir,
+  .single-post menu, .single-post dd {
+    margin-left: 40px; }
+  .single-post ol {
+    list-style-type: decimal; }
+  .single-post ol ul, .single-post ul ol,
+  .single-post ul ul, .single-post ol ol {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .single-post u, .single-post ins {
+    text-decoration: underline; }
+  .single-post br:before {
+    content: "\A";
+    white-space: pre-line; }
+  .single-post center {
+    text-align: center; }
+  .single-post :link, .single-post :visited {
+    text-decoration: underline; }
+  .single-post :focus {
+    outline: thin dotted invert; }
+  .single-post BDO[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: bidi-override; }
+  .single-post BDO[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: bidi-override; }
+  .single-post *[DIR="ltr"] {
+    direction: ltr;
+    unicode-bidi: embed; }
+  .single-post *[DIR="rtl"] {
+    direction: rtl;
+    unicode-bidi: embed; }
+  @media print {
+    .single-post h1 {
+      page-break-before: always; }
+    .single-post h1, .single-post h2, .single-post h3,
+    .single-post h4, .single-post h5, .single-post h6 {
+      page-break-after: avoid; }
+    .single-post ul, .single-post ol, .single-post dl {
+      page-break-before: avoid; } }

@@ -11,6 +11,7 @@ Text Domain: mutantcity
 $fa-font-path: "assets/fonts";
 
 @charset "utf-8";
+@import 'node_modules/reset-css/sass/reset';
 @import "node_modules/bulma/bulma";
 @import "node_modules/font-awesome/scss/font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
@@ -79,15 +80,7 @@ hr {
 }
 
 // remove hard-reset of elements in the single post block
-.single-post ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px;
-}
-.single-post li{
-  display: list-item;
+
+.single-post {
+  @import 'default-styles';
 }
