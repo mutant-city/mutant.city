@@ -8956,6 +8956,20 @@ hr {
 .media-content {
   line-height: 1.6em; }
 
+.single-post .category-section {
+  display: inline; }
+  .single-post .category-section ul {
+    display: inline; }
+
+.single-post .post-categories li {
+  display: inline; }
+
+.single-post .post-categories li:after {
+  content: ", "; }
+
+.single-post .post-categories li:last-child:after {
+  content: ""; }
+
 .single-post-content {
   /* Begin bidirectionality settings (do not change) */ }
   .single-post-content html, .single-post-content address,
@@ -9061,6 +9075,8 @@ hr {
     margin-left: 40px; }
   .single-post-content ol {
     list-style-type: decimal; }
+  .single-post-content ul {
+    list-style-type: disc; }
   .single-post-content ol ul, .single-post-content ul ol,
   .single-post-content ul ul, .single-post-content ol ol {
     margin-top: 0;
@@ -9096,17 +9112,3 @@ hr {
       page-break-after: avoid; }
     .single-post-content ul, .single-post-content ol, .single-post-content dl {
       page-break-before: avoid; } }
-
-.single-post .category-section {
-  display: inline; }
-  .single-post .category-section ul {
-    display: inline; }
-
-.single-post .post-categories li {
-  display: inline; }
-
-.single-post .post-categories li:after {
-  content: ", "; }
-
-.single-post .post-categories li:last-child:after {
-  content: ""; }

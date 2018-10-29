@@ -79,12 +79,6 @@ hr {
   line-height: 1.6em;
 }
 
-// remove hard-reset of elements in the single post block
-
-.single-post-content {
-  @import 'default-styles';
-}
-
 // category section
 .single-post {
   .category-section {
@@ -104,4 +98,9 @@ hr {
       content: "";
     }
   }
+}
+
+// remove hard-reset of elements in the single post block
+.single-post-content {
+  @import 'default-styles';
 }

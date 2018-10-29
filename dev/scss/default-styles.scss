@@ -57,6 +57,7 @@ hr              { border: 1px inset }
 ol, ul, dir,
 menu, dd        { margin-left: 40px }
 ol              { list-style-type: decimal }
+ul              { list-style-type: disc; }
 ol ul, ul ol,
 ul ul, ol ol    { margin-top: 0; margin-bottom: 0 }
 u, ins          { text-decoration: underline }
@@ -64,7 +65,6 @@ br:before       { content: "\A"; white-space: pre-line }
 center          { text-align: center }
 :link, :visited { text-decoration: underline }
 :focus          { outline: thin dotted invert }
-
 /* Begin bidirectionality settings (do not change) */
 BDO[DIR="ltr"]  { direction: ltr; unicode-bidi: bidi-override }
 BDO[DIR="rtl"]  { direction: rtl; unicode-bidi: bidi-override }
