@@ -1,5 +1,5 @@
 <section class="section" id="comment-<?php comment_ID() ?>">
-            <div>
+            <div class="comment-header">
                 <a class="comment-permalink"
                    href="<?php echo htmlspecialchars(get_comment_link($comment->comment_ID)) ?>">
                     <?php printf(__('%1$s'), get_comment_date(), get_comment_time()) ?>
@@ -7,7 +7,6 @@
                 by
                 <?php printf(__('%s'), get_comment_author_link()) ?>
             </div>
-            <hr/>
             <?php if ($comment->comment_approved == '0'): ?>
                 <div>
                     <?php _e('Thank you for posting. Your comment is awaiting moderation.'); ?>

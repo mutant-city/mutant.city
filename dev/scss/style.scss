@@ -25,6 +25,11 @@ a {
   text-decoration: none;
 }
 
+#main-loop  img{
+  border: solid 1px whitesmoke;
+}
+
+
 .title-font {
   font-family: 'Special Elite', cursive;
   font-size: x-large;
@@ -59,6 +64,10 @@ a {
 
 #comments-thoughts-blurb {
   @extend .title-font;
+  text-decoration: underline;
+}
+
+.comment-header{
   text-decoration: underline;
 }
 

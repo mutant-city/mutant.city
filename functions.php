@@ -46,9 +46,7 @@ function eliminate_readmore_jump($link)
     }
     return $link;
 }
-
 add_filter('the_content_more_link', 'eliminate_readmore_jump');
-
 
 # set your single comment template
 function format_comment($comment, $args, $depth)

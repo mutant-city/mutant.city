@@ -8926,6 +8926,9 @@ body {
 a {
   text-decoration: none; }
 
+#main-loop img {
+  border: solid 1px whitesmoke; }
+
 .title-font, .navbar-item, .blog-post-title, #commentform #submit, #respond #reply-title, #comments-thoughts-blurb {
   font-family: 'Special Elite', cursive;
   font-size: x-large; }
@@ -8941,6 +8944,9 @@ a {
   text-decoration: underline; }
 
 #comments-thoughts-blurb {
+  text-decoration: underline; }
+
+.comment-header {
   text-decoration: underline; }
 
 hr {

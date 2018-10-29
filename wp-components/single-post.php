@@ -15,11 +15,12 @@
                     </a>
                 </h1>
                 <p class=><?php the_date(); ?> by <?php the_author(); ?></p>
-            </div>
-            <hr/>
-            <div class="media-content">
-                <?php the_content(); ?>
+                <?php echo get_the_category_list(); ?>
             </div>
         </div>
+    </div>
+    <hr/>
+    <div class="media-content">
+        <?php the_content(); ?>
     </div>
 </section>

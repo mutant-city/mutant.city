@@ -8,20 +8,18 @@
 ?>
 <?php if (have_comments()) : ?>
 
-<section class="section">
-    <div id="comments-thoughts-blurb">
-        <?php
-        printf(_nx('One thought on: "%2$s"', '%1$s thoughts on: "%2$s"', get_comments_number(), 'comments title', 'twentythirteen'),
-            number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>');
-        ?>
-    </div>
-</section>
-
+    <section class="section">
+        <div id="comments-thoughts-blurb">
+            <?php
+            printf(_nx('One thought on: "%2$s"', '%1$s thoughts on: "%2$s"', get_comments_number(), 'comments title', 'twentythirteen'),
+                number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>');
+            ?>
+        </div>
+    </section>
 
     <ol>
         <?php wp_list_comments('type=comment&callback=format_comment'); ?>
     </ol>
-
 
     <?php if (!comments_open() && get_comments_number()) : ?>
         <p><?php _e('Comments are closed.', 'twentythirteen'); ?></p>
@@ -30,6 +28,6 @@
 <?php endif; // have_comments() ?>
 
 <section class="section">
-<?php comment_form(); ?>
+    <?php comment_form(); ?>
 
 </section>
