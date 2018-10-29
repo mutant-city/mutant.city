@@ -8956,143 +8956,143 @@ hr {
 .media-content {
   line-height: 1.6em; }
 
-.single-post {
+.single-post-content {
   /* Begin bidirectionality settings (do not change) */ }
-  .single-post html, .single-post address,
-  .single-post blockquote,
-  .single-post body, .single-post dd, .single-post div,
-  .single-post dl, .single-post dt, .single-post fieldset, .single-post form,
-  .single-post frame, .single-post frameset,
-  .single-post h1, .single-post h2, .single-post h3, .single-post h4,
-  .single-post h5, .single-post h6, .single-post noframes,
-  .single-post ol, .single-post p, .single-post ul, .single-post center,
-  .single-post dir, .single-post hr, .single-post menu, .single-post pre {
+  .single-post-content html, .single-post-content address,
+  .single-post-content blockquote,
+  .single-post-content body, .single-post-content dd, .single-post-content div,
+  .single-post-content dl, .single-post-content dt, .single-post-content fieldset, .single-post-content form,
+  .single-post-content frame, .single-post-content frameset,
+  .single-post-content h1, .single-post-content h2, .single-post-content h3, .single-post-content h4,
+  .single-post-content h5, .single-post-content h6, .single-post-content noframes,
+  .single-post-content ol, .single-post-content p, .single-post-content ul, .single-post-content center,
+  .single-post-content dir, .single-post-content hr, .single-post-content menu, .single-post-content pre {
     display: block;
     unicode-bidi: embed; }
-  .single-post li {
+  .single-post-content li {
     display: list-item; }
-  .single-post head {
+  .single-post-content head {
     display: none; }
-  .single-post table {
+  .single-post-content table {
     display: table; }
-  .single-post tr {
+  .single-post-content tr {
     display: table-row; }
-  .single-post thead {
+  .single-post-content thead {
     display: table-header-group; }
-  .single-post tbody {
+  .single-post-content tbody {
     display: table-row-group; }
-  .single-post tfoot {
+  .single-post-content tfoot {
     display: table-footer-group; }
-  .single-post col {
+  .single-post-content col {
     display: table-column; }
-  .single-post colgroup {
+  .single-post-content colgroup {
     display: table-column-group; }
-  .single-post td, .single-post th {
+  .single-post-content td, .single-post-content th {
     display: table-cell; }
-  .single-post caption {
+  .single-post-content caption {
     display: table-caption; }
-  .single-post th {
+  .single-post-content th {
     font-weight: bolder;
     text-align: center; }
-  .single-post caption {
+  .single-post-content caption {
     text-align: center; }
-  .single-post body {
+  .single-post-content body {
     margin: 8px; }
-  .single-post h1 {
+  .single-post-content h1 {
     font-size: 2em;
     margin: .67em 0; }
-  .single-post h2 {
+  .single-post-content h2 {
     font-size: 1.5em;
     margin: .75em 0; }
-  .single-post h3 {
+  .single-post-content h3 {
     font-size: 1.17em;
     margin: .83em 0; }
-  .single-post h4, .single-post p,
-  .single-post blockquote, .single-post ul,
-  .single-post fieldset, .single-post form,
-  .single-post ol, .single-post dl, .single-post dir,
-  .single-post menu {
+  .single-post-content h4, .single-post-content p,
+  .single-post-content blockquote, .single-post-content ul,
+  .single-post-content fieldset, .single-post-content form,
+  .single-post-content ol, .single-post-content dl, .single-post-content dir,
+  .single-post-content menu {
     margin: 1.12em 0; }
-  .single-post h5 {
+  .single-post-content h5 {
     font-size: .83em;
     margin: 1.5em 0; }
-  .single-post h6 {
+  .single-post-content h6 {
     font-size: .75em;
     margin: 1.67em 0; }
-  .single-post h1, .single-post h2, .single-post h3, .single-post h4,
-  .single-post h5, .single-post h6, .single-post b,
-  .single-post strong {
+  .single-post-content h1, .single-post-content h2, .single-post-content h3, .single-post-content h4,
+  .single-post-content h5, .single-post-content h6, .single-post-content b,
+  .single-post-content strong {
     font-weight: bolder; }
-  .single-post blockquote {
+  .single-post-content blockquote {
     margin-left: 40px;
     margin-right: 40px; }
-  .single-post i, .single-post cite, .single-post em,
-  .single-post var, .single-post address {
+  .single-post-content i, .single-post-content cite, .single-post-content em,
+  .single-post-content var, .single-post-content address {
     font-style: italic; }
-  .single-post pre, .single-post tt, .single-post code,
-  .single-post kbd, .single-post samp {
+  .single-post-content pre, .single-post-content tt, .single-post-content code,
+  .single-post-content kbd, .single-post-content samp {
     font-family: monospace; }
-  .single-post pre {
+  .single-post-content pre {
     white-space: pre; }
-  .single-post button, .single-post textarea,
-  .single-post input, .single-post select {
+  .single-post-content button, .single-post-content textarea,
+  .single-post-content input, .single-post-content select {
     display: inline-block; }
-  .single-post big {
+  .single-post-content big {
     font-size: 1.17em; }
-  .single-post small, .single-post sub, .single-post sup {
+  .single-post-content small, .single-post-content sub, .single-post-content sup {
     font-size: .83em; }
-  .single-post sub {
+  .single-post-content sub {
     vertical-align: sub; }
-  .single-post sup {
+  .single-post-content sup {
     vertical-align: super; }
-  .single-post table {
+  .single-post-content table {
     border-spacing: 2px; }
-  .single-post thead, .single-post tbody,
-  .single-post tfoot {
+  .single-post-content thead, .single-post-content tbody,
+  .single-post-content tfoot {
     vertical-align: middle; }
-  .single-post td, .single-post th, .single-post tr {
+  .single-post-content td, .single-post-content th, .single-post-content tr {
     vertical-align: inherit; }
-  .single-post s, .single-post strike, .single-post del {
+  .single-post-content s, .single-post-content strike, .single-post-content del {
     text-decoration: line-through; }
-  .single-post hr {
+  .single-post-content hr {
     border: 1px inset; }
-  .single-post ol, .single-post ul, .single-post dir,
-  .single-post menu, .single-post dd {
+  .single-post-content ol, .single-post-content ul, .single-post-content dir,
+  .single-post-content menu, .single-post-content dd {
     margin-left: 40px; }
-  .single-post ol {
+  .single-post-content ol {
     list-style-type: decimal; }
-  .single-post ol ul, .single-post ul ol,
-  .single-post ul ul, .single-post ol ol {
+  .single-post-content ol ul, .single-post-content ul ol,
+  .single-post-content ul ul, .single-post-content ol ol {
     margin-top: 0;
     margin-bottom: 0; }
-  .single-post u, .single-post ins {
+  .single-post-content u, .single-post-content ins {
     text-decoration: underline; }
-  .single-post br:before {
+  .single-post-content br:before {
     content: "\A";
     white-space: pre-line; }
-  .single-post center {
+  .single-post-content center {
     text-align: center; }
-  .single-post :link, .single-post :visited {
+  .single-post-content :link, .single-post-content :visited {
     text-decoration: underline; }
-  .single-post :focus {
+  .single-post-content :focus {
     outline: thin dotted invert; }
-  .single-post BDO[DIR="ltr"] {
+  .single-post-content BDO[DIR="ltr"] {
     direction: ltr;
     unicode-bidi: bidi-override; }
-  .single-post BDO[DIR="rtl"] {
+  .single-post-content BDO[DIR="rtl"] {
     direction: rtl;
     unicode-bidi: bidi-override; }
-  .single-post *[DIR="ltr"] {
+  .single-post-content *[DIR="ltr"] {
     direction: ltr;
     unicode-bidi: embed; }
-  .single-post *[DIR="rtl"] {
+  .single-post-content *[DIR="rtl"] {
     direction: rtl;
     unicode-bidi: embed; }
   @media print {
-    .single-post h1 {
+    .single-post-content h1 {
       page-break-before: always; }
-    .single-post h1, .single-post h2, .single-post h3,
-    .single-post h4, .single-post h5, .single-post h6 {
+    .single-post-content h1, .single-post-content h2, .single-post-content h3,
+    .single-post-content h4, .single-post-content h5, .single-post-content h6 {
       page-break-after: avoid; }
-    .single-post ul, .single-post ol, .single-post dl {
+    .single-post-content ul, .single-post-content ol, .single-post-content dl {
       page-break-before: avoid; } }

@@ -20,7 +20,7 @@
         </div>
     </div>
     <hr/>
-    <div class="media-content">
+    <div class="media-content single-post-content">
         <?php the_content(); ?>
     </div>
 </section>
