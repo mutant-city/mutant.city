@@ -8955,3 +8955,15 @@ hr {
 
 .media-content {
   line-height: 1.6em; }
+
+.single-post ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px; }
+
+.single-post li {
+  display: list-item; }

@@ -25,10 +25,9 @@ a {
   text-decoration: none;
 }
 
-#main-loop  img{
+#main-loop img {
   border: solid 1px whitesmoke;
 }
-
 
 .title-font {
   font-family: 'Special Elite', cursive;
@@ -67,15 +66,28 @@ a {
   text-decoration: underline;
 }
 
-.comment-header{
+.comment-header {
   text-decoration: underline;
 }
 
-hr{
+hr {
   margin-top: 1%;
   margin-bottom: 1%;
 }
 
-.media-content{
+.media-content {
   line-height: 1.6em;
+}
+
+.single-post ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+.single-post li{
+  display: list-item;
 }
