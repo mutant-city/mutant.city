@@ -9096,3 +9096,17 @@ hr {
       page-break-after: avoid; }
     .single-post-content ul, .single-post-content ol, .single-post-content dl {
       page-break-before: avoid; } }
+
+.single-post .category-section {
+  display: inline; }
+  .single-post .category-section ul {
+    display: inline; }
+
+.single-post .post-categories li {
+  display: inline; }
+
+.single-post .post-categories li:after {
+  content: ", "; }
+
+.single-post .post-categories li:last-child:after {
+  content: ""; }

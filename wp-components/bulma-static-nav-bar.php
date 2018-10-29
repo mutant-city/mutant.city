@@ -6,7 +6,8 @@
                 <span>Mutant.City</span>
             </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+               data-target="navbarBasicExample">
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
                 <span aria-hidden="true"></span>
@@ -32,6 +33,9 @@
                 </a>
                 <a class="navbar-item" href="#" target="_blank" style="color: #55acee; font-size: 140%;">
                     <i class="fa fa-twitter nav-icon"></i>
+                </a>
+                <a class="navbar-item" href="#" target="_blank" style="font-size:140%; color: #f48024;">
+                    <i class="fa fa-stack-overflow"></i>
                 </a>
                 <a class="navbar-item" href="#" target="_blank" style="font-size:140%; color: #f48024;">
                     <i class="fa fa-stack-overflow"></i>

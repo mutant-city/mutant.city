@@ -84,3 +84,24 @@ hr {
 .single-post-content {
   @import 'default-styles';
 }
+
+// category section
+.single-post {
+  .category-section {
+    display: inline;
+    ul {
+      display: inline;
+    }
+  }
+  .post-categories {
+    li {
+      display: inline;
+    }
+    li:after {
+      content: ", ";
+    }
+    li:last-child:after {
+      content: "";
+    }
+  }
+}

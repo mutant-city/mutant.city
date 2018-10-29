@@ -15,7 +15,9 @@
                     </a>
                 </h1>
                 <p class=><?php the_date(); ?> by <?php the_author(); ?></p>
-                <?php echo get_the_category_list(); ?>
+                <div class="category-section">
+                    Categories: <?php echo get_the_category_list(); ?>
+                </div>
             </div>
         </div>
     </div>
