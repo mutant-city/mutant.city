@@ -37,9 +37,6 @@
                 <a class="navbar-item" href="#" target="_blank" style="font-size:140%; color: #f48024;">
                     <i class="fa fa-stack-overflow"></i>
                 </a>
-                <a class="navbar-item" href="#" target="_blank" style="font-size:140%; color: #f48024;">
-                    <i class="fa fa-stack-overflow"></i>
-                </a>
             </div>
         </div>
     </div>
