@@ -16,7 +16,7 @@ $fa-font-path: "assets/fonts";
 @import "node_modules/font-awesome/scss/font-awesome";
 @import url('https://fonts.googleapis.com/css?family=Special+Elite');
 
-body{
+body {
   padding-top: 1.4em;
   font-size: 1.3em;
 }
@@ -38,7 +38,34 @@ a {
   @extend .title-font
 }
 
+#commentform textarea {
+  width: 90%;
+  height: 20%;
+  @extend .textarea;
+  @extend .is-large;
+}
 
+#commentform #submit {
+  @extend .button;
+  @extend .is-primary;
+  margin-top: 20px;
+  @extend .title-font;
+}
+
+#respond #reply-title {
+  @extend .title-font;
+  text-decoration: underline;
+}
+
+#comments-thoughts-blurb {
+  @extend .title-font;
+  text-decoration: underline;
+}
+
+hr{
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
 
 
 

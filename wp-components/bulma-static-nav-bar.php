@@ -1,15 +1,15 @@
 <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
     <div class="container is-fullhd">
         <div class="navbar-brand">
-            <span class="navbar-item">
-                <span>Mutant.City</span>
-            </span>
+            <a class="navbar-item" href="/">
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
-               data-target="navbarBasicExample">
-                <span aria-hidden="true">Test</span>
-                <span aria-hidden="true">Test</span>
-                <span aria-hidden="true">Test</span>
+                <span>Mutant.City</span>
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
 
@@ -40,4 +40,3 @@
         </div>
     </div>
 </nav>
-

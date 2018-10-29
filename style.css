@@ -67,7 +67,7 @@ table {
   to {
     transform: rotate(359deg); } }
 
-.delete, .modal-close, .is-unselectable, .button, .file, .breadcrumb, .pagination-previous,
+.delete, .modal-close, .is-unselectable, .button, #commentform #submit, .file, .breadcrumb, .pagination-previous,
 .pagination-next,
 .pagination-link,
 .pagination-ellipsis, .tabs {
@@ -150,7 +150,7 @@ table {
     min-height: 24px;
     min-width: 24px;
     width: 24px; }
-  .is-large.delete, .is-large.modal-close {
+  .is-large.delete, #commentform textarea.delete, .is-large.modal-close, #commentform textarea.modal-close {
     height: 32px;
     max-height: 32px;
     max-width: 32px;
@@ -158,7 +158,7 @@ table {
     min-width: 32px;
     width: 32px; }
 
-.button.is-loading::after, .select.is-loading::after, .control.is-loading::after, .loader {
+.button.is-loading::after, #commentform .is-loading#submit::after, .select.is-loading::after, .control.is-loading::after, .loader {
   animation: spinAround 500ms infinite linear;
   border: 2px solid #dbdbdb;
   border-radius: 290486px;
@@ -177,8 +177,8 @@ table {
   right: 0;
   top: 0; }
 
-.button, .input,
-.textarea, .select select, .file-cta,
+.button, #commentform #submit, .input,
+.textarea, #commentform textarea, .select select, .file-cta,
 .file-name, .pagination-previous,
 .pagination-next,
 .pagination-link,
@@ -200,30 +200,30 @@ table {
   padding-top: calc(0.375em - 1px);
   position: relative;
   vertical-align: top; }
-  .button:focus, .input:focus,
-  .textarea:focus, .select select:focus, .file-cta:focus,
+  .button:focus, #commentform #submit:focus, .input:focus,
+  .textarea:focus, #commentform textarea:focus, .select select:focus, .file-cta:focus,
   .file-name:focus, .pagination-previous:focus,
   .pagination-next:focus,
   .pagination-link:focus,
-  .pagination-ellipsis:focus, .is-focused.button, .is-focused.input,
-  .is-focused.textarea, .select select.is-focused, .is-focused.file-cta,
+  .pagination-ellipsis:focus, .is-focused.button, #commentform .is-focused#submit, .is-focused.input,
+  .is-focused.textarea, #commentform textarea.is-focused, .select select.is-focused, .is-focused.file-cta,
   .is-focused.file-name, .is-focused.pagination-previous,
   .is-focused.pagination-next,
   .is-focused.pagination-link,
-  .is-focused.pagination-ellipsis, .button:active, .input:active,
-  .textarea:active, .select select:active, .file-cta:active,
+  .is-focused.pagination-ellipsis, .button:active, #commentform #submit:active, .input:active,
+  .textarea:active, #commentform textarea:active, .select select:active, .file-cta:active,
   .file-name:active, .pagination-previous:active,
   .pagination-next:active,
   .pagination-link:active,
-  .pagination-ellipsis:active, .is-active.button, .is-active.input,
-  .is-active.textarea, .select select.is-active, .is-active.file-cta,
+  .pagination-ellipsis:active, .is-active.button, #commentform .is-active#submit, .is-active.input,
+  .is-active.textarea, #commentform textarea.is-active, .select select.is-active, .is-active.file-cta,
   .is-active.file-name, .is-active.pagination-previous,
   .is-active.pagination-next,
   .is-active.pagination-link,
   .is-active.pagination-ellipsis {
     outline: none; }
-  .button[disabled], .input[disabled],
-  .textarea[disabled], .select select[disabled], .file-cta[disabled],
+  .button[disabled], #commentform #submit[disabled], .input[disabled],
+  .textarea[disabled], #commentform textarea[disabled], .select select[disabled], .file-cta[disabled],
   .file-name[disabled], .pagination-previous[disabled],
   .pagination-next[disabled],
   .pagination-link[disabled],
@@ -1157,7 +1157,7 @@ a.box:hover, a.box:focus {
 a.box:active {
   box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 1px #3273dc; }
 
-.button {
+.button, #commentform #submit {
   background-color: white;
   border-color: #dbdbdb;
   border-width: 1px;
@@ -1170,676 +1170,676 @@ a.box:active {
   padding-top: calc(0.375em - 1px);
   text-align: center;
   white-space: nowrap; }
-  .button strong {
+  .button strong, #commentform #submit strong {
     color: inherit; }
-  .button .icon, .button .icon.is-small, .button .icon.is-medium, .button .icon.is-large {
+  .button .icon, #commentform #submit .icon, .button .icon.is-small, #commentform #submit .icon.is-small, .button .icon.is-medium, #commentform #submit .icon.is-medium, .button .icon.is-large, #commentform #submit .icon.is-large, .button #commentform textarea.icon, #commentform .button textarea.icon, #commentform #submit textarea.icon {
     height: 1.5em;
     width: 1.5em; }
-  .button .icon:first-child:not(:last-child) {
+  .button .icon:first-child:not(:last-child), #commentform #submit .icon:first-child:not(:last-child) {
     margin-left: calc(-0.375em - 1px);
     margin-right: 0.1875em; }
-  .button .icon:last-child:not(:first-child) {
+  .button .icon:last-child:not(:first-child), #commentform #submit .icon:last-child:not(:first-child) {
     margin-left: 0.1875em;
     margin-right: calc(-0.375em - 1px); }
-  .button .icon:first-child:last-child {
+  .button .icon:first-child:last-child, #commentform #submit .icon:first-child:last-child {
     margin-left: calc(-0.375em - 1px);
     margin-right: calc(-0.375em - 1px); }
-  .button:hover, .button.is-hovered {
+  .button:hover, #commentform #submit:hover, .button.is-hovered, #commentform .is-hovered#submit {
     border-color: #b5b5b5;
     color: #363636; }
-  .button:focus, .button.is-focused {
+  .button:focus, #commentform #submit:focus, .button.is-focused, #commentform .is-focused#submit {
     border-color: #3273dc;
     color: #363636; }
-    .button:focus:not(:active), .button.is-focused:not(:active) {
+    .button:focus:not(:active), #commentform #submit:focus:not(:active), .button.is-focused:not(:active), #commentform .is-focused#submit:not(:active) {
       box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
-  .button:active, .button.is-active {
+  .button:active, #commentform #submit:active, .button.is-active, #commentform .is-active#submit {
     border-color: #4a4a4a;
     color: #363636; }
-  .button.is-text {
+  .button.is-text, #commentform .is-text#submit {
     background-color: transparent;
     border-color: transparent;
     color: #4a4a4a;
     text-decoration: underline; }
-    .button.is-text:hover, .button.is-text.is-hovered, .button.is-text:focus, .button.is-text.is-focused {
+    .button.is-text:hover, #commentform .is-text#submit:hover, .button.is-text.is-hovered, #commentform .is-text.is-hovered#submit, .button.is-text:focus, #commentform .is-text#submit:focus, .button.is-text.is-focused, #commentform .is-text.is-focused#submit {
       background-color: whitesmoke;
       color: #363636; }
-    .button.is-text:active, .button.is-text.is-active {
+    .button.is-text:active, #commentform .is-text#submit:active, .button.is-text.is-active, #commentform .is-text.is-active#submit {
       background-color: #e8e8e8;
       color: #363636; }
-    .button.is-text[disabled] {
+    .button.is-text[disabled], #commentform .is-text#submit[disabled] {
       background-color: transparent;
       border-color: transparent;
       box-shadow: none; }
-  .button.is-white {
+  .button.is-white, #commentform .is-white#submit {
     background-color: white;
     border-color: transparent;
     color: #0a0a0a; }
-    .button.is-white:hover, .button.is-white.is-hovered {
+    .button.is-white:hover, #commentform .is-white#submit:hover, .button.is-white.is-hovered, #commentform .is-white.is-hovered#submit {
       background-color: #f9f9f9;
       border-color: transparent;
       color: #0a0a0a; }
-    .button.is-white:focus, .button.is-white.is-focused {
+    .button.is-white:focus, #commentform .is-white#submit:focus, .button.is-white.is-focused, #commentform .is-white.is-focused#submit {
       border-color: transparent;
       color: #0a0a0a; }
-      .button.is-white:focus:not(:active), .button.is-white.is-focused:not(:active) {
+      .button.is-white:focus:not(:active), #commentform .is-white#submit:focus:not(:active), .button.is-white.is-focused:not(:active), #commentform .is-white.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
-    .button.is-white:active, .button.is-white.is-active {
+    .button.is-white:active, #commentform .is-white#submit:active, .button.is-white.is-active, #commentform .is-white.is-active#submit {
       background-color: #f2f2f2;
       border-color: transparent;
       color: #0a0a0a; }
-    .button.is-white[disabled] {
+    .button.is-white[disabled], #commentform .is-white#submit[disabled] {
       background-color: white;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-white.is-inverted {
+    .button.is-white.is-inverted, #commentform .is-white.is-inverted#submit {
       background-color: #0a0a0a;
       color: white; }
-      .button.is-white.is-inverted:hover {
+      .button.is-white.is-inverted:hover, #commentform .is-white.is-inverted#submit:hover {
         background-color: black; }
-      .button.is-white.is-inverted[disabled] {
+      .button.is-white.is-inverted[disabled], #commentform .is-white.is-inverted#submit[disabled] {
         background-color: #0a0a0a;
         border-color: transparent;
         box-shadow: none;
         color: white; }
-    .button.is-white.is-loading::after {
+    .button.is-white.is-loading::after, #commentform .is-white.is-loading#submit::after {
       border-color: transparent transparent #0a0a0a #0a0a0a !important; }
-    .button.is-white.is-outlined {
+    .button.is-white.is-outlined, #commentform .is-white.is-outlined#submit {
       background-color: transparent;
       border-color: white;
       color: white; }
-      .button.is-white.is-outlined:hover, .button.is-white.is-outlined:focus {
+      .button.is-white.is-outlined:hover, #commentform .is-white.is-outlined#submit:hover, .button.is-white.is-outlined:focus, #commentform .is-white.is-outlined#submit:focus {
         background-color: white;
         border-color: white;
         color: #0a0a0a; }
-      .button.is-white.is-outlined.is-loading::after {
+      .button.is-white.is-outlined.is-loading::after, #commentform .is-white.is-outlined.is-loading#submit::after {
         border-color: transparent transparent white white !important; }
-      .button.is-white.is-outlined[disabled] {
+      .button.is-white.is-outlined[disabled], #commentform .is-white.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: white;
         box-shadow: none;
         color: white; }
-    .button.is-white.is-inverted.is-outlined {
+    .button.is-white.is-inverted.is-outlined, #commentform .is-white.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #0a0a0a;
       color: #0a0a0a; }
-      .button.is-white.is-inverted.is-outlined:hover, .button.is-white.is-inverted.is-outlined:focus {
+      .button.is-white.is-inverted.is-outlined:hover, #commentform .is-white.is-inverted.is-outlined#submit:hover, .button.is-white.is-inverted.is-outlined:focus, #commentform .is-white.is-inverted.is-outlined#submit:focus {
         background-color: #0a0a0a;
         color: white; }
-      .button.is-white.is-inverted.is-outlined[disabled] {
+      .button.is-white.is-inverted.is-outlined[disabled], #commentform .is-white.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #0a0a0a;
         box-shadow: none;
         color: #0a0a0a; }
-  .button.is-black {
+  .button.is-black, #commentform .is-black#submit {
     background-color: #0a0a0a;
     border-color: transparent;
     color: white; }
-    .button.is-black:hover, .button.is-black.is-hovered {
+    .button.is-black:hover, #commentform .is-black#submit:hover, .button.is-black.is-hovered, #commentform .is-black.is-hovered#submit {
       background-color: #040404;
       border-color: transparent;
       color: white; }
-    .button.is-black:focus, .button.is-black.is-focused {
+    .button.is-black:focus, #commentform .is-black#submit:focus, .button.is-black.is-focused, #commentform .is-black.is-focused#submit {
       border-color: transparent;
       color: white; }
-      .button.is-black:focus:not(:active), .button.is-black.is-focused:not(:active) {
+      .button.is-black:focus:not(:active), #commentform .is-black#submit:focus:not(:active), .button.is-black.is-focused:not(:active), #commentform .is-black.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
-    .button.is-black:active, .button.is-black.is-active {
+    .button.is-black:active, #commentform .is-black#submit:active, .button.is-black.is-active, #commentform .is-black.is-active#submit {
       background-color: black;
       border-color: transparent;
       color: white; }
-    .button.is-black[disabled] {
+    .button.is-black[disabled], #commentform .is-black#submit[disabled] {
       background-color: #0a0a0a;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-black.is-inverted {
+    .button.is-black.is-inverted, #commentform .is-black.is-inverted#submit {
       background-color: white;
       color: #0a0a0a; }
-      .button.is-black.is-inverted:hover {
+      .button.is-black.is-inverted:hover, #commentform .is-black.is-inverted#submit:hover {
         background-color: #f2f2f2; }
-      .button.is-black.is-inverted[disabled] {
+      .button.is-black.is-inverted[disabled], #commentform .is-black.is-inverted#submit[disabled] {
         background-color: white;
         border-color: transparent;
         box-shadow: none;
         color: #0a0a0a; }
-    .button.is-black.is-loading::after {
+    .button.is-black.is-loading::after, #commentform .is-black.is-loading#submit::after {
       border-color: transparent transparent white white !important; }
-    .button.is-black.is-outlined {
+    .button.is-black.is-outlined, #commentform .is-black.is-outlined#submit {
       background-color: transparent;
       border-color: #0a0a0a;
       color: #0a0a0a; }
-      .button.is-black.is-outlined:hover, .button.is-black.is-outlined:focus {
+      .button.is-black.is-outlined:hover, #commentform .is-black.is-outlined#submit:hover, .button.is-black.is-outlined:focus, #commentform .is-black.is-outlined#submit:focus {
         background-color: #0a0a0a;
         border-color: #0a0a0a;
         color: white; }
-      .button.is-black.is-outlined.is-loading::after {
+      .button.is-black.is-outlined.is-loading::after, #commentform .is-black.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #0a0a0a #0a0a0a !important; }
-      .button.is-black.is-outlined[disabled] {
+      .button.is-black.is-outlined[disabled], #commentform .is-black.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #0a0a0a;
         box-shadow: none;
         color: #0a0a0a; }
-    .button.is-black.is-inverted.is-outlined {
+    .button.is-black.is-inverted.is-outlined, #commentform .is-black.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: white;
       color: white; }
-      .button.is-black.is-inverted.is-outlined:hover, .button.is-black.is-inverted.is-outlined:focus {
+      .button.is-black.is-inverted.is-outlined:hover, #commentform .is-black.is-inverted.is-outlined#submit:hover, .button.is-black.is-inverted.is-outlined:focus, #commentform .is-black.is-inverted.is-outlined#submit:focus {
         background-color: white;
         color: #0a0a0a; }
-      .button.is-black.is-inverted.is-outlined[disabled] {
+      .button.is-black.is-inverted.is-outlined[disabled], #commentform .is-black.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: white;
         box-shadow: none;
         color: white; }
-  .button.is-light {
+  .button.is-light, #commentform .is-light#submit {
     background-color: whitesmoke;
     border-color: transparent;
     color: #363636; }
-    .button.is-light:hover, .button.is-light.is-hovered {
+    .button.is-light:hover, #commentform .is-light#submit:hover, .button.is-light.is-hovered, #commentform .is-light.is-hovered#submit {
       background-color: #eeeeee;
       border-color: transparent;
       color: #363636; }
-    .button.is-light:focus, .button.is-light.is-focused {
+    .button.is-light:focus, #commentform .is-light#submit:focus, .button.is-light.is-focused, #commentform .is-light.is-focused#submit {
       border-color: transparent;
       color: #363636; }
-      .button.is-light:focus:not(:active), .button.is-light.is-focused:not(:active) {
+      .button.is-light:focus:not(:active), #commentform .is-light#submit:focus:not(:active), .button.is-light.is-focused:not(:active), #commentform .is-light.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
-    .button.is-light:active, .button.is-light.is-active {
+    .button.is-light:active, #commentform .is-light#submit:active, .button.is-light.is-active, #commentform .is-light.is-active#submit {
       background-color: #e8e8e8;
       border-color: transparent;
       color: #363636; }
-    .button.is-light[disabled] {
+    .button.is-light[disabled], #commentform .is-light#submit[disabled] {
       background-color: whitesmoke;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-light.is-inverted {
+    .button.is-light.is-inverted, #commentform .is-light.is-inverted#submit {
       background-color: #363636;
       color: whitesmoke; }
-      .button.is-light.is-inverted:hover {
+      .button.is-light.is-inverted:hover, #commentform .is-light.is-inverted#submit:hover {
         background-color: #292929; }
-      .button.is-light.is-inverted[disabled] {
+      .button.is-light.is-inverted[disabled], #commentform .is-light.is-inverted#submit[disabled] {
         background-color: #363636;
         border-color: transparent;
         box-shadow: none;
         color: whitesmoke; }
-    .button.is-light.is-loading::after {
+    .button.is-light.is-loading::after, #commentform .is-light.is-loading#submit::after {
       border-color: transparent transparent #363636 #363636 !important; }
-    .button.is-light.is-outlined {
+    .button.is-light.is-outlined, #commentform .is-light.is-outlined#submit {
       background-color: transparent;
       border-color: whitesmoke;
       color: whitesmoke; }
-      .button.is-light.is-outlined:hover, .button.is-light.is-outlined:focus {
+      .button.is-light.is-outlined:hover, #commentform .is-light.is-outlined#submit:hover, .button.is-light.is-outlined:focus, #commentform .is-light.is-outlined#submit:focus {
         background-color: whitesmoke;
         border-color: whitesmoke;
         color: #363636; }
-      .button.is-light.is-outlined.is-loading::after {
+      .button.is-light.is-outlined.is-loading::after, #commentform .is-light.is-outlined.is-loading#submit::after {
         border-color: transparent transparent whitesmoke whitesmoke !important; }
-      .button.is-light.is-outlined[disabled] {
+      .button.is-light.is-outlined[disabled], #commentform .is-light.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: whitesmoke;
         box-shadow: none;
         color: whitesmoke; }
-    .button.is-light.is-inverted.is-outlined {
+    .button.is-light.is-inverted.is-outlined, #commentform .is-light.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #363636;
       color: #363636; }
-      .button.is-light.is-inverted.is-outlined:hover, .button.is-light.is-inverted.is-outlined:focus {
+      .button.is-light.is-inverted.is-outlined:hover, #commentform .is-light.is-inverted.is-outlined#submit:hover, .button.is-light.is-inverted.is-outlined:focus, #commentform .is-light.is-inverted.is-outlined#submit:focus {
         background-color: #363636;
         color: whitesmoke; }
-      .button.is-light.is-inverted.is-outlined[disabled] {
+      .button.is-light.is-inverted.is-outlined[disabled], #commentform .is-light.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #363636;
         box-shadow: none;
         color: #363636; }
-  .button.is-dark {
+  .button.is-dark, #commentform .is-dark#submit {
     background-color: #363636;
     border-color: transparent;
     color: whitesmoke; }
-    .button.is-dark:hover, .button.is-dark.is-hovered {
+    .button.is-dark:hover, #commentform .is-dark#submit:hover, .button.is-dark.is-hovered, #commentform .is-dark.is-hovered#submit {
       background-color: #2f2f2f;
       border-color: transparent;
       color: whitesmoke; }
-    .button.is-dark:focus, .button.is-dark.is-focused {
+    .button.is-dark:focus, #commentform .is-dark#submit:focus, .button.is-dark.is-focused, #commentform .is-dark.is-focused#submit {
       border-color: transparent;
       color: whitesmoke; }
-      .button.is-dark:focus:not(:active), .button.is-dark.is-focused:not(:active) {
+      .button.is-dark:focus:not(:active), #commentform .is-dark#submit:focus:not(:active), .button.is-dark.is-focused:not(:active), #commentform .is-dark.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
-    .button.is-dark:active, .button.is-dark.is-active {
+    .button.is-dark:active, #commentform .is-dark#submit:active, .button.is-dark.is-active, #commentform .is-dark.is-active#submit {
       background-color: #292929;
       border-color: transparent;
       color: whitesmoke; }
-    .button.is-dark[disabled] {
+    .button.is-dark[disabled], #commentform .is-dark#submit[disabled] {
       background-color: #363636;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-dark.is-inverted {
+    .button.is-dark.is-inverted, #commentform .is-dark.is-inverted#submit {
       background-color: whitesmoke;
       color: #363636; }
-      .button.is-dark.is-inverted:hover {
+      .button.is-dark.is-inverted:hover, #commentform .is-dark.is-inverted#submit:hover {
         background-color: #e8e8e8; }
-      .button.is-dark.is-inverted[disabled] {
+      .button.is-dark.is-inverted[disabled], #commentform .is-dark.is-inverted#submit[disabled] {
         background-color: whitesmoke;
         border-color: transparent;
         box-shadow: none;
         color: #363636; }
-    .button.is-dark.is-loading::after {
+    .button.is-dark.is-loading::after, #commentform .is-dark.is-loading#submit::after {
       border-color: transparent transparent whitesmoke whitesmoke !important; }
-    .button.is-dark.is-outlined {
+    .button.is-dark.is-outlined, #commentform .is-dark.is-outlined#submit {
       background-color: transparent;
       border-color: #363636;
       color: #363636; }
-      .button.is-dark.is-outlined:hover, .button.is-dark.is-outlined:focus {
+      .button.is-dark.is-outlined:hover, #commentform .is-dark.is-outlined#submit:hover, .button.is-dark.is-outlined:focus, #commentform .is-dark.is-outlined#submit:focus {
         background-color: #363636;
         border-color: #363636;
         color: whitesmoke; }
-      .button.is-dark.is-outlined.is-loading::after {
+      .button.is-dark.is-outlined.is-loading::after, #commentform .is-dark.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #363636 #363636 !important; }
-      .button.is-dark.is-outlined[disabled] {
+      .button.is-dark.is-outlined[disabled], #commentform .is-dark.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #363636;
         box-shadow: none;
         color: #363636; }
-    .button.is-dark.is-inverted.is-outlined {
+    .button.is-dark.is-inverted.is-outlined, #commentform .is-dark.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: whitesmoke;
       color: whitesmoke; }
-      .button.is-dark.is-inverted.is-outlined:hover, .button.is-dark.is-inverted.is-outlined:focus {
+      .button.is-dark.is-inverted.is-outlined:hover, #commentform .is-dark.is-inverted.is-outlined#submit:hover, .button.is-dark.is-inverted.is-outlined:focus, #commentform .is-dark.is-inverted.is-outlined#submit:focus {
         background-color: whitesmoke;
         color: #363636; }
-      .button.is-dark.is-inverted.is-outlined[disabled] {
+      .button.is-dark.is-inverted.is-outlined[disabled], #commentform .is-dark.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: whitesmoke;
         box-shadow: none;
         color: whitesmoke; }
-  .button.is-primary {
+  .button.is-primary, #commentform #submit {
     background-color: #00d1b2;
     border-color: transparent;
     color: #fff; }
-    .button.is-primary:hover, .button.is-primary.is-hovered {
+    .button.is-primary:hover, #commentform #submit:hover, .button.is-primary.is-hovered, #commentform .is-hovered#submit {
       background-color: #00c4a7;
       border-color: transparent;
       color: #fff; }
-    .button.is-primary:focus, .button.is-primary.is-focused {
+    .button.is-primary:focus, #commentform #submit:focus, .button.is-primary.is-focused, #commentform .is-focused#submit {
       border-color: transparent;
       color: #fff; }
-      .button.is-primary:focus:not(:active), .button.is-primary.is-focused:not(:active) {
+      .button.is-primary:focus:not(:active), #commentform #submit:focus:not(:active), .button.is-primary.is-focused:not(:active), #commentform .is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
-    .button.is-primary:active, .button.is-primary.is-active {
+    .button.is-primary:active, #commentform #submit:active, .button.is-primary.is-active, #commentform .is-active#submit {
       background-color: #00b89c;
       border-color: transparent;
       color: #fff; }
-    .button.is-primary[disabled] {
+    .button.is-primary[disabled], #commentform #submit[disabled] {
       background-color: #00d1b2;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-primary.is-inverted {
+    .button.is-primary.is-inverted, #commentform .is-inverted#submit {
       background-color: #fff;
       color: #00d1b2; }
-      .button.is-primary.is-inverted:hover {
+      .button.is-primary.is-inverted:hover, #commentform .is-inverted#submit:hover {
         background-color: #f2f2f2; }
-      .button.is-primary.is-inverted[disabled] {
+      .button.is-primary.is-inverted[disabled], #commentform .is-inverted#submit[disabled] {
         background-color: #fff;
         border-color: transparent;
         box-shadow: none;
         color: #00d1b2; }
-    .button.is-primary.is-loading::after {
+    .button.is-primary.is-loading::after, #commentform .is-loading#submit::after {
       border-color: transparent transparent #fff #fff !important; }
-    .button.is-primary.is-outlined {
+    .button.is-primary.is-outlined, #commentform .is-outlined#submit {
       background-color: transparent;
       border-color: #00d1b2;
       color: #00d1b2; }
-      .button.is-primary.is-outlined:hover, .button.is-primary.is-outlined:focus {
+      .button.is-primary.is-outlined:hover, #commentform .is-outlined#submit:hover, .button.is-primary.is-outlined:focus, #commentform .is-outlined#submit:focus {
         background-color: #00d1b2;
         border-color: #00d1b2;
         color: #fff; }
-      .button.is-primary.is-outlined.is-loading::after {
+      .button.is-primary.is-outlined.is-loading::after, #commentform .is-outlined.is-loading#submit::after {
         border-color: transparent transparent #00d1b2 #00d1b2 !important; }
-      .button.is-primary.is-outlined[disabled] {
+      .button.is-primary.is-outlined[disabled], #commentform .is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #00d1b2;
         box-shadow: none;
         color: #00d1b2; }
-    .button.is-primary.is-inverted.is-outlined {
+    .button.is-primary.is-inverted.is-outlined, #commentform .is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #fff;
       color: #fff; }
-      .button.is-primary.is-inverted.is-outlined:hover, .button.is-primary.is-inverted.is-outlined:focus {
+      .button.is-primary.is-inverted.is-outlined:hover, #commentform .is-inverted.is-outlined#submit:hover, .button.is-primary.is-inverted.is-outlined:focus, #commentform .is-inverted.is-outlined#submit:focus {
         background-color: #fff;
         color: #00d1b2; }
-      .button.is-primary.is-inverted.is-outlined[disabled] {
+      .button.is-primary.is-inverted.is-outlined[disabled], #commentform .is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #fff;
         box-shadow: none;
         color: #fff; }
-  .button.is-link {
+  .button.is-link, #commentform .is-link#submit {
     background-color: #3273dc;
     border-color: transparent;
     color: #fff; }
-    .button.is-link:hover, .button.is-link.is-hovered {
+    .button.is-link:hover, #commentform .is-link#submit:hover, .button.is-link.is-hovered, #commentform .is-link.is-hovered#submit {
       background-color: #276cda;
       border-color: transparent;
       color: #fff; }
-    .button.is-link:focus, .button.is-link.is-focused {
+    .button.is-link:focus, #commentform .is-link#submit:focus, .button.is-link.is-focused, #commentform .is-link.is-focused#submit {
       border-color: transparent;
       color: #fff; }
-      .button.is-link:focus:not(:active), .button.is-link.is-focused:not(:active) {
+      .button.is-link:focus:not(:active), #commentform .is-link#submit:focus:not(:active), .button.is-link.is-focused:not(:active), #commentform .is-link.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
-    .button.is-link:active, .button.is-link.is-active {
+    .button.is-link:active, #commentform .is-link#submit:active, .button.is-link.is-active, #commentform .is-link.is-active#submit {
       background-color: #2366d1;
       border-color: transparent;
       color: #fff; }
-    .button.is-link[disabled] {
+    .button.is-link[disabled], #commentform .is-link#submit[disabled] {
       background-color: #3273dc;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-link.is-inverted {
+    .button.is-link.is-inverted, #commentform .is-link.is-inverted#submit {
       background-color: #fff;
       color: #3273dc; }
-      .button.is-link.is-inverted:hover {
+      .button.is-link.is-inverted:hover, #commentform .is-link.is-inverted#submit:hover {
         background-color: #f2f2f2; }
-      .button.is-link.is-inverted[disabled] {
+      .button.is-link.is-inverted[disabled], #commentform .is-link.is-inverted#submit[disabled] {
         background-color: #fff;
         border-color: transparent;
         box-shadow: none;
         color: #3273dc; }
-    .button.is-link.is-loading::after {
+    .button.is-link.is-loading::after, #commentform .is-link.is-loading#submit::after {
       border-color: transparent transparent #fff #fff !important; }
-    .button.is-link.is-outlined {
+    .button.is-link.is-outlined, #commentform .is-link.is-outlined#submit {
       background-color: transparent;
       border-color: #3273dc;
       color: #3273dc; }
-      .button.is-link.is-outlined:hover, .button.is-link.is-outlined:focus {
+      .button.is-link.is-outlined:hover, #commentform .is-link.is-outlined#submit:hover, .button.is-link.is-outlined:focus, #commentform .is-link.is-outlined#submit:focus {
         background-color: #3273dc;
         border-color: #3273dc;
         color: #fff; }
-      .button.is-link.is-outlined.is-loading::after {
+      .button.is-link.is-outlined.is-loading::after, #commentform .is-link.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #3273dc #3273dc !important; }
-      .button.is-link.is-outlined[disabled] {
+      .button.is-link.is-outlined[disabled], #commentform .is-link.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #3273dc;
         box-shadow: none;
         color: #3273dc; }
-    .button.is-link.is-inverted.is-outlined {
+    .button.is-link.is-inverted.is-outlined, #commentform .is-link.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #fff;
       color: #fff; }
-      .button.is-link.is-inverted.is-outlined:hover, .button.is-link.is-inverted.is-outlined:focus {
+      .button.is-link.is-inverted.is-outlined:hover, #commentform .is-link.is-inverted.is-outlined#submit:hover, .button.is-link.is-inverted.is-outlined:focus, #commentform .is-link.is-inverted.is-outlined#submit:focus {
         background-color: #fff;
         color: #3273dc; }
-      .button.is-link.is-inverted.is-outlined[disabled] {
+      .button.is-link.is-inverted.is-outlined[disabled], #commentform .is-link.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #fff;
         box-shadow: none;
         color: #fff; }
-  .button.is-info {
+  .button.is-info, #commentform .is-info#submit {
     background-color: #209cee;
     border-color: transparent;
     color: #fff; }
-    .button.is-info:hover, .button.is-info.is-hovered {
+    .button.is-info:hover, #commentform .is-info#submit:hover, .button.is-info.is-hovered, #commentform .is-info.is-hovered#submit {
       background-color: #1496ed;
       border-color: transparent;
       color: #fff; }
-    .button.is-info:focus, .button.is-info.is-focused {
+    .button.is-info:focus, #commentform .is-info#submit:focus, .button.is-info.is-focused, #commentform .is-info.is-focused#submit {
       border-color: transparent;
       color: #fff; }
-      .button.is-info:focus:not(:active), .button.is-info.is-focused:not(:active) {
+      .button.is-info:focus:not(:active), #commentform .is-info#submit:focus:not(:active), .button.is-info.is-focused:not(:active), #commentform .is-info.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
-    .button.is-info:active, .button.is-info.is-active {
+    .button.is-info:active, #commentform .is-info#submit:active, .button.is-info.is-active, #commentform .is-info.is-active#submit {
       background-color: #118fe4;
       border-color: transparent;
       color: #fff; }
-    .button.is-info[disabled] {
+    .button.is-info[disabled], #commentform .is-info#submit[disabled] {
       background-color: #209cee;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-info.is-inverted {
+    .button.is-info.is-inverted, #commentform .is-info.is-inverted#submit {
       background-color: #fff;
       color: #209cee; }
-      .button.is-info.is-inverted:hover {
+      .button.is-info.is-inverted:hover, #commentform .is-info.is-inverted#submit:hover {
         background-color: #f2f2f2; }
-      .button.is-info.is-inverted[disabled] {
+      .button.is-info.is-inverted[disabled], #commentform .is-info.is-inverted#submit[disabled] {
         background-color: #fff;
         border-color: transparent;
         box-shadow: none;
         color: #209cee; }
-    .button.is-info.is-loading::after {
+    .button.is-info.is-loading::after, #commentform .is-info.is-loading#submit::after {
       border-color: transparent transparent #fff #fff !important; }
-    .button.is-info.is-outlined {
+    .button.is-info.is-outlined, #commentform .is-info.is-outlined#submit {
       background-color: transparent;
       border-color: #209cee;
       color: #209cee; }
-      .button.is-info.is-outlined:hover, .button.is-info.is-outlined:focus {
+      .button.is-info.is-outlined:hover, #commentform .is-info.is-outlined#submit:hover, .button.is-info.is-outlined:focus, #commentform .is-info.is-outlined#submit:focus {
         background-color: #209cee;
         border-color: #209cee;
         color: #fff; }
-      .button.is-info.is-outlined.is-loading::after {
+      .button.is-info.is-outlined.is-loading::after, #commentform .is-info.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #209cee #209cee !important; }
-      .button.is-info.is-outlined[disabled] {
+      .button.is-info.is-outlined[disabled], #commentform .is-info.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #209cee;
         box-shadow: none;
         color: #209cee; }
-    .button.is-info.is-inverted.is-outlined {
+    .button.is-info.is-inverted.is-outlined, #commentform .is-info.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #fff;
       color: #fff; }
-      .button.is-info.is-inverted.is-outlined:hover, .button.is-info.is-inverted.is-outlined:focus {
+      .button.is-info.is-inverted.is-outlined:hover, #commentform .is-info.is-inverted.is-outlined#submit:hover, .button.is-info.is-inverted.is-outlined:focus, #commentform .is-info.is-inverted.is-outlined#submit:focus {
         background-color: #fff;
         color: #209cee; }
-      .button.is-info.is-inverted.is-outlined[disabled] {
+      .button.is-info.is-inverted.is-outlined[disabled], #commentform .is-info.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #fff;
         box-shadow: none;
         color: #fff; }
-  .button.is-success {
+  .button.is-success, #commentform .is-success#submit {
     background-color: #23d160;
     border-color: transparent;
     color: #fff; }
-    .button.is-success:hover, .button.is-success.is-hovered {
+    .button.is-success:hover, #commentform .is-success#submit:hover, .button.is-success.is-hovered, #commentform .is-success.is-hovered#submit {
       background-color: #22c65b;
       border-color: transparent;
       color: #fff; }
-    .button.is-success:focus, .button.is-success.is-focused {
+    .button.is-success:focus, #commentform .is-success#submit:focus, .button.is-success.is-focused, #commentform .is-success.is-focused#submit {
       border-color: transparent;
       color: #fff; }
-      .button.is-success:focus:not(:active), .button.is-success.is-focused:not(:active) {
+      .button.is-success:focus:not(:active), #commentform .is-success#submit:focus:not(:active), .button.is-success.is-focused:not(:active), #commentform .is-success.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25); }
-    .button.is-success:active, .button.is-success.is-active {
+    .button.is-success:active, #commentform .is-success#submit:active, .button.is-success.is-active, #commentform .is-success.is-active#submit {
       background-color: #20bc56;
       border-color: transparent;
       color: #fff; }
-    .button.is-success[disabled] {
+    .button.is-success[disabled], #commentform .is-success#submit[disabled] {
       background-color: #23d160;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-success.is-inverted {
+    .button.is-success.is-inverted, #commentform .is-success.is-inverted#submit {
       background-color: #fff;
       color: #23d160; }
-      .button.is-success.is-inverted:hover {
+      .button.is-success.is-inverted:hover, #commentform .is-success.is-inverted#submit:hover {
         background-color: #f2f2f2; }
-      .button.is-success.is-inverted[disabled] {
+      .button.is-success.is-inverted[disabled], #commentform .is-success.is-inverted#submit[disabled] {
         background-color: #fff;
         border-color: transparent;
         box-shadow: none;
         color: #23d160; }
-    .button.is-success.is-loading::after {
+    .button.is-success.is-loading::after, #commentform .is-success.is-loading#submit::after {
       border-color: transparent transparent #fff #fff !important; }
-    .button.is-success.is-outlined {
+    .button.is-success.is-outlined, #commentform .is-success.is-outlined#submit {
       background-color: transparent;
       border-color: #23d160;
       color: #23d160; }
-      .button.is-success.is-outlined:hover, .button.is-success.is-outlined:focus {
+      .button.is-success.is-outlined:hover, #commentform .is-success.is-outlined#submit:hover, .button.is-success.is-outlined:focus, #commentform .is-success.is-outlined#submit:focus {
         background-color: #23d160;
         border-color: #23d160;
         color: #fff; }
-      .button.is-success.is-outlined.is-loading::after {
+      .button.is-success.is-outlined.is-loading::after, #commentform .is-success.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #23d160 #23d160 !important; }
-      .button.is-success.is-outlined[disabled] {
+      .button.is-success.is-outlined[disabled], #commentform .is-success.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #23d160;
         box-shadow: none;
         color: #23d160; }
-    .button.is-success.is-inverted.is-outlined {
+    .button.is-success.is-inverted.is-outlined, #commentform .is-success.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #fff;
       color: #fff; }
-      .button.is-success.is-inverted.is-outlined:hover, .button.is-success.is-inverted.is-outlined:focus {
+      .button.is-success.is-inverted.is-outlined:hover, #commentform .is-success.is-inverted.is-outlined#submit:hover, .button.is-success.is-inverted.is-outlined:focus, #commentform .is-success.is-inverted.is-outlined#submit:focus {
         background-color: #fff;
         color: #23d160; }
-      .button.is-success.is-inverted.is-outlined[disabled] {
+      .button.is-success.is-inverted.is-outlined[disabled], #commentform .is-success.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #fff;
         box-shadow: none;
         color: #fff; }
-  .button.is-warning {
+  .button.is-warning, #commentform .is-warning#submit {
     background-color: #ffdd57;
     border-color: transparent;
     color: rgba(0, 0, 0, 0.7); }
-    .button.is-warning:hover, .button.is-warning.is-hovered {
+    .button.is-warning:hover, #commentform .is-warning#submit:hover, .button.is-warning.is-hovered, #commentform .is-warning.is-hovered#submit {
       background-color: #ffdb4a;
       border-color: transparent;
       color: rgba(0, 0, 0, 0.7); }
-    .button.is-warning:focus, .button.is-warning.is-focused {
+    .button.is-warning:focus, #commentform .is-warning#submit:focus, .button.is-warning.is-focused, #commentform .is-warning.is-focused#submit {
       border-color: transparent;
       color: rgba(0, 0, 0, 0.7); }
-      .button.is-warning:focus:not(:active), .button.is-warning.is-focused:not(:active) {
+      .button.is-warning:focus:not(:active), #commentform .is-warning#submit:focus:not(:active), .button.is-warning.is-focused:not(:active), #commentform .is-warning.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25); }
-    .button.is-warning:active, .button.is-warning.is-active {
+    .button.is-warning:active, #commentform .is-warning#submit:active, .button.is-warning.is-active, #commentform .is-warning.is-active#submit {
       background-color: #ffd83d;
       border-color: transparent;
       color: rgba(0, 0, 0, 0.7); }
-    .button.is-warning[disabled] {
+    .button.is-warning[disabled], #commentform .is-warning#submit[disabled] {
       background-color: #ffdd57;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-warning.is-inverted {
+    .button.is-warning.is-inverted, #commentform .is-warning.is-inverted#submit {
       background-color: rgba(0, 0, 0, 0.7);
       color: #ffdd57; }
-      .button.is-warning.is-inverted:hover {
+      .button.is-warning.is-inverted:hover, #commentform .is-warning.is-inverted#submit:hover {
         background-color: rgba(0, 0, 0, 0.7); }
-      .button.is-warning.is-inverted[disabled] {
+      .button.is-warning.is-inverted[disabled], #commentform .is-warning.is-inverted#submit[disabled] {
         background-color: rgba(0, 0, 0, 0.7);
         border-color: transparent;
         box-shadow: none;
         color: #ffdd57; }
-    .button.is-warning.is-loading::after {
+    .button.is-warning.is-loading::after, #commentform .is-warning.is-loading#submit::after {
       border-color: transparent transparent rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) !important; }
-    .button.is-warning.is-outlined {
+    .button.is-warning.is-outlined, #commentform .is-warning.is-outlined#submit {
       background-color: transparent;
       border-color: #ffdd57;
       color: #ffdd57; }
-      .button.is-warning.is-outlined:hover, .button.is-warning.is-outlined:focus {
+      .button.is-warning.is-outlined:hover, #commentform .is-warning.is-outlined#submit:hover, .button.is-warning.is-outlined:focus, #commentform .is-warning.is-outlined#submit:focus {
         background-color: #ffdd57;
         border-color: #ffdd57;
         color: rgba(0, 0, 0, 0.7); }
-      .button.is-warning.is-outlined.is-loading::after {
+      .button.is-warning.is-outlined.is-loading::after, #commentform .is-warning.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #ffdd57 #ffdd57 !important; }
-      .button.is-warning.is-outlined[disabled] {
+      .button.is-warning.is-outlined[disabled], #commentform .is-warning.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #ffdd57;
         box-shadow: none;
         color: #ffdd57; }
-    .button.is-warning.is-inverted.is-outlined {
+    .button.is-warning.is-inverted.is-outlined, #commentform .is-warning.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: rgba(0, 0, 0, 0.7);
       color: rgba(0, 0, 0, 0.7); }
-      .button.is-warning.is-inverted.is-outlined:hover, .button.is-warning.is-inverted.is-outlined:focus {
+      .button.is-warning.is-inverted.is-outlined:hover, #commentform .is-warning.is-inverted.is-outlined#submit:hover, .button.is-warning.is-inverted.is-outlined:focus, #commentform .is-warning.is-inverted.is-outlined#submit:focus {
         background-color: rgba(0, 0, 0, 0.7);
         color: #ffdd57; }
-      .button.is-warning.is-inverted.is-outlined[disabled] {
+      .button.is-warning.is-inverted.is-outlined[disabled], #commentform .is-warning.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: rgba(0, 0, 0, 0.7);
         box-shadow: none;
         color: rgba(0, 0, 0, 0.7); }
-  .button.is-danger {
+  .button.is-danger, #commentform .is-danger#submit {
     background-color: #ff3860;
     border-color: transparent;
     color: #fff; }
-    .button.is-danger:hover, .button.is-danger.is-hovered {
+    .button.is-danger:hover, #commentform .is-danger#submit:hover, .button.is-danger.is-hovered, #commentform .is-danger.is-hovered#submit {
       background-color: #ff2b56;
       border-color: transparent;
       color: #fff; }
-    .button.is-danger:focus, .button.is-danger.is-focused {
+    .button.is-danger:focus, #commentform .is-danger#submit:focus, .button.is-danger.is-focused, #commentform .is-danger.is-focused#submit {
       border-color: transparent;
       color: #fff; }
-      .button.is-danger:focus:not(:active), .button.is-danger.is-focused:not(:active) {
+      .button.is-danger:focus:not(:active), #commentform .is-danger#submit:focus:not(:active), .button.is-danger.is-focused:not(:active), #commentform .is-danger.is-focused#submit:not(:active) {
         box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25); }
-    .button.is-danger:active, .button.is-danger.is-active {
+    .button.is-danger:active, #commentform .is-danger#submit:active, .button.is-danger.is-active, #commentform .is-danger.is-active#submit {
       background-color: #ff1f4b;
       border-color: transparent;
       color: #fff; }
-    .button.is-danger[disabled] {
+    .button.is-danger[disabled], #commentform .is-danger#submit[disabled] {
       background-color: #ff3860;
       border-color: transparent;
       box-shadow: none; }
-    .button.is-danger.is-inverted {
+    .button.is-danger.is-inverted, #commentform .is-danger.is-inverted#submit {
       background-color: #fff;
       color: #ff3860; }
-      .button.is-danger.is-inverted:hover {
+      .button.is-danger.is-inverted:hover, #commentform .is-danger.is-inverted#submit:hover {
         background-color: #f2f2f2; }
-      .button.is-danger.is-inverted[disabled] {
+      .button.is-danger.is-inverted[disabled], #commentform .is-danger.is-inverted#submit[disabled] {
         background-color: #fff;
         border-color: transparent;
         box-shadow: none;
         color: #ff3860; }
-    .button.is-danger.is-loading::after {
+    .button.is-danger.is-loading::after, #commentform .is-danger.is-loading#submit::after {
       border-color: transparent transparent #fff #fff !important; }
-    .button.is-danger.is-outlined {
+    .button.is-danger.is-outlined, #commentform .is-danger.is-outlined#submit {
       background-color: transparent;
       border-color: #ff3860;
       color: #ff3860; }
-      .button.is-danger.is-outlined:hover, .button.is-danger.is-outlined:focus {
+      .button.is-danger.is-outlined:hover, #commentform .is-danger.is-outlined#submit:hover, .button.is-danger.is-outlined:focus, #commentform .is-danger.is-outlined#submit:focus {
         background-color: #ff3860;
         border-color: #ff3860;
         color: #fff; }
-      .button.is-danger.is-outlined.is-loading::after {
+      .button.is-danger.is-outlined.is-loading::after, #commentform .is-danger.is-outlined.is-loading#submit::after {
         border-color: transparent transparent #ff3860 #ff3860 !important; }
-      .button.is-danger.is-outlined[disabled] {
+      .button.is-danger.is-outlined[disabled], #commentform .is-danger.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #ff3860;
         box-shadow: none;
         color: #ff3860; }
-    .button.is-danger.is-inverted.is-outlined {
+    .button.is-danger.is-inverted.is-outlined, #commentform .is-danger.is-inverted.is-outlined#submit {
       background-color: transparent;
       border-color: #fff;
       color: #fff; }
-      .button.is-danger.is-inverted.is-outlined:hover, .button.is-danger.is-inverted.is-outlined:focus {
+      .button.is-danger.is-inverted.is-outlined:hover, #commentform .is-danger.is-inverted.is-outlined#submit:hover, .button.is-danger.is-inverted.is-outlined:focus, #commentform .is-danger.is-inverted.is-outlined#submit:focus {
         background-color: #fff;
         color: #ff3860; }
-      .button.is-danger.is-inverted.is-outlined[disabled] {
+      .button.is-danger.is-inverted.is-outlined[disabled], #commentform .is-danger.is-inverted.is-outlined#submit[disabled] {
         background-color: transparent;
         border-color: #fff;
         box-shadow: none;
         color: #fff; }
-  .button.is-small {
+  .button.is-small, #commentform .is-small#submit {
     border-radius: 2px;
     font-size: 0.75rem; }
-  .button.is-medium {
+  .button.is-medium, #commentform .is-medium#submit {
     font-size: 1.25rem; }
-  .button.is-large {
+  .button.is-large, #commentform textarea.button, #commentform textarea#submit, #commentform .is-large#submit {
     font-size: 1.5rem; }
-  .button[disabled] {
+  .button[disabled], #commentform #submit[disabled] {
     background-color: white;
     border-color: #dbdbdb;
     box-shadow: none;
     opacity: 0.5; }
-  .button.is-fullwidth {
+  .button.is-fullwidth, #commentform .is-fullwidth#submit {
     display: flex;
     width: 100%; }
-  .button.is-loading {
+  .button.is-loading, #commentform .is-loading#submit {
     color: transparent !important;
     pointer-events: none; }
-    .button.is-loading::after {
+    .button.is-loading::after, #commentform .is-loading#submit::after {
       position: absolute;
       left: calc(50% - (1em / 2));
       top: calc(50% - (1em / 2));
       position: absolute !important; }
-  .button.is-static {
+  .button.is-static, #commentform .is-static#submit {
     background-color: whitesmoke;
     border-color: #dbdbdb;
     color: #7a7a7a;
     box-shadow: none;
     pointer-events: none; }
-  .button.is-rounded {
+  .button.is-rounded, #commentform .is-rounded#submit {
     border-radius: 290486px;
     padding-left: 1em;
     padding-right: 1em; }
@@ -1849,30 +1849,30 @@ a.box:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; }
-  .buttons .button {
+  .buttons .button, .buttons #commentform #submit, #commentform .buttons #submit {
     margin-bottom: 0.5rem; }
-    .buttons .button:not(:last-child) {
+    .buttons .button:not(:last-child), .buttons #commentform #submit:not(:last-child), #commentform .buttons #submit:not(:last-child) {
       margin-right: 0.5rem; }
   .buttons:last-child {
     margin-bottom: -0.5rem; }
   .buttons:not(:last-child) {
     margin-bottom: 1rem; }
-  .buttons.has-addons .button:not(:first-child) {
+  .buttons.has-addons .button:not(:first-child), .buttons.has-addons #commentform #submit:not(:first-child), #commentform .buttons.has-addons #submit:not(:first-child) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
-  .buttons.has-addons .button:not(:last-child) {
+  .buttons.has-addons .button:not(:last-child), .buttons.has-addons #commentform #submit:not(:last-child), #commentform .buttons.has-addons #submit:not(:last-child) {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
     margin-right: -1px; }
-  .buttons.has-addons .button:last-child {
+  .buttons.has-addons .button:last-child, .buttons.has-addons #commentform #submit:last-child, #commentform .buttons.has-addons #submit:last-child {
     margin-right: 0; }
-  .buttons.has-addons .button:hover, .buttons.has-addons .button.is-hovered {
+  .buttons.has-addons .button:hover, .buttons.has-addons #commentform #submit:hover, #commentform .buttons.has-addons #submit:hover, .buttons.has-addons .button.is-hovered, .buttons.has-addons #commentform .is-hovered#submit, #commentform .buttons.has-addons .is-hovered#submit {
     z-index: 2; }
-  .buttons.has-addons .button:focus, .buttons.has-addons .button.is-focused, .buttons.has-addons .button:active, .buttons.has-addons .button.is-active, .buttons.has-addons .button.is-selected {
+  .buttons.has-addons .button:focus, .buttons.has-addons #commentform #submit:focus, #commentform .buttons.has-addons #submit:focus, .buttons.has-addons .button.is-focused, .buttons.has-addons #commentform .is-focused#submit, #commentform .buttons.has-addons .is-focused#submit, .buttons.has-addons .button:active, .buttons.has-addons #commentform #submit:active, #commentform .buttons.has-addons #submit:active, .buttons.has-addons .button.is-active, .buttons.has-addons #commentform .is-active#submit, #commentform .buttons.has-addons .is-active#submit, .buttons.has-addons .button.is-selected, .buttons.has-addons #commentform .is-selected#submit, #commentform .buttons.has-addons .is-selected#submit {
     z-index: 3; }
-    .buttons.has-addons .button:focus:hover, .buttons.has-addons .button.is-focused:hover, .buttons.has-addons .button:active:hover, .buttons.has-addons .button.is-active:hover, .buttons.has-addons .button.is-selected:hover {
+    .buttons.has-addons .button:focus:hover, .buttons.has-addons #commentform #submit:focus:hover, #commentform .buttons.has-addons #submit:focus:hover, .buttons.has-addons .button.is-focused:hover, .buttons.has-addons #commentform .is-focused#submit:hover, #commentform .buttons.has-addons .is-focused#submit:hover, .buttons.has-addons .button:active:hover, .buttons.has-addons #commentform #submit:active:hover, #commentform .buttons.has-addons #submit:active:hover, .buttons.has-addons .button.is-active:hover, .buttons.has-addons #commentform .is-active#submit:hover, #commentform .buttons.has-addons .is-active#submit:hover, .buttons.has-addons .button.is-selected:hover, .buttons.has-addons #commentform .is-selected#submit:hover, #commentform .buttons.has-addons .is-selected#submit:hover {
       z-index: 4; }
-  .buttons.has-addons .button.is-expanded {
+  .buttons.has-addons .button.is-expanded, .buttons.has-addons #commentform .is-expanded#submit, #commentform .buttons.has-addons .is-expanded#submit {
     flex-grow: 1; }
   .buttons.is-centered {
     justify-content: center; }
@@ -2036,11 +2036,12 @@ a.box:active {
 .content.is-medium {
   font-size: 1.25rem; }
 
-.content.is-large {
+.content.is-large, #commentform textarea.content {
   font-size: 1.5rem; }
 
 .input,
-.textarea {
+.textarea,
+#commentform textarea {
   background-color: white;
   border-color: #dbdbdb;
   color: #363636;
@@ -2048,155 +2049,236 @@ a.box:active {
   max-width: 100%;
   width: 100%; }
   .input::-moz-placeholder,
-  .textarea::-moz-placeholder {
+  .textarea::-moz-placeholder,
+  #commentform textarea::-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
   .input::-webkit-input-placeholder,
-  .textarea::-webkit-input-placeholder {
+  .textarea::-webkit-input-placeholder,
+  #commentform textarea::-webkit-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
   .input:-moz-placeholder,
-  .textarea:-moz-placeholder {
+  .textarea:-moz-placeholder,
+  #commentform textarea:-moz-placeholder {
     color: rgba(54, 54, 54, 0.3); }
   .input:-ms-input-placeholder,
-  .textarea:-ms-input-placeholder {
+  .textarea:-ms-input-placeholder,
+  #commentform textarea:-ms-input-placeholder {
     color: rgba(54, 54, 54, 0.3); }
   .input:hover, .input.is-hovered,
   .textarea:hover,
-  .textarea.is-hovered {
+  #commentform textarea:hover,
+  .textarea.is-hovered,
+  #commentform textarea.is-hovered {
     border-color: #b5b5b5; }
   .input:focus, .input.is-focused, .input:active, .input.is-active,
   .textarea:focus,
+  #commentform textarea:focus,
   .textarea.is-focused,
+  #commentform textarea.is-focused,
   .textarea:active,
-  .textarea.is-active {
+  #commentform textarea:active,
+  .textarea.is-active,
+  #commentform textarea.is-active {
     border-color: #3273dc;
     box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
   .input[disabled],
-  .textarea[disabled] {
+  .textarea[disabled],
+  #commentform textarea[disabled] {
     background-color: whitesmoke;
     border-color: whitesmoke;
     box-shadow: none;
     color: #7a7a7a; }
     .input[disabled]::-moz-placeholder,
-    .textarea[disabled]::-moz-placeholder {
+    .textarea[disabled]::-moz-placeholder,
+    #commentform textarea[disabled]::-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
     .input[disabled]::-webkit-input-placeholder,
-    .textarea[disabled]::-webkit-input-placeholder {
+    .textarea[disabled]::-webkit-input-placeholder,
+    #commentform textarea[disabled]::-webkit-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
     .input[disabled]:-moz-placeholder,
-    .textarea[disabled]:-moz-placeholder {
+    .textarea[disabled]:-moz-placeholder,
+    #commentform textarea[disabled]:-moz-placeholder {
       color: rgba(122, 122, 122, 0.3); }
     .input[disabled]:-ms-input-placeholder,
-    .textarea[disabled]:-ms-input-placeholder {
+    .textarea[disabled]:-ms-input-placeholder,
+    #commentform textarea[disabled]:-ms-input-placeholder {
       color: rgba(122, 122, 122, 0.3); }
   .input[readonly],
-  .textarea[readonly] {
+  .textarea[readonly],
+  #commentform textarea[readonly] {
     box-shadow: none; }
   .input.is-white,
-  .textarea.is-white {
+  .textarea.is-white,
+  #commentform textarea.is-white {
     border-color: white; }
     .input.is-white:focus, .input.is-white.is-focused, .input.is-white:active, .input.is-white.is-active,
     .textarea.is-white:focus,
+    #commentform textarea.is-white:focus,
     .textarea.is-white.is-focused,
+    #commentform textarea.is-white.is-focused,
     .textarea.is-white:active,
-    .textarea.is-white.is-active {
+    #commentform textarea.is-white:active,
+    .textarea.is-white.is-active,
+    #commentform textarea.is-white.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 255, 255, 0.25); }
   .input.is-black,
-  .textarea.is-black {
+  .textarea.is-black,
+  #commentform textarea.is-black {
     border-color: #0a0a0a; }
     .input.is-black:focus, .input.is-black.is-focused, .input.is-black:active, .input.is-black.is-active,
     .textarea.is-black:focus,
+    #commentform textarea.is-black:focus,
     .textarea.is-black.is-focused,
+    #commentform textarea.is-black.is-focused,
     .textarea.is-black:active,
-    .textarea.is-black.is-active {
+    #commentform textarea.is-black:active,
+    .textarea.is-black.is-active,
+    #commentform textarea.is-black.is-active {
       box-shadow: 0 0 0 0.125em rgba(10, 10, 10, 0.25); }
   .input.is-light,
-  .textarea.is-light {
+  .textarea.is-light,
+  #commentform textarea.is-light {
     border-color: whitesmoke; }
     .input.is-light:focus, .input.is-light.is-focused, .input.is-light:active, .input.is-light.is-active,
     .textarea.is-light:focus,
+    #commentform textarea.is-light:focus,
     .textarea.is-light.is-focused,
+    #commentform textarea.is-light.is-focused,
     .textarea.is-light:active,
-    .textarea.is-light.is-active {
+    #commentform textarea.is-light:active,
+    .textarea.is-light.is-active,
+    #commentform textarea.is-light.is-active {
       box-shadow: 0 0 0 0.125em rgba(245, 245, 245, 0.25); }
   .input.is-dark,
-  .textarea.is-dark {
+  .textarea.is-dark,
+  #commentform textarea.is-dark {
     border-color: #363636; }
     .input.is-dark:focus, .input.is-dark.is-focused, .input.is-dark:active, .input.is-dark.is-active,
     .textarea.is-dark:focus,
+    #commentform textarea.is-dark:focus,
     .textarea.is-dark.is-focused,
+    #commentform textarea.is-dark.is-focused,
     .textarea.is-dark:active,
-    .textarea.is-dark.is-active {
+    #commentform textarea.is-dark:active,
+    .textarea.is-dark.is-active,
+    #commentform textarea.is-dark.is-active {
       box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
-  .input.is-primary,
-  .textarea.is-primary {
+  .input.is-primary, #commentform .input#submit,
+  .textarea.is-primary,
+  #commentform textarea.is-primary,
+  #commentform textarea#submit,
+  #commentform .textarea#submit {
     border-color: #00d1b2; }
-    .input.is-primary:focus, .input.is-primary.is-focused, .input.is-primary:active, .input.is-primary.is-active,
+    .input.is-primary:focus, #commentform .input#submit:focus, .input.is-primary.is-focused, #commentform .input.is-focused#submit, .input.is-primary:active, #commentform .input#submit:active, .input.is-primary.is-active, #commentform .input.is-active#submit,
     .textarea.is-primary:focus,
+    #commentform textarea.is-primary:focus,
+    #commentform textarea#submit:focus,
+    #commentform .textarea#submit:focus,
     .textarea.is-primary.is-focused,
+    #commentform textarea.is-primary.is-focused,
+    #commentform textarea.is-focused#submit,
+    #commentform .textarea.is-focused#submit,
     .textarea.is-primary:active,
-    .textarea.is-primary.is-active {
+    #commentform textarea.is-primary:active,
+    #commentform textarea#submit:active,
+    #commentform .textarea#submit:active,
+    .textarea.is-primary.is-active,
+    #commentform textarea.is-primary.is-active,
+    #commentform textarea.is-active#submit,
+    #commentform .textarea.is-active#submit {
       box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
   .input.is-link,
-  .textarea.is-link {
+  .textarea.is-link,
+  #commentform textarea.is-link {
     border-color: #3273dc; }
     .input.is-link:focus, .input.is-link.is-focused, .input.is-link:active, .input.is-link.is-active,
     .textarea.is-link:focus,
+    #commentform textarea.is-link:focus,
     .textarea.is-link.is-focused,
+    #commentform textarea.is-link.is-focused,
     .textarea.is-link:active,
-    .textarea.is-link.is-active {
+    #commentform textarea.is-link:active,
+    .textarea.is-link.is-active,
+    #commentform textarea.is-link.is-active {
       box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25); }
   .input.is-info,
-  .textarea.is-info {
+  .textarea.is-info,
+  #commentform textarea.is-info {
     border-color: #209cee; }
     .input.is-info:focus, .input.is-info.is-focused, .input.is-info:active, .input.is-info.is-active,
     .textarea.is-info:focus,
+    #commentform textarea.is-info:focus,
     .textarea.is-info.is-focused,
+    #commentform textarea.is-info.is-focused,
     .textarea.is-info:active,
-    .textarea.is-info.is-active {
+    #commentform textarea.is-info:active,
+    .textarea.is-info.is-active,
+    #commentform textarea.is-info.is-active {
       box-shadow: 0 0 0 0.125em rgba(32, 156, 238, 0.25); }
   .input.is-success,
-  .textarea.is-success {
+  .textarea.is-success,
+  #commentform textarea.is-success {
     border-color: #23d160; }
     .input.is-success:focus, .input.is-success.is-focused, .input.is-success:active, .input.is-success.is-active,
     .textarea.is-success:focus,
+    #commentform textarea.is-success:focus,
     .textarea.is-success.is-focused,
+    #commentform textarea.is-success.is-focused,
     .textarea.is-success:active,
-    .textarea.is-success.is-active {
+    #commentform textarea.is-success:active,
+    .textarea.is-success.is-active,
+    #commentform textarea.is-success.is-active {
       box-shadow: 0 0 0 0.125em rgba(35, 209, 96, 0.25); }
   .input.is-warning,
-  .textarea.is-warning {
+  .textarea.is-warning,
+  #commentform textarea.is-warning {
     border-color: #ffdd57; }
     .input.is-warning:focus, .input.is-warning.is-focused, .input.is-warning:active, .input.is-warning.is-active,
     .textarea.is-warning:focus,
+    #commentform textarea.is-warning:focus,
     .textarea.is-warning.is-focused,
+    #commentform textarea.is-warning.is-focused,
     .textarea.is-warning:active,
-    .textarea.is-warning.is-active {
+    #commentform textarea.is-warning:active,
+    .textarea.is-warning.is-active,
+    #commentform textarea.is-warning.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 221, 87, 0.25); }
   .input.is-danger,
-  .textarea.is-danger {
+  .textarea.is-danger,
+  #commentform textarea.is-danger {
     border-color: #ff3860; }
     .input.is-danger:focus, .input.is-danger.is-focused, .input.is-danger:active, .input.is-danger.is-active,
     .textarea.is-danger:focus,
+    #commentform textarea.is-danger:focus,
     .textarea.is-danger.is-focused,
+    #commentform textarea.is-danger.is-focused,
     .textarea.is-danger:active,
-    .textarea.is-danger.is-active {
+    #commentform textarea.is-danger:active,
+    .textarea.is-danger.is-active,
+    #commentform textarea.is-danger.is-active {
       box-shadow: 0 0 0 0.125em rgba(255, 56, 96, 0.25); }
   .input.is-small,
-  .textarea.is-small {
+  .textarea.is-small,
+  #commentform textarea.is-small {
     border-radius: 2px;
     font-size: 0.75rem; }
   .input.is-medium,
-  .textarea.is-medium {
+  .textarea.is-medium,
+  #commentform textarea.is-medium {
     font-size: 1.25rem; }
-  .input.is-large,
-  .textarea.is-large {
+  .input.is-large, #commentform textarea.input,
+  .textarea.is-large,
+  #commentform textarea {
     font-size: 1.5rem; }
   .input.is-fullwidth,
-  .textarea.is-fullwidth {
+  .textarea.is-fullwidth,
+  #commentform textarea.is-fullwidth {
     display: block;
     width: 100%; }
   .input.is-inline,
-  .textarea.is-inline {
+  .textarea.is-inline,
+  #commentform textarea.is-inline {
     display: inline;
     width: auto; }
 
@@ -2212,18 +2294,20 @@ a.box:active {
   padding-left: 0;
   padding-right: 0; }
 
-.textarea {
+
+.textarea,
+#commentform textarea {
   display: block;
   max-width: 100%;
   min-width: 100%;
   padding: 0.625em;
   resize: vertical; }
-  .textarea:not([rows]) {
+  .textarea:not([rows]), #commentform textarea:not([rows]) {
     max-height: 600px;
     min-height: 120px; }
-  .textarea[rows] {
+  .textarea[rows], #commentform textarea[rows] {
     height: initial; }
-  .textarea.has-fixed-size {
+  .textarea.has-fixed-size, #commentform textarea.has-fixed-size {
     resize: none; }
 
 .checkbox,
@@ -2340,13 +2424,13 @@ a.box:active {
       border-color: #292929; }
     .select.is-dark select:focus, .select.is-dark select.is-focused, .select.is-dark select:active, .select.is-dark select.is-active {
       box-shadow: 0 0 0 0.125em rgba(54, 54, 54, 0.25); }
-  .select.is-primary:not(:hover)::after {
+  .select.is-primary:not(:hover)::after, #commentform .select#submit:not(:hover)::after {
     border-color: #00d1b2; }
-  .select.is-primary select {
+  .select.is-primary select, #commentform .select#submit select {
     border-color: #00d1b2; }
-    .select.is-primary select:hover, .select.is-primary select.is-hovered {
+    .select.is-primary select:hover, #commentform .select#submit select:hover, .select.is-primary select.is-hovered, #commentform .select#submit select.is-hovered {
       border-color: #00b89c; }
-    .select.is-primary select:focus, .select.is-primary select.is-focused, .select.is-primary select:active, .select.is-primary select.is-active {
+    .select.is-primary select:focus, #commentform .select#submit select:focus, .select.is-primary select.is-focused, #commentform .select#submit select.is-focused, .select.is-primary select:active, #commentform .select#submit select:active, .select.is-primary select.is-active, #commentform .select#submit select.is-active {
       box-shadow: 0 0 0 0.125em rgba(0, 209, 178, 0.25); }
   .select.is-link:not(:hover)::after {
     border-color: #3273dc; }
@@ -2393,7 +2477,7 @@ a.box:active {
     font-size: 0.75rem; }
   .select.is-medium {
     font-size: 1.25rem; }
-  .select.is-large {
+  .select.is-large, #commentform textarea.select {
     font-size: 1.5rem; }
   .select.is-disabled::after {
     border-color: #7a7a7a; }
@@ -2411,7 +2495,7 @@ a.box:active {
     font-size: 0.75rem; }
   .select.is-loading.is-medium:after {
     font-size: 1.25rem; }
-  .select.is-loading.is-large:after {
+  .select.is-loading.is-large:after, #commentform textarea.select.is-loading:after {
     font-size: 1.5rem; }
 
 .file {
@@ -2483,19 +2567,19 @@ a.box:active {
     background-color: #292929;
     border-color: transparent;
     color: whitesmoke; }
-  .file.is-primary .file-cta {
+  .file.is-primary .file-cta, #commentform .file#submit .file-cta {
     background-color: #00d1b2;
     border-color: transparent;
     color: #fff; }
-  .file.is-primary:hover .file-cta, .file.is-primary.is-hovered .file-cta {
+  .file.is-primary:hover .file-cta, #commentform .file#submit:hover .file-cta, .file.is-primary.is-hovered .file-cta, #commentform .file.is-hovered#submit .file-cta {
     background-color: #00c4a7;
     border-color: transparent;
     color: #fff; }
-  .file.is-primary:focus .file-cta, .file.is-primary.is-focused .file-cta {
+  .file.is-primary:focus .file-cta, #commentform .file#submit:focus .file-cta, .file.is-primary.is-focused .file-cta, #commentform .file.is-focused#submit .file-cta {
     border-color: transparent;
     box-shadow: 0 0 0.5em rgba(0, 209, 178, 0.25);
     color: #fff; }
-  .file.is-primary:active .file-cta, .file.is-primary.is-active .file-cta {
+  .file.is-primary:active .file-cta, #commentform .file#submit:active .file-cta, .file.is-primary.is-active .file-cta, #commentform .file.is-active#submit .file-cta {
     background-color: #00b89c;
     border-color: transparent;
     color: #fff; }
@@ -2585,9 +2669,9 @@ a.box:active {
     font-size: 1.25rem; }
     .file.is-medium .file-icon .fa {
       font-size: 21px; }
-  .file.is-large {
+  .file.is-large, #commentform textarea.file {
     font-size: 1.5rem; }
-    .file.is-large .file-icon .fa {
+    .file.is-large .file-icon .fa, #commentform textarea.file .file-icon .fa {
       font-size: 28px; }
   .file.has-name .file-cta {
     border-bottom-right-radius: 0;
@@ -2616,7 +2700,7 @@ a.box:active {
     font-size: 14px; }
   .file.is-boxed.is-medium .file-icon .fa {
     font-size: 28px; }
-  .file.is-boxed.is-large .file-icon .fa {
+  .file.is-boxed.is-large .file-icon .fa, #commentform textarea.file.is-boxed .file-icon .fa {
     font-size: 35px; }
   .file.is-boxed.has-name .file-cta {
     border-radius: 4px 4px 0 0; }
@@ -2709,7 +2793,7 @@ a.box:active {
     font-size: 0.75rem; }
   .label.is-medium {
     font-size: 1.25rem; }
-  .label.is-large {
+  .label.is-large, #commentform textarea.label {
     font-size: 1.5rem; }
 
 .help {
@@ -2724,7 +2808,7 @@ a.box:active {
     color: whitesmoke; }
   .help.is-dark {
     color: #363636; }
-  .help.is-primary {
+  .help.is-primary, #commentform .help#submit {
     color: #00d1b2; }
   .help.is-link {
     color: #3273dc; }
@@ -2745,27 +2829,27 @@ a.box:active {
   justify-content: flex-start; }
   .field.has-addons .control:not(:last-child) {
     margin-right: -1px; }
-  .field.has-addons .control:not(:first-child):not(:last-child) .button,
+  .field.has-addons .control:not(:first-child):not(:last-child) .button, .field.has-addons .control:not(:first-child):not(:last-child) #commentform #submit, #commentform .field.has-addons .control:not(:first-child):not(:last-child) #submit,
   .field.has-addons .control:not(:first-child):not(:last-child) .input,
   .field.has-addons .control:not(:first-child):not(:last-child) .select select {
     border-radius: 0; }
-  .field.has-addons .control:first-child .button,
+  .field.has-addons .control:first-child .button, .field.has-addons .control:first-child #commentform #submit, #commentform .field.has-addons .control:first-child #submit,
   .field.has-addons .control:first-child .input,
   .field.has-addons .control:first-child .select select {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0; }
-  .field.has-addons .control:last-child .button,
+  .field.has-addons .control:last-child .button, .field.has-addons .control:last-child #commentform #submit, #commentform .field.has-addons .control:last-child #submit,
   .field.has-addons .control:last-child .input,
   .field.has-addons .control:last-child .select select {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0; }
-  .field.has-addons .control .button:hover, .field.has-addons .control .button.is-hovered,
+  .field.has-addons .control .button:hover, .field.has-addons .control #commentform #submit:hover, #commentform .field.has-addons .control #submit:hover, .field.has-addons .control .button.is-hovered, .field.has-addons .control #commentform .is-hovered#submit, #commentform .field.has-addons .control .is-hovered#submit,
   .field.has-addons .control .input:hover,
   .field.has-addons .control .input.is-hovered,
   .field.has-addons .control .select select:hover,
   .field.has-addons .control .select select.is-hovered {
     z-index: 2; }
-  .field.has-addons .control .button:focus, .field.has-addons .control .button.is-focused, .field.has-addons .control .button:active, .field.has-addons .control .button.is-active,
+  .field.has-addons .control .button:focus, .field.has-addons .control #commentform #submit:focus, #commentform .field.has-addons .control #submit:focus, .field.has-addons .control .button.is-focused, .field.has-addons .control #commentform .is-focused#submit, #commentform .field.has-addons .control .is-focused#submit, .field.has-addons .control .button:active, .field.has-addons .control #commentform #submit:active, #commentform .field.has-addons .control #submit:active, .field.has-addons .control .button.is-active, .field.has-addons .control #commentform .is-active#submit, #commentform .field.has-addons .control .is-active#submit,
   .field.has-addons .control .input:focus,
   .field.has-addons .control .input.is-focused,
   .field.has-addons .control .input:active,
@@ -2775,7 +2859,7 @@ a.box:active {
   .field.has-addons .control .select select:active,
   .field.has-addons .control .select select.is-active {
     z-index: 3; }
-    .field.has-addons .control .button:focus:hover, .field.has-addons .control .button.is-focused:hover, .field.has-addons .control .button:active:hover, .field.has-addons .control .button.is-active:hover,
+    .field.has-addons .control .button:focus:hover, .field.has-addons .control #commentform #submit:focus:hover, #commentform .field.has-addons .control #submit:focus:hover, .field.has-addons .control .button.is-focused:hover, .field.has-addons .control #commentform .is-focused#submit:hover, #commentform .field.has-addons .control .is-focused#submit:hover, .field.has-addons .control .button:active:hover, .field.has-addons .control #commentform #submit:active:hover, #commentform .field.has-addons .control #submit:active:hover, .field.has-addons .control .button.is-active:hover, .field.has-addons .control #commentform .is-active#submit:hover, #commentform .field.has-addons .control .is-active#submit:hover,
     .field.has-addons .control .input:focus:hover,
     .field.has-addons .control .input.is-focused:hover,
     .field.has-addons .control .input:active:hover,
@@ -2845,7 +2929,7 @@ a.box:active {
     .field-label.is-medium {
       font-size: 1.25rem;
       padding-top: 0.375em; }
-    .field-label.is-large {
+    .field-label.is-large, #commentform textarea.field-label {
       font-size: 1.5rem;
       padding-top: 0.375em; } }
 
@@ -2885,7 +2969,7 @@ a.box:active {
     font-size: 0.75rem; }
   .control.has-icon .input.is-medium + .icon {
     font-size: 1.25rem; }
-  .control.has-icon .input.is-large + .icon {
+  .control.has-icon .input.is-large + .icon, .control.has-icon #commentform textarea.input + .icon, #commentform .control.has-icon textarea.input + .icon {
     font-size: 1.5rem; }
   .control.has-icon:not(.has-icon-right) .icon {
     left: 0; }
@@ -2907,9 +2991,13 @@ a.box:active {
   .control.has-icons-left .select.is-medium ~ .icon, .control.has-icons-right .input.is-medium ~ .icon,
   .control.has-icons-right .select.is-medium ~ .icon {
     font-size: 1.25rem; }
-  .control.has-icons-left .input.is-large ~ .icon,
-  .control.has-icons-left .select.is-large ~ .icon, .control.has-icons-right .input.is-large ~ .icon,
-  .control.has-icons-right .select.is-large ~ .icon {
+  .control.has-icons-left .input.is-large ~ .icon, .control.has-icons-left #commentform textarea.input ~ .icon, #commentform .control.has-icons-left textarea.input ~ .icon,
+  .control.has-icons-left .select.is-large ~ .icon,
+  .control.has-icons-left #commentform textarea.select ~ .icon,
+  #commentform .control.has-icons-left textarea.select ~ .icon, .control.has-icons-right .input.is-large ~ .icon, .control.has-icons-right #commentform textarea.input ~ .icon, #commentform .control.has-icons-right textarea.input ~ .icon,
+  .control.has-icons-right .select.is-large ~ .icon,
+  .control.has-icons-right #commentform textarea.select ~ .icon,
+  #commentform .control.has-icons-right textarea.select ~ .icon {
     font-size: 1.5rem; }
   .control.has-icons-left .icon, .control.has-icons-right .icon {
     color: #dbdbdb;
@@ -2938,7 +3026,7 @@ a.box:active {
     font-size: 0.75rem; }
   .control.is-loading.is-medium:after {
     font-size: 1.25rem; }
-  .control.is-loading.is-large:after {
+  .control.is-loading.is-large:after, #commentform textarea.control.is-loading:after {
     font-size: 1.5rem; }
 
 .icon {
@@ -2953,7 +3041,7 @@ a.box:active {
   .icon.is-medium {
     height: 2rem;
     width: 2rem; }
-  .icon.is-large {
+  .icon.is-large, #commentform textarea.icon {
     height: 3rem;
     width: 3rem; }
 
@@ -3056,7 +3144,7 @@ a.box:active {
   .notification.is-dark {
     background-color: #363636;
     color: whitesmoke; }
-  .notification.is-primary {
+  .notification.is-primary, #commentform .notification#submit {
     background-color: #00d1b2;
     color: #fff; }
   .notification.is-link {
@@ -3118,11 +3206,11 @@ a.box:active {
     background-color: #363636; }
   .progress.is-dark::-ms-fill {
     background-color: #363636; }
-  .progress.is-primary::-webkit-progress-value {
+  .progress.is-primary::-webkit-progress-value, #commentform .progress#submit::-webkit-progress-value {
     background-color: #00d1b2; }
-  .progress.is-primary::-moz-progress-bar {
+  .progress.is-primary::-moz-progress-bar, #commentform .progress#submit::-moz-progress-bar {
     background-color: #00d1b2; }
-  .progress.is-primary::-ms-fill {
+  .progress.is-primary::-ms-fill, #commentform .progress#submit::-ms-fill {
     background-color: #00d1b2; }
   .progress.is-link::-webkit-progress-value {
     background-color: #3273dc; }
@@ -3158,7 +3246,7 @@ a.box:active {
     height: 0.75rem; }
   .progress.is-medium {
     height: 1.25rem; }
-  .progress.is-large {
+  .progress.is-large, #commentform textarea.progress {
     height: 1.5rem; }
 
 .table {
@@ -3190,8 +3278,10 @@ a.box:active {
       background-color: #363636;
       border-color: #363636;
       color: whitesmoke; }
-    .table td.is-primary,
-    .table th.is-primary {
+    .table td.is-primary, .table #commentform td#submit, #commentform .table td#submit,
+    .table th.is-primary,
+    .table #commentform th#submit,
+    #commentform .table th#submit {
       background-color: #00d1b2;
       border-color: #00d1b2;
       color: #fff; }
@@ -3342,7 +3432,7 @@ a.box:active {
   .tag:not(body).is-dark {
     background-color: #363636;
     color: whitesmoke; }
-  .tag:not(body).is-primary {
+  .tag:not(body).is-primary, #commentform .tag#submit:not(body) {
     background-color: #00d1b2;
     color: #fff; }
   .tag:not(body).is-link {
@@ -3362,7 +3452,7 @@ a.box:active {
     color: #fff; }
   .tag:not(body).is-medium {
     font-size: 1rem; }
-  .tag:not(body).is-large {
+  .tag:not(body).is-large, #commentform textarea.tag:not(body) {
     font-size: 1.25rem; }
   .tag:not(body) .icon:first-child:not(:last-child) {
     margin-left: -0.375em;
@@ -3546,7 +3636,7 @@ a.tag:hover {
     font-size: 0.75rem; }
   .breadcrumb.is-medium {
     font-size: 1.25rem; }
-  .breadcrumb.is-large {
+  .breadcrumb.is-large, #commentform textarea.breadcrumb {
     font-size: 1.5rem; }
   .breadcrumb.has-arrow-separator li + li::before {
     content: "\02192"; }
@@ -3763,7 +3853,7 @@ a.dropdown-item {
     border-top: 1px solid rgba(219, 219, 219, 0.5);
     margin-top: 1rem;
     padding-top: 1rem; }
-  .media.is-large + .media {
+  .media.is-large + .media, #commentform textarea.media + .media {
     margin-top: 1.5rem;
     padding-top: 1.5rem; }
 
@@ -3791,7 +3881,7 @@ a.dropdown-item {
     font-size: 0.75rem; }
   .menu.is-medium {
     font-size: 1.25rem; }
-  .menu.is-large {
+  .menu.is-large, #commentform textarea.menu {
     font-size: 1.5rem; }
 
 .menu-list {
@@ -3835,7 +3925,7 @@ a.dropdown-item {
     font-size: 0.75rem; }
   .message.is-medium {
     font-size: 1.25rem; }
-  .message.is-large {
+  .message.is-large, #commentform textarea.message {
     font-size: 1.5rem; }
   .message.is-white {
     background-color: white; }
@@ -3869,12 +3959,12 @@ a.dropdown-item {
     .message.is-dark .message-body {
       border-color: #363636;
       color: #2a2a2a; }
-  .message.is-primary {
+  .message.is-primary, #commentform .message#submit {
     background-color: #f5fffd; }
-    .message.is-primary .message-header {
+    .message.is-primary .message-header, #commentform .message#submit .message-header {
       background-color: #00d1b2;
       color: #fff; }
-    .message.is-primary .message-body {
+    .message.is-primary .message-body, #commentform .message#submit .message-body {
       border-color: #00d1b2;
       color: #021310; }
   .message.is-link {
@@ -4018,7 +4108,7 @@ a.dropdown-item {
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top: 1px solid #dbdbdb; }
-  .modal-card-foot .button:not(:last-child) {
+  .modal-card-foot .button:not(:last-child), .modal-card-foot #commentform #submit:not(:last-child), #commentform .modal-card-foot #submit:not(:last-child) {
     margin-right: 10px; }
 
 .modal-card-body {
@@ -4186,42 +4276,56 @@ a.dropdown-item {
       .navbar.is-dark .navbar-dropdown a.navbar-item.is-active {
         background-color: #363636;
         color: whitesmoke; } }
-  .navbar.is-primary {
+  .navbar.is-primary, #commentform .navbar#submit {
     background-color: #00d1b2;
     color: #fff; }
-    .navbar.is-primary .navbar-brand > .navbar-item,
-    .navbar.is-primary .navbar-brand .navbar-link {
+    .navbar.is-primary .navbar-brand > .navbar-item, #commentform .navbar#submit .navbar-brand > .navbar-item,
+    .navbar.is-primary .navbar-brand .navbar-link,
+    #commentform .navbar#submit .navbar-brand .navbar-link {
       color: #fff; }
-    .navbar.is-primary .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active,
+    .navbar.is-primary .navbar-brand > a.navbar-item:hover, #commentform .navbar#submit .navbar-brand > a.navbar-item:hover, .navbar.is-primary .navbar-brand > a.navbar-item.is-active, #commentform .navbar#submit .navbar-brand > a.navbar-item.is-active,
     .navbar.is-primary .navbar-brand .navbar-link:hover,
-    .navbar.is-primary .navbar-brand .navbar-link.is-active {
+    #commentform .navbar#submit .navbar-brand .navbar-link:hover,
+    .navbar.is-primary .navbar-brand .navbar-link.is-active,
+    #commentform .navbar#submit .navbar-brand .navbar-link.is-active {
       background-color: #00b89c;
       color: #fff; }
-    .navbar.is-primary .navbar-brand .navbar-link::after {
+    .navbar.is-primary .navbar-brand .navbar-link::after, #commentform .navbar#submit .navbar-brand .navbar-link::after {
       border-color: #fff; }
     @media screen and (min-width: 1088px) {
-      .navbar.is-primary .navbar-start > .navbar-item,
+      .navbar.is-primary .navbar-start > .navbar-item, #commentform .navbar#submit .navbar-start > .navbar-item,
       .navbar.is-primary .navbar-start .navbar-link,
+      #commentform .navbar#submit .navbar-start .navbar-link,
       .navbar.is-primary .navbar-end > .navbar-item,
-      .navbar.is-primary .navbar-end .navbar-link {
+      #commentform .navbar#submit .navbar-end > .navbar-item,
+      .navbar.is-primary .navbar-end .navbar-link,
+      #commentform .navbar#submit .navbar-end .navbar-link {
         color: #fff; }
-      .navbar.is-primary .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active,
+      .navbar.is-primary .navbar-start > a.navbar-item:hover, #commentform .navbar#submit .navbar-start > a.navbar-item:hover, .navbar.is-primary .navbar-start > a.navbar-item.is-active, #commentform .navbar#submit .navbar-start > a.navbar-item.is-active,
       .navbar.is-primary .navbar-start .navbar-link:hover,
+      #commentform .navbar#submit .navbar-start .navbar-link:hover,
       .navbar.is-primary .navbar-start .navbar-link.is-active,
+      #commentform .navbar#submit .navbar-start .navbar-link.is-active,
       .navbar.is-primary .navbar-end > a.navbar-item:hover,
+      #commentform .navbar#submit .navbar-end > a.navbar-item:hover,
       .navbar.is-primary .navbar-end > a.navbar-item.is-active,
+      #commentform .navbar#submit .navbar-end > a.navbar-item.is-active,
       .navbar.is-primary .navbar-end .navbar-link:hover,
-      .navbar.is-primary .navbar-end .navbar-link.is-active {
+      #commentform .navbar#submit .navbar-end .navbar-link:hover,
+      .navbar.is-primary .navbar-end .navbar-link.is-active,
+      #commentform .navbar#submit .navbar-end .navbar-link.is-active {
         background-color: #00b89c;
         color: #fff; }
-      .navbar.is-primary .navbar-start .navbar-link::after,
-      .navbar.is-primary .navbar-end .navbar-link::after {
+      .navbar.is-primary .navbar-start .navbar-link::after, #commentform .navbar#submit .navbar-start .navbar-link::after,
+      .navbar.is-primary .navbar-end .navbar-link::after,
+      #commentform .navbar#submit .navbar-end .navbar-link::after {
         border-color: #fff; }
-      .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link,
-      .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link {
+      .navbar.is-primary .navbar-item.has-dropdown:hover .navbar-link, #commentform .navbar#submit .navbar-item.has-dropdown:hover .navbar-link,
+      .navbar.is-primary .navbar-item.has-dropdown.is-active .navbar-link,
+      #commentform .navbar#submit .navbar-item.has-dropdown.is-active .navbar-link {
         background-color: #00b89c;
         color: #fff; }
-      .navbar.is-primary .navbar-dropdown a.navbar-item.is-active {
+      .navbar.is-primary .navbar-dropdown a.navbar-item.is-active, #commentform .navbar#submit .navbar-dropdown a.navbar-item.is-active {
         background-color: #00d1b2;
         color: #fff; } }
   .navbar.is-link {
@@ -4751,7 +4855,7 @@ a.navbar-item,
     font-size: 0.75rem; }
   .pagination.is-medium {
     font-size: 1.25rem; }
-  .pagination.is-large {
+  .pagination.is-large, #commentform textarea.pagination {
     font-size: 1.5rem; }
   .pagination.is-rounded .pagination-previous,
   .pagination.is-rounded .pagination-next {
@@ -5050,7 +5154,7 @@ label.panel-block {
     font-size: 0.75rem; }
   .tabs.is-medium {
     font-size: 1.25rem; }
-  .tabs.is-large {
+  .tabs.is-large, #commentform textarea.tabs {
     font-size: 1.5rem; }
 
 .column {
@@ -6144,49 +6248,54 @@ label.panel-block {
       @media screen and (max-width: 768px) {
         .hero.is-dark.is-bold .navbar-menu {
           background-image: linear-gradient(141deg, #1f191a 0%, #363636 71%, #46403f 100%); } }
-  .hero.is-primary {
+  .hero.is-primary, #commentform .hero#submit {
     background-color: #00d1b2;
     color: #fff; }
-    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag),
-    .hero.is-primary strong {
+    .hero.is-primary a:not(.button):not(.dropdown-item):not(.tag), #commentform .hero#submit a:not(.button):not(.dropdown-item):not(.tag),
+    .hero.is-primary strong,
+    #commentform .hero#submit strong {
       color: inherit; }
-    .hero.is-primary .title {
+    .hero.is-primary .title, #commentform .hero#submit .title {
       color: #fff; }
-    .hero.is-primary .subtitle {
+    .hero.is-primary .subtitle, #commentform .hero#submit .subtitle {
       color: rgba(255, 255, 255, 0.9); }
-      .hero.is-primary .subtitle a:not(.button),
-      .hero.is-primary .subtitle strong {
+      .hero.is-primary .subtitle a:not(.button), #commentform .hero#submit .subtitle a:not(.button),
+      .hero.is-primary .subtitle strong,
+      #commentform .hero#submit .subtitle strong {
         color: #fff; }
     @media screen and (max-width: 1087px) {
-      .hero.is-primary .navbar-menu {
+      .hero.is-primary .navbar-menu, #commentform .hero#submit .navbar-menu {
         background-color: #00d1b2; } }
-    .hero.is-primary .navbar-item,
-    .hero.is-primary .navbar-link {
+    .hero.is-primary .navbar-item, #commentform .hero#submit .navbar-item,
+    .hero.is-primary .navbar-link,
+    #commentform .hero#submit .navbar-link {
       color: rgba(255, 255, 255, 0.7); }
-    .hero.is-primary a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active,
+    .hero.is-primary a.navbar-item:hover, #commentform .hero#submit a.navbar-item:hover, .hero.is-primary a.navbar-item.is-active, #commentform .hero#submit a.navbar-item.is-active,
     .hero.is-primary .navbar-link:hover,
-    .hero.is-primary .navbar-link.is-active {
+    #commentform .hero#submit .navbar-link:hover,
+    .hero.is-primary .navbar-link.is-active,
+    #commentform .hero#submit .navbar-link.is-active {
       background-color: #00b89c;
       color: #fff; }
-    .hero.is-primary .tabs a {
+    .hero.is-primary .tabs a, #commentform .hero#submit .tabs a {
       color: #fff;
       opacity: 0.9; }
-      .hero.is-primary .tabs a:hover {
+      .hero.is-primary .tabs a:hover, #commentform .hero#submit .tabs a:hover {
         opacity: 1; }
-    .hero.is-primary .tabs li.is-active a {
+    .hero.is-primary .tabs li.is-active a, #commentform .hero#submit .tabs li.is-active a {
       opacity: 1; }
-    .hero.is-primary .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a {
+    .hero.is-primary .tabs.is-boxed a, #commentform .hero#submit .tabs.is-boxed a, .hero.is-primary .tabs.is-toggle a, #commentform .hero#submit .tabs.is-toggle a {
       color: #fff; }
-      .hero.is-primary .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover {
+      .hero.is-primary .tabs.is-boxed a:hover, #commentform .hero#submit .tabs.is-boxed a:hover, .hero.is-primary .tabs.is-toggle a:hover, #commentform .hero#submit .tabs.is-toggle a:hover {
         background-color: rgba(10, 10, 10, 0.1); }
-    .hero.is-primary .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover {
+    .hero.is-primary .tabs.is-boxed li.is-active a, #commentform .hero#submit .tabs.is-boxed li.is-active a, .hero.is-primary .tabs.is-boxed li.is-active a:hover, #commentform .hero#submit .tabs.is-boxed li.is-active a:hover, .hero.is-primary .tabs.is-toggle li.is-active a, #commentform .hero#submit .tabs.is-toggle li.is-active a, .hero.is-primary .tabs.is-toggle li.is-active a:hover, #commentform .hero#submit .tabs.is-toggle li.is-active a:hover {
       background-color: #fff;
       border-color: #fff;
       color: #00d1b2; }
-    .hero.is-primary.is-bold {
+    .hero.is-primary.is-bold, #commentform .hero.is-bold#submit {
       background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%); }
       @media screen and (max-width: 768px) {
-        .hero.is-primary.is-bold .navbar-menu {
+        .hero.is-primary.is-bold .navbar-menu, #commentform .hero.is-bold#submit .navbar-menu {
           background-image: linear-gradient(141deg, #009e6c 0%, #00d1b2 71%, #00e7eb 100%); } }
   .hero.is-link {
     background-color: #3273dc;
@@ -6416,7 +6525,7 @@ label.panel-block {
       padding-bottom: 9rem;
       padding-top: 9rem; } }
   @media screen and (min-width: 769px), print {
-    .hero.is-large .hero-body {
+    .hero.is-large .hero-body, #commentform textarea.hero .hero-body {
       padding-bottom: 18rem;
       padding-top: 18rem; } }
   .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body {
@@ -6448,15 +6557,15 @@ label.panel-block {
 .hero-buttons {
   margin-top: 1.5rem; }
   @media screen and (max-width: 768px) {
-    .hero-buttons .button {
+    .hero-buttons .button, .hero-buttons #commentform #submit, #commentform .hero-buttons #submit {
       display: flex; }
-      .hero-buttons .button:not(:last-child) {
+      .hero-buttons .button:not(:last-child), .hero-buttons #commentform #submit:not(:last-child), #commentform .hero-buttons #submit:not(:last-child) {
         margin-bottom: 0.75rem; } }
   @media screen and (min-width: 769px), print {
     .hero-buttons {
       display: flex;
       justify-content: center; }
-      .hero-buttons .button:not(:last-child) {
+      .hero-buttons .button:not(:last-child), .hero-buttons #commentform #submit:not(:last-child), #commentform .hero-buttons #submit:not(:last-child) {
         margin-right: 1.5rem; } }
 
 .hero-head,
@@ -6474,7 +6583,7 @@ label.panel-block {
   @media screen and (min-width: 1088px) {
     .section.is-medium {
       padding: 9rem 1.5rem; }
-    .section.is-large {
+    .section.is-large, #commentform textarea.section {
       padding: 18rem 1.5rem; } }
 
 .footer {
@@ -8817,6 +8926,23 @@ body {
 a {
   text-decoration: none; }
 
-.title-font, .navbar-item, .blog-post-title {
+.title-font, .navbar-item, .blog-post-title, #commentform #submit, #respond #reply-title, #comments-thoughts-blurb {
   font-family: 'Special Elite', cursive;
   font-size: x-large; }
+
+#commentform textarea {
+  width: 90%;
+  height: 20%; }
+
+#commentform #submit {
+  margin-top: 20px; }
+
+#respond #reply-title {
+  text-decoration: underline; }
+
+#comments-thoughts-blurb {
+  text-decoration: underline; }
+
+hr {
+  margin-top: 1%;
+  margin-bottom: 1%; }

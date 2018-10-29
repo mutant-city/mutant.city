@@ -10,3 +10,8 @@
 
 
 Note: Permanent work in progress. It may never be finished.
+
+Todo(high priority):
+* style comments
+* add captcha
+* categories
