@@ -19,9 +19,10 @@
 </section>
 
 <footer class="footer">
-<div class="container">
-<?php get_footer(); ?>
-</div>
+    <div class="container">
+        <?php get_footer(); ?>
+    </div>
 </footer>
+
 </body>
 </html>

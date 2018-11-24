@@ -1,5 +1,5 @@
 <nav class="navbar is-fixed-top has-shadow" role="navigation" aria-label="main navigation">
-    <div class="container is-fullhd">
+    <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="/">
 
