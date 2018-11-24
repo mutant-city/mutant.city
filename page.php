@@ -6,6 +6,7 @@
 <body <?php body_class(); ?>>
 <?php get_template_part('wp-components/bulma-static-nav-bar'); ?>
 <section class="section">
+    <div class="container">
     <div class="columns">
         <div class="column is-2">
             <p class="image"">
@@ -15,6 +16,7 @@
         <div class="column">
         <?= get_post_field('post_content', $post->ID) ?>
         </div>
+    </div>
     </div>
 </section>
 </body>

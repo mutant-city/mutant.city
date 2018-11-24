@@ -1,4 +1,5 @@
 <section class="section single-post">
+<div class="container">
     <div class="columns">
         <div class="column is-2">
             <p class="image"">
@@ -7,7 +8,6 @@
         </div>
 
         <div class="column is-10">
-
             <div class="media-content">
                 <h1 class="blog-post-title">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
@@ -25,4 +25,5 @@
     <div class="media-content single-post-content">
         <?php the_content(); ?>
     </div>
+</div>
 </section>
