@@ -1,4 +1,4 @@
-<footer class="footer">
+
     <p>
         <a href="#"><i class="fa fa-chevron-up"></i> Back to top</a>
     </p>
@@ -9,4 +9,3 @@
     <a href="/wp-admin" target="_blank" style="font-size:140%;">
         <i class="fa fa-gear"></i>
     </a>
-</footer>
